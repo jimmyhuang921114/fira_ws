@@ -28,8 +28,8 @@ def generate_launch_description():
     # 宣告 Launch 參數 cpp_node，只宣告一次！可從命令列傳入
     declare_cpp_node = DeclareLaunchArgument(
         "cpp_node",
-        default_value="pose_goal",  # 預設值
-        # default_value="ee_pose_in_base",
+        # default_value="auto_pose_goal",  # 預設值
+        default_value="ee_pose_in_base",
         description="C++ node executable name to launch",
     )
 

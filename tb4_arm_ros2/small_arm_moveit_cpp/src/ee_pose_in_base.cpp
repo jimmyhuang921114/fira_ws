@@ -1,5 +1,4 @@
 #include <memory>
-
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
@@ -15,12 +14,12 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    // 宣告參數（相機到末端執行器）
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.053, 0.08, -0.6});
+    // tranform parameter
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.053, 0.05, -0.6});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
 
-    // 訂閱 Pose 資料（來自相機）
-    subscription_ = this->create_subscription<geometry_msgs::msg::Pose>("/world_coordinates", 10,std::bind(&CameraToBasePrinter::callback, this, std::placeholders::_1)
+    // sub the positionn from camera
+    subscription_ = this->create_subscription<geometry_msgs::msg::Pose>("/text_coordinate", 10,std::bind(&CameraToBasePrinter::callback, this, std::placeholders::_1)
     );
 
     // 建立 publisher，發佈轉換後的 PoseStamped

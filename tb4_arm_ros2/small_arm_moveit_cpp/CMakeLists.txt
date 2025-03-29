@@ -5,86 +5,45 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
+# === Find dependencies ===
 find_package(ament_cmake REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(tf2_geometry_msgs REQUIRED)  # Add this dependency
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
-add_executable(pose_goal src/pose_goal.cpp)
-ament_target_dependencies(pose_goal
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(joint_goal src/joint_goal.cpp)
-ament_target_dependencies(joint_goal
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(cartesian_path src/cartesian_path.cpp)
-ament_target_dependencies(cartesian_path
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
+# === Executables ===
+# add_executable(joint_goal src/joint_goal.cpp)
+# ament_target_dependencies(joint_goal moveit_ros_planning_interface rclcpp)
 
 add_executable(named_goal src/named_goal.cpp)
-ament_target_dependencies(named_goal
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(gripper_open src/gripper_open.cpp)
-ament_target_dependencies(gripper_open
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(gripper_joint_value src/gripper_joint_value.cpp)
-ament_target_dependencies(gripper_joint_value
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(pliz_move src/pliz_move.cpp)
-ament_target_dependencies(pliz_move
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
-
-add_executable(tool_move src/tool_coordinate_move.cpp)
-ament_target_dependencies(tool_move
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
+ament_target_dependencies(named_goal moveit_ros_planning_interface rclcpp)
 
 add_executable(ee_pose_in_base src/ee_pose_in_base.cpp)
-ament_target_dependencies(ee_pose_in_base
-  "moveit_ros_planning_interface"
-  "rclcpp"
-)
+ament_target_dependencies(ee_pose_in_base moveit_ros_planning_interface rclcpp)
 
 add_executable(eye_hand_pose src/eye_hand_pose.cpp)
-ament_target_dependencies(eye_hand_pose
-  "moveit_ros_planning_interface"
-  "rclcpp"
+ament_target_dependencies(eye_hand_pose moveit_ros_planning_interface rclcpp)
+
+add_executable(auto_pose_goal src/auto_pose_goal.cpp)
+ament_target_dependencies(auto_pose_goal moveit_ros_planning_interface rclcpp geometry_msgs std_msgs)
+
+# === Install targets ===
+install(TARGETS
+  # joint_goal
+  named_goal
+  ee_pose_in_base
+  eye_hand_pose
+  auto_pose_goal
+  DESTINATION lib/${PROJECT_NAME}
 )
 
-install(TARGETS eye_hand_pose DESTINATION lib/${PROJECT_NAME})
-install(TARGETS ee_pose_in_base DESTINATION lib/${PROJECT_NAME})
-install(TARGETS pose_goal DESTINATION lib/${PROJECT_NAME})  
-install(TARGETS joint_goal DESTINATION lib/${PROJECT_NAME})
-install(TARGETS cartesian_path DESTINATION lib/${PROJECT_NAME})
-install(TARGETS named_goal DESTINATION lib/${PROJECT_NAME})
-install(TARGETS gripper_open DESTINATION lib/${PROJECT_NAME})
-install(TARGETS gripper_joint_value DESTINATION lib/${PROJECT_NAME})
-install(TARGETS pliz_move DESTINATION lib/${PROJECT_NAME})
-install(TARGETS tool_move DESTINATION lib/${PROJECT_NAME})
-
+# === Install folders (launch/config) ===
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
 
+# === Lint & Testing ===
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   set(ament_cmake_copyright_FOUND TRUE)
