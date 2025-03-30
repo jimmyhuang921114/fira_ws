@@ -1,0 +1,16 @@
+[0.441s] Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit2': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/darkdemon/work/motor_control/build/python_moveit2/build --no-deps symlink_data
+[0.592s] running develop
+[0.672s] running egg_info
+[0.672s] writing python_moveit2.egg-info/PKG-INFO
+[0.672s] writing dependency_links to python_moveit2.egg-info/dependency_links.txt
+[0.672s] writing entry points to python_moveit2.egg-info/entry_points.txt
+[0.672s] writing requirements to python_moveit2.egg-info/requires.txt
+[0.672s] writing top-level names to python_moveit2.egg-info/top_level.txt
+[0.673s] reading manifest file 'python_moveit2.egg-info/SOURCES.txt'
+[0.674s] writing manifest file 'python_moveit2.egg-info/SOURCES.txt'
+[0.675s] running build_ext
+[0.675s] Creating /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python-moveit2.egg-link (link to .)
+[0.675s] 
+[0.675s] Installed /home/darkdemon/work/motor_control/build/python_moveit2
+[0.675s] running symlink_data
+[0.692s] Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit2' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/darkdemon/work/motor_control/build/python_moveit2/build --no-deps symlink_data

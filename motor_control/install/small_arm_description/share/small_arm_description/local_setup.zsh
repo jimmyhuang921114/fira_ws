@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/build/small_arm_description/ament_cmake_environment_hooks/local_setup.zsh

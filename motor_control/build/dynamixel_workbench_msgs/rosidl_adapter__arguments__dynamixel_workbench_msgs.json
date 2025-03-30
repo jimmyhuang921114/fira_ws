@@ -1,0 +1,25 @@
+{
+  "package_name": "dynamixel_workbench_msgs",
+  "non_idl_tuples": [
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/AX.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/EX.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX2.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MX2Ext.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/MXExt.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/PRO.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/PROExt.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/RX.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XH.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XL.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XL320.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XM.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/XMExt.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelState.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelStateList.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelInfo.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:msg/DynamixelLoadInfo.msg",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:srv/GetDynamixelInfo.srv",
+    "/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs:srv/DynamixelCommand.srv"
+  ]
+}

@@ -1,0 +1,10 @@
+[ 10%] Built target ee_pose_in_base
+[ 20%] Built target gripper_open
+[ 30%] Built target tool_move
+[ 45%] Built target cartesian_path
+[ 50%] Built target pliz_move
+[ 70%] Built target gripper_joint_value
+[ 70%] Built target eye_hand_pose
+[ 85%] [32mBuilding CXX object CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o[0m
+[ 85%] Built target joint_goal
+[ 95%] Built target named_goal

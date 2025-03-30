@@ -1,0 +1,82 @@
+[0.007s] Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/darkdemon/work/motor_control/install/dynamixel_hardware
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.098s] -- Detecting C compiler ABI info
+[0.146s] -- Detecting C compiler ABI info - done
+[0.153s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.153s] -- Detecting C compile features
+[0.154s] -- Detecting C compile features - done
+[0.156s] -- Detecting CXX compiler ABI info
+[0.223s] -- Detecting CXX compiler ABI info - done
+[0.231s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.231s] -- Detecting CXX compile features
+[0.231s] -- Detecting CXX compile features - done
+[0.234s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.345s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.401s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.430s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.464s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.468s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.474s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.483s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.494s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.526s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.529s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.543s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.550s] -- Looking for pthread.h
+[0.609s] -- Looking for pthread.h - found
+[0.609s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.664s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.664s] -- Found Threads: TRUE  
+[0.722s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.749s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.844s] -- Found dynamixel_workbench_toolbox: 2.2.3 (/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake)
+[0.853s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.916s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.917s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.917s] -- Configured cppcheck include dirs: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/include
+[0.917s] -- Configured cppcheck exclude dirs and/or files: 
+[0.918s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.918s] -- Configured cpplint exclude dirs and/or files: 
+[0.918s] -- Added test 'lint_cmake' to check CMake code style
+[0.919s] -- Added test 'uncrustify' to check C / C++ code style
+[0.919s] -- Configured uncrustify additional arguments: 
+[0.920s] -- Added test 'xmllint' to check XML markup files
+[0.921s] -- Configuring done
+[0.959s] -- Generating done
+[0.962s] -- Build files have been written to: /home/darkdemon/work/motor_control/build/dynamixel_hardware
+[0.968s] Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware' returned '0': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/darkdemon/work/motor_control/install/dynamixel_hardware
+[0.969s] Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_hardware -- -j20 -l20
+[1.012s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o[0m
+[4.778s] [100%] [32m[1mLinking CXX shared library libdynamixel_hardware.so[0m
+[4.984s] [100%] Built target dynamixel_hardware
+[5.006s] Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware' returned '0': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_hardware -- -j20 -l20
+[5.006s] Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_hardware
+[5.014s] -- Install configuration: ""
+[5.016s] -- Execute custom install script
+[5.016s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware//dynamixel_hardware.xml
+[5.026s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/lib/libdynamixel_hardware.so
+[5.036s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/include/dynamixel_hardware/dynamixel_hardware.hpp
+[5.043s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/include/dynamixel_hardware/visiblity_control.h
+[5.051s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/library_path.sh
+[5.061s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/library_path.dsv
+[5.068s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/ament_index/resource_index/package_run_dependencies/dynamixel_hardware
+[5.078s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/ament_index/resource_index/parent_prefix_path/dynamixel_hardware
+[5.085s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/ament_prefix_path.sh
+[5.093s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/ament_prefix_path.dsv
+[5.102s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/path.sh
+[5.111s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/environment/path.dsv
+[5.118s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/local_setup.bash
+[5.128s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/local_setup.sh
+[5.135s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/local_setup.zsh
+[5.143s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/local_setup.dsv
+[5.152s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.dsv
+[5.160s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/ament_index/resource_index/packages/dynamixel_hardware
+[5.166s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/dynamixel_hardware
+[5.173s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.181s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[5.189s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.196s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/cmake/dynamixel_hardwareConfig.cmake
+[5.202s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/cmake/dynamixel_hardwareConfig-version.cmake
+[5.209s] -- Symlinking: /home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.xml
+[5.217s] Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware' returned '0': AMENT_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_hardware

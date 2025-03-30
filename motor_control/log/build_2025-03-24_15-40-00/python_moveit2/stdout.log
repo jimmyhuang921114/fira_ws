@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing python_moveit2.egg-info/PKG-INFO
+writing dependency_links to python_moveit2.egg-info/dependency_links.txt
+writing entry points to python_moveit2.egg-info/entry_points.txt
+writing requirements to python_moveit2.egg-info/requires.txt
+writing top-level names to python_moveit2.egg-info/top_level.txt
+reading manifest file 'python_moveit2.egg-info/SOURCES.txt'
+writing manifest file 'python_moveit2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python-moveit2.egg-link (link to .)
+
+Installed /home/darkdemon/work/motor_control/build/python_moveit2
+running symlink_data

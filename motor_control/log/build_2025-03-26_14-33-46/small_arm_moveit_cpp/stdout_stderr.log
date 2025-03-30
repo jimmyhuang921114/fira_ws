@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[35m[1mConsolidate compiler generated dependencies of target eye_hand_pose[0m
+[ 10%] Built target named_goal
+[ 20%] Built target ee_pose_in_base
+[ 30%] Built target joint_goal
+[ 40%] Built target cartesian_path
+[ 50%] Built target gripper_open
+[ 60%] Built target tool_move
+[ 70%] Built target pose_goal
+[ 80%] Built target gripper_joint_value
+[ 90%] Built target pliz_move
+[ 95%] [32mBuilding CXX object CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.o[0m
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/eye_hand_pose.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/eye_hand_pose.cpp:107:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcp[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp[m[K’?
+  107 |   [01;31m[Krclcp[m[K p::init(argc, argv);  // 初始化 ROS2 節點
+      |   [01;31m[K^~~~~[m[K
+      |   [32m[Krclcpp[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/eye_hand_pose.cpp:106:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 | int main([01;35m[Kint argc[m[K, char * argv[]) {
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/eye_hand_pose.cpp:106:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 | int main(int argc, [01;35m[Kchar * argv[][m[K) {
+      |                    [01;35m[K~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/eye_hand_pose.dir/build.make:76: CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/eye_hand_pose.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

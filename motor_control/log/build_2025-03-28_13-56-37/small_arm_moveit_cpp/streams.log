@@ -1,0 +1,55 @@
+[0.308s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.366s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[0.367s] [35m[1mConsolidate compiler generated dependencies of target gripper_joint_value[0m
+[0.367s] [35m[1mConsolidate compiler generated dependencies of target joint_goal[0m
+[0.369s] [35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[0.384s] [ 10%] [32m[1mLinking CXX executable joint_goal[0m
+[0.384s] [ 10%] [32m[1mLinking CXX executable gripper_joint_value[0m
+[0.396s] [ 15%] [32mBuilding CXX object CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o[0m
+[0.397s] [ 20%] [32mBuilding CXX object CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o[0m
+[0.397s] [ 30%] Built target eye_hand_pose
+[0.398s] [ 35%] [32mBuilding CXX object CMakeFiles/pliz_move.dir/src/pliz_move.cpp.o[0m
+[0.400s] [ 40%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[0.401s] [ 45%] [32mBuilding CXX object CMakeFiles/named_goal.dir/src/named_goal.cpp.o[0m
+[0.404s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp: No such file or directory
+[0.404s] compilation terminated.
+[0.404s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/pose_goal.cpp: No such file or directory
+[0.404s] compilation terminated.
+[0.404s] [ 50%] [32mBuilding CXX object CMakeFiles/tool_move.dir/src/tool_coordinate_move.cpp.o[0m
+[0.404s] gmake[2]: *** [CMakeFiles/cartesian_path.dir/build.make:76: CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o] Error 1
+[0.405s] gmake[2]: *** [CMakeFiles/pose_goal.dir/build.make:76: CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o] Error 1
+[0.405s] gmake[1]: *** [CMakeFiles/Makefile2:207: CMakeFiles/cartesian_path.dir/all] Error 2
+[0.405s] gmake[1]: *** Waiting for unfinished jobs....
+[0.405s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/pose_goal.dir/all] Error 2
+[0.405s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/pliz_move.cpp: No such file or directory
+[0.405s] compilation terminated.
+[0.406s] gmake[2]: *** [CMakeFiles/pliz_move.dir/build.make:76: CMakeFiles/pliz_move.dir/src/pliz_move.cpp.o] Error 1
+[0.406s] gmake[1]: *** [CMakeFiles/Makefile2:311: CMakeFiles/pliz_move.dir/all] Error 2
+[0.410s] [ 60%] Built target gripper_open
+[0.412s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/tool_coordinate_move.cpp: No such file or directory
+[0.412s] compilation terminated.
+[0.412s] gmake[2]: *** [CMakeFiles/tool_move.dir/build.make:76: CMakeFiles/tool_move.dir/src/tool_coordinate_move.cpp.o] Error 1
+[0.413s] gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/tool_move.dir/all] Error 2
+[0.518s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:2:17:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+[0.518s]     2 | #include <rclcpp
+[0.518s]       |                 [01;31m[K^[m[K
+[0.519s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krclcpp: No such file or directory
+[0.519s]     2 | #include [01;31m[K<[m[Krclcpp
+[0.520s]       |          [01;31m[K^[m[K
+[0.520s] compilation terminated.
+[0.521s] gmake[2]: *** [CMakeFiles/named_goal.dir/build.make:76: CMakeFiles/named_goal.dir/src/named_goal.cpp.o] Error 1
+[0.521s] gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/named_goal.dir/all] Error 2
+[10.353s] [ 65%] [32m[1mLinking CXX executable ee_pose_in_base[0m
+[11.190s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[11.190s] (.text+0x1b): undefined reference to `main'
+[11.194s] collect2: error: ld returned 1 exit status
+[11.196s] gmake[2]: *** [CMakeFiles/gripper_joint_value.dir/build.make:355: gripper_joint_value] Error 1
+[11.196s] gmake[1]: *** [CMakeFiles/Makefile2:285: CMakeFiles/gripper_joint_value.dir/all] Error 2
+[11.375s] [ 65%] Built target ee_pose_in_base
+[12.118s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[12.118s] (.text+0x1b): undefined reference to `main'
+[12.123s] collect2: error: ld returned 1 exit status
+[12.125s] gmake[2]: *** [CMakeFiles/joint_goal.dir/build.make:355: joint_goal] Error 1
+[12.125s] gmake[1]: *** [CMakeFiles/Makefile2:181: CMakeFiles/joint_goal.dir/all] Error 2
+[12.125s] gmake: *** [Makefile:146: all] Error 2
+[12.128s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

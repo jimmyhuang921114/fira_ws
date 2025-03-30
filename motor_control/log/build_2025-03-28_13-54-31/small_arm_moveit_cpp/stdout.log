@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target pose_goal[0m
+[  5%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[ 15%] Built target eye_hand_pose
+[ 25%] [32mBuilding CXX object CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/joint_goal.dir/src/joint_goal.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/tool_move.dir/src/tool_coordinate_move.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/gripper_joint_value.dir/src/gripper_joint_value.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/named_goal.dir/src/named_goal.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pliz_move.dir/src/pliz_move.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable joint_goal[0m
+[ 65%] [32m[1mLinking CXX executable gripper_joint_value[0m
+[ 70%] [32m[1mLinking CXX executable ee_pose_in_base[0m
+[ 70%] Built target ee_pose_in_base
+[ 75%] [32m[1mLinking CXX executable gripper_open[0m
+[ 75%] Built target gripper_open

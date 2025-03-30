@@ -1,0 +1,32 @@
+[0.265s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.284s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.284s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.284s]   contain a literal, direct call to the project() command.  Add a line of
+[0.285s]   code such as
+[0.285s] 
+[0.286s]     project(ProjectName)
+[0.287s] 
+[0.287s]   near the top of the file, but after cmake_minimum_required().
+[0.287s] 
+[0.287s]   CMake is pretending there is a "project(Project)" command on the first
+[0.287s]   line.
+[0.287s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.287s] [0m
+[0.289s] [31mCMake Error at CMakeLists.txt:3 (ament_target_dependencies):
+[0.289s]   Unknown CMake command "ament_target_dependencies".
+[0.289s] 
+[0.290s] [0m
+[0.290s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.291s]   No cmake_minimum_required command is present.  A line of code such as
+[0.291s] 
+[0.291s]     cmake_minimum_required(VERSION 3.22)
+[0.291s] 
+[0.291s]   should be added at the top of the file.  The version specified may be lower
+[0.291s]   if you wish to support older CMake versions for this project.  For more
+[0.291s]   information run "cmake --help-policy CMP0000".
+[0.291s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.291s] [0m
+[0.291s] -- Configuring incomplete, errors occurred!
+[0.291s] See also "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/CMakeOutput.log".
+[0.291s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.305s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

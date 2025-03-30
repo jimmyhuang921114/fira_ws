@@ -1,0 +1,9 @@
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/uninstall.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/small_arm_description_uninstall.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/test.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/edit_cache.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/rebuild_cache.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/list_install_components.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/install.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/install/local.dir
+/home/darkdemon/work/motor_control/build/small_arm_description/CMakeFiles/install/strip.dir

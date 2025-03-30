@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target pose_goal[0m
+[35m[1mConsolidate compiler generated dependencies of target eye_hand_pose[0m
+[ 10%] Built target ee_pose_in_base
+[ 25%] [32mBuilding CXX object CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o[0m
+[ 25%] Built target named_goal
+[ 35%] Built target gripper_joint_value
+[ 45%] Built target gripper_open
+[ 55%] Built target joint_goal
+[ 75%] Built target tool_move
+[ 75%] Built target cartesian_path
+[ 85%] Built target pliz_move
+[ 90%] [32mBuilding CXX object CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable pose_goal[0m
+[ 95%] Built target pose_goal

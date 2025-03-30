@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_py/dynamixel_workbench_msgs/msg/_xm_ext_s.c

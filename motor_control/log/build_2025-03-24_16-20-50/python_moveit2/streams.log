@@ -1,0 +1,40 @@
+[0.361s] Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit2': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/darkdemon/work/motor_control/build/python_moveit2/build
+[0.506s] running develop
+[0.583s] Removing /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python-moveit2.egg-link (link to .)
+[0.601s] Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit2' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/darkdemon/work/motor_control/build/python_moveit2/build
+[0.602s] Invoking command in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/python_moveit2 build --build-base /home/darkdemon/work/motor_control/build/python_moveit2/build install --record /home/darkdemon/work/motor_control/build/python_moveit2/install.log --single-version-externally-managed install_data --force
+[0.745s] running egg_info
+[0.745s] writing ../../../build/python_moveit2/python_moveit2.egg-info/PKG-INFO
+[0.745s] writing dependency_links to ../../../build/python_moveit2/python_moveit2.egg-info/dependency_links.txt
+[0.745s] writing entry points to ../../../build/python_moveit2/python_moveit2.egg-info/entry_points.txt
+[0.745s] writing requirements to ../../../build/python_moveit2/python_moveit2.egg-info/requires.txt
+[0.746s] writing top-level names to ../../../build/python_moveit2/python_moveit2.egg-info/top_level.txt
+[0.747s] reading manifest file '../../../build/python_moveit2/python_moveit2.egg-info/SOURCES.txt'
+[0.747s] writing manifest file '../../../build/python_moveit2/python_moveit2.egg-info/SOURCES.txt'
+[0.748s] running build
+[0.748s] running build_py
+[0.748s] creating /home/darkdemon/work/motor_control/build/python_moveit2/build
+[0.748s] creating /home/darkdemon/work/motor_control/build/python_moveit2/build/lib
+[0.748s] creating /home/darkdemon/work/motor_control/build/python_moveit2/build/lib/python_moveit2
+[0.748s] copying python_moveit2/__init__.py -> /home/darkdemon/work/motor_control/build/python_moveit2/build/lib/python_moveit2
+[0.748s] copying python_moveit2/arm_control.py -> /home/darkdemon/work/motor_control/build/python_moveit2/build/lib/python_moveit2
+[0.749s] running install
+[0.749s] running install_lib
+[0.749s] creating /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2
+[0.749s] copying /home/darkdemon/work/motor_control/build/python_moveit2/build/lib/python_moveit2/__init__.py -> /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2
+[0.749s] copying /home/darkdemon/work/motor_control/build/python_moveit2/build/lib/python_moveit2/arm_control.py -> /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2
+[0.749s] byte-compiling /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__init__.py to __init__.cpython-310.pyc
+[0.749s] byte-compiling /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/arm_control.py to arm_control.cpython-310.pyc
+[0.749s]   File "/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/arm_control.py", line 25
+[0.749s]     self.status = ["gripper":0,"name_goal":0,"pose_goal":0,"word_detection":0]
+[0.749s]                             ^
+[0.749s] SyntaxError: invalid syntax
+[0.749s] 
+[0.749s] running install_data
+[0.750s] copying resource/python_moveit2 -> /home/darkdemon/work/motor_control/install/python_moveit2/share/ament_index/resource_index/packages
+[0.750s] copying package.xml -> /home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2
+[0.750s] running install_egg_info
+[0.750s] Copying ../../../build/python_moveit2/python_moveit2.egg-info to /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2-0.0.0-py3.10.egg-info
+[0.751s] running install_scripts
+[0.765s] writing list of installed files to '/home/darkdemon/work/motor_control/build/python_moveit2/install.log'
+[0.782s] Invoked command in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/python_moveit2 build --build-base /home/darkdemon/work/motor_control/build/python_moveit2/build install --record /home/darkdemon/work/motor_control/build/python_moveit2/install.log --single-version-externally-managed install_data --force

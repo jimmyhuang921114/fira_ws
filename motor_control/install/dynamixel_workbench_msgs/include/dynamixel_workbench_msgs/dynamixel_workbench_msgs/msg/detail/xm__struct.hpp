@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_cpp/dynamixel_workbench_msgs/msg/detail/xm__struct.hpp

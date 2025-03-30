@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/build/dynamixel_workbench/ament_cmake_environment_hooks/local_setup.bash

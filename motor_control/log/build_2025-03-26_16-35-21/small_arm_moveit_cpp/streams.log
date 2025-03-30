@@ -1,0 +1,46 @@
+[0.238s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[0.301s] [ 15%] [32mBuilding CXX object CMakeFiles/pose_goal.dir/src/pose_goal.cpp.o[0m
+[0.301s] [ 15%] Built target gripper_joint_value
+[0.302s] [ 25%] Built target gripper_open
+[0.303s] [ 35%] Built target joint_goal
+[0.304s] [ 45%] Built target cartesian_path
+[0.307s] [ 55%] Built target tool_move
+[0.307s] [ 65%] Built target eye_hand_pose
+[0.307s] [ 75%] Built target named_goal
+[0.308s] [ 85%] Built target pliz_move
+[0.309s] [ 95%] Built target ee_pose_in_base
+[5.978s] [100%] [32m[1mLinking CXX executable pose_goal[0m
+[6.206s] [100%] Built target pose_goal
+[6.217s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[6.219s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
+[6.225s] -- Install configuration: ""
+[6.225s] -- Execute custom install script
+[6.225s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/eye_hand_pose
+[6.225s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/ee_pose_in_base
+[6.225s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/pose_goal
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/joint_goal
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/cartesian_path
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/named_goal
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/gripper_open
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/gripper_joint_value
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/pliz_move
+[6.226s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/tool_move
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/launch/motion_planning.launch.py
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/config/moveit_cpp.yaml
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/package_run_dependencies/small_arm_moveit_cpp
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/parent_prefix_path/small_arm_moveit_cpp
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/ament_prefix_path.sh
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/ament_prefix_path.dsv
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/path.sh
+[6.227s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/path.dsv
+[6.228s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.bash
+[6.228s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.sh
+[6.228s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.zsh
+[6.228s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.dsv
+[6.228s] -- Symlinking: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.dsv
+[6.235s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/packages/small_arm_moveit_cpp
+[6.235s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/cmake/small_arm_moveit_cppConfig.cmake
+[6.235s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/cmake/small_arm_moveit_cppConfig-version.cmake
+[6.235s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.xml
+[6.237s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp

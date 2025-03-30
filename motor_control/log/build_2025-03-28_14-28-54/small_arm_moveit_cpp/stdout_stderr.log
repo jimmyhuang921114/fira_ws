@@ -1,0 +1,41 @@
+[ 25%] Built target ee_pose_in_base
+[ 37%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[ 62%] Built target eye_hand_pose
+[ 87%] Built target named_goal
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:1:29:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+    1 | class PoseGoalNode : public [01;31m[Krclcpp[m[K::Node
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:1:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+    1 | class PoseGoalNode : public rclcpp::[01;31m[KNode[m[K
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:3:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+    3 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:3:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:2:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    2 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:18:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   18 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+   52 |     [01;31m[Krclcpp[m[K::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+   53 |     [01;31m[Krclcpp[m[K::Subscription<geometry_msgs::msg::Pose>::SharedPtr subscriber_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:54:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kshared_ptr[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+   54 |     std::[01;31m[Kshared_ptr[m[K<moveit::planning_interface::MoveGroupInterface> move_group_interface_;
+      |          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+  +++ |+[32m[K#include <memory>[m[K
+    1 | class PoseGoalNode : public rclcpp::Node
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ does not name a type
+   55 |     [01;31m[Krclcpp[m[K::Logger logger_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:56:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   56 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/auto_pose_goal.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

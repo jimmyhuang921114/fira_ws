@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_cmake/srv/GetDynamixelInfo_Request.msg

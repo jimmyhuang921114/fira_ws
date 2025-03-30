@@ -1,0 +1,1 @@
+/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config/launch/rsp.launch.py

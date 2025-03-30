@@ -1,0 +1,40 @@
+#environment setting
+vcs import src < src/tb4_arm_ros2/dynamixel_control.repos
+rosdep udpate
+sudo apt update
+rosdep install --from-paths src --ignore-src -r -y
+
+
+#visual
+
+#color_detect
+ros2 run realsense color_range
+
+#text_detect
+ros2 run realsense realsense_read
+ros2 run realsense paddleorc
+ros2 run realsense depth_calculate
+
+#open all visual package
+ros2 launch realsense visual_realsense.py
+
+
+-----------------------------------------
+
+#arm control
+
+#moveit2 server
+ros2 launch small_arm_moveit_config 
+
+#arm launch control(neccessary)
+ros2 launch small_arm_moveit_cpp 
+
+#single node open
+ros2 run small_arm_moveit_cpp gripper_joint_value.cpp	#control grip open and close(untest before)
+ros2 run small_arm_moveit_cpp auto_pose_goal.cpp	#sub the ee point and move
+ros2 run small_arm_moveit_cpp name_goal.cpp		#go to setting named_state,need go to moveit assistent or srdf add pose
+ros2 run small_arm_moveit_cpp ee_pose_in_base.cpp	#tf camera to base link 
+
+#pub the ee point once
+ros2 topic pub --once /pose_goal_position geometry_msgs/msg/Pose "{position: {x: -0.061, y: 0.287, z: 0.030}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"
+

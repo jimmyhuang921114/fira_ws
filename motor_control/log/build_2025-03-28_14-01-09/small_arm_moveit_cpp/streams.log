@@ -1,0 +1,60 @@
+[0.284s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.322s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.479s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.488s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.511s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.546s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.549s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.556s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.567s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.863s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.901s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.941s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.942s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.963s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.019s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.059s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.112s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.153s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.318s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.356s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.395s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.442s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.538s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.538s] -- Configured cppcheck include dirs: 
+[1.538s] -- Configured cppcheck exclude dirs and/or files: 
+[1.539s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.539s] -- Added test 'lint_cmake' to check CMake code style
+[1.540s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.541s] -- Added test 'uncrustify' to check C / C++ code style
+[1.541s] -- Configured uncrustify additional arguments: 
+[1.541s] -- Added test 'xmllint' to check XML markup files
+[1.542s] -- Configuring done
+[1.574s] -- Generating done
+[1.585s] -- Build files have been written to: /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
+[1.624s] [35m[1mConsolidate compiler generated dependencies of target named_goal[0m
+[1.653s] [100%] Built target named_goal
+[1.667s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[1.668s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
+[1.679s] -- Install configuration: ""
+[1.679s] -- Execute custom install script
+[1.680s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/named_goal
+[1.680s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/launch/motion_planning.launch.py
+[1.681s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/config/moveit_cpp.yaml
+[1.681s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/package_run_dependencies/small_arm_moveit_cpp
+[1.681s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/parent_prefix_path/small_arm_moveit_cpp
+[1.682s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/ament_prefix_path.sh
+[1.682s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/ament_prefix_path.dsv
+[1.682s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/path.sh
+[1.682s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/environment/path.dsv
+[1.682s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.bash
+[1.683s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.sh
+[1.683s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.zsh
+[1.683s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/local_setup.dsv
+[1.684s] -- Symlinking: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.dsv
+[1.694s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/packages/small_arm_moveit_cpp
+[1.694s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/cmake/small_arm_moveit_cppConfig.cmake
+[1.694s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/cmake/small_arm_moveit_cppConfig-version.cmake
+[1.694s] -- Up-to-date symlink: /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.xml
+[1.698s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp

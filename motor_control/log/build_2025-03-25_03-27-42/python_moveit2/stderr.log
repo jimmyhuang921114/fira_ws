@@ -1,0 +1,5 @@
+  File "/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/arm_control.py", line 25
+    self.status = ["gripper":0,"name_goal":0,"pose_goal":0,"word_detection":0]
+                            ^
+SyntaxError: invalid syntax
+
