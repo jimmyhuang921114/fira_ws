@@ -1,161 +1,106 @@
-FROM osrf/ros:humble-desktop-full
+FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04
+
 ############################## SYSTEM PARAMETERS ##############################
-# * Arguments
-ARG USER=initial
-ARG GROUP=initial
+ARG USER=developer
+ARG GROUP=developer
 ARG UID=1000
-ARG GID="${UID}"
+ARG GID=${UID}
 ARG SHELL=/bin/bash
-ARG HARDWARE=x86_64
-ARG ENTRYPOINT_FILE=entrypint.sh
 
-# * Env vars for the nvidia-container-runtime.
-ENV NVIDIA_VISIBLE_DEVICES all
-ENV NVIDIA_DRIVER_CAPABILITIES all
-# ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
-
-# * Setup users and groups
-RUN groupadd --gid "${GID}" "${GROUP}" \
-    && useradd --gid "${GID}" --uid "${UID}" -ms "${SHELL}" "${USER}" \
-    && mkdir -p /etc/sudoers.d \
-    && echo "${USER}:x:${UID}:${UID}:${USER},,,:/home/${USER}:${SHELL}" >> /etc/passwd \
-    && echo "${USER}:x:${UID}:" >> /etc/group \
-    && echo "${USER} ALL=(ALL) NOPASSWD: ALL" > "/etc/sudoers.d/${USER}" \
-    && chmod 0440 "/etc/sudoers.d/${USER}"
-
-# * Replace apt urls
-# ? Change to tku
-RUN sed -i 's@archive.ubuntu.com@ftp.tku.edu.tw@g' /etc/apt/sources.list
-# ? Change to Taiwan
-# RUN sed -i 's@archive.ubuntu.com@tw.archive.ubuntu.com@g' /etc/apt/sources.list
-
-# * Time zone
+ENV NVIDIA_VISIBLE_DEVICES=all
+ENV NVIDIA_DRIVER_CAPABILITIES=all
 ENV TZ=Asia/Taipei
-RUN ln -snf /usr/share/zoneinfo/"${TZ}" /etc/localtime && echo "${TZ}" > /etc/timezone
+ENV DEBIAN_FRONTEND=noninteractive
 
-# * Copy custom configuration
-# ? Requires docker version >= 17.09
-COPY --chmod=0775 ./${ENTRYPOINT_FILE} /entrypoint.sh
-COPY --chown="${USER}":"${GROUP}" --chmod=0775 config config
+############################## USER SETUP ####################################
+RUN groupadd --gid ${GID} ${GROUP} && \
+    useradd --gid ${GID} --uid ${UID} -ms ${SHELL} ${USER} && \
+    mkdir -p /etc/sudoers.d && \
+    echo "${USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER} && \
+    chmod 0440 /etc/sudoers.d/${USER} && \
+    ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && \
+    echo ${TZ} > /etc/timezone && \
+    apt-get update && apt-get install -y --no-install-recommends \
+    locales tzdata && \
+    locale-gen zh_TW.UTF-8 && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-############################### INSTALL #######################################
-# * Install packages
-RUN apt update \
-    && apt install -y --no-install-recommends \
-        sudo \
-        git \
-        htop \
-        wget \
-        curl \
-        psmisc \
-        # * Shell
-        tmux \
-        terminator \
-        # * base tools
-        udev \
-        libtool \
-        python3-pip \
-        python3-dev \
-        python3-setuptools \
-        python3-colcon-common-extensions \
-        software-properties-common \
-        lsb-release \
-        ros-humble-rmw-cyclonedds-cpp \
-        # * Work tools
-    && apt clean \
-    && rm -rf /var/lib/apt/lists/*
+ENV LANG=zh_TW.UTF-8
+ENV LC_ALL=zh_TW.UTF-8
 
-# Install RealSense dependencies
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || \
-    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
-RUN add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u
+# 切換回官方鏡像源
+RUN sed -i 's@ftp.tku.edu.tw@archive.ubuntu.com@g' /etc/apt/sources.list
 
-# 替换原有的 RealSense 安装部分
-RUN apt update && apt install -y --no-install-recommends \
-    librealsense2 \
-    librealsense2-utils \
-    librealsense2-dev \
-    librealsense2-dbg \
-    ros-humble-librealsense2* \
-    ros-humble-realsense2-camera \
-    ros-humble-realsense2-description \
-    ros-humble-diagnostic-updater \
-    ros-humble-moveit \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists
+############################## INSTALL ROS2 HUMBLE ############################
+RUN apt-get update && apt-get install -y curl gnupg2 lsb-release ca-certificates && \
+    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /tmp/ros.key && \
+    gpg --dearmor -o /usr/share/keyrings/ros-archive-keyring.gpg /tmp/ros.key && \
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2.list && \
+    rm /tmp/ros.key && apt-get update && \
+    apt-get install -y --no-install-recommends \
+    ros-humble-desktop-full ros-humble-rmw-cyclonedds-cpp python3-colcon-common-extensions
 
-# Install PaddleOCR GPU dependencies
-RUN apt update && apt install -y --no-install-recommends \
-    libgl1 \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    # OMPL dependencies
-    g++ \
-    cmake \
-    pkg-config \
-    libboost-serialization-dev \
-    libboost-filesystem-dev \
-    libboost-system-dev \
-    libboost-program-options-dev \
-    libboost-test-dev \
-    libeigen3-dev \
-    libode-dev \
-    libyaml-cpp-dev \
-    # Additional dependencies
-    castxml \
-    libboost-python-dev \
-    libboost-numpy-dev \
-    python3-numpy \
-    pypy3 \
-    python3-pyqt5.qtopengl \
-    freeglut3-dev \
-    libassimp-dev \
-    python3-opengl \
-    python3-flask \
-    python3-celery \
-    libccd-dev \
-    libfcl-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists 
+############################## BASIC TOOLS & LIBS #############################
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    sudo git wget curl tmux terminator htop psmisc udev libtool \
+    python3-pip python3-dev python3-setuptools python3-distutils \
+    build-essential software-properties-common \
+    libgl1-mesa-glx libglib2.0-0 g++ cmake pkg-config \
+    libboost-serialization-dev libboost-filesystem-dev libboost-system-dev \
+    libboost-program-options-dev libboost-test-dev libeigen3-dev libode-dev \
+    libyaml-cpp-dev castxml libboost-python-dev libboost-numpy-dev \
+    python3-numpy pypy3 python3-pyqt5.qtopengl freeglut3-dev libassimp-dev \
+    python3-opengl python3-flask python3-celery libccd-dev libfcl-dev \
+    python-is-python3 && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages for PaddleOCR GPU
+############################## INSTALL RealSense SDK ##########################
+RUN apt-get update && apt-get install -y libssl-dev libusb-1.0-0-dev \
+    libgtk-3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libudev-dev
+RUN pip install pyrealsense2
+
+WORKDIR /opt
+RUN git clone https://github.com/IntelRealSense/librealsense.git && \
+    cd librealsense && git checkout v2.54.2 && \
+    cp config/99-realsense-libusb.rules /etc/udev/rules.d/ && \
+    mkdir build && cd build && \
+    cmake ../ -DCMAKE_BUILD_TYPE=Release \
+              -DBUILD_EXAMPLES=false \
+              -DBUILD_GRAPHICAL_EXAMPLES=false \
+              -DBUILD_PYTHON_BINDINGS=bool:true \
+              -DPYTHON_EXECUTABLE=/usr/bin/python3 && \
+    make -j$(nproc) && make install && ldconfig
+
+############################## INSTALL rosdep & vcs ###########################
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-rosdep python3-vcstool && \
+    rosdep update || true
+
+############################## pyrealsense2 Python Link ########################
+RUN PYTHON_VERSION=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')") && \
+    PYTHON_SITE_PACKAGES=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") && \
+    ln -sf /usr/local/lib/python${PYTHON_VERSION}/site-packages/pyrealsense2*.so ${PYTHON_SITE_PACKAGES}/
+
+############################## INSTALL PaddleOCR (GPU) ########################
 RUN pip3 install --upgrade pip && \
+    pip3 install numpy==1.26.4 && \
     pip3 install paddlepaddle-gpu==2.4.2.post117 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html && \
-    pip3 install "paddleocr>=2.0.1" && \
-    pip3 install -vU https://github.com/CastXML/pygccxml/archive/develop.zip pyplusplus && \
+    pip3 install "paddleocr>=2.0.1"
+
+############################## PyGCCXML & PyOpenGL ############################
+RUN pip3 install -vU https://github.com/CastXML/pygccxml/archive/develop.zip pyplusplus && \
     pip3 install -vU PyOpenGL-accelerate
 
-# Install additional ROS packages
-RUN apt update && apt install -y --no-install-recommends \
-    ros-humble-geometric-shapes \
-    ros-humble-srdfdom \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists 
-
-############################## USER CONFIG ####################################
-# * Switch user to ${USER}
+############################## SWITCH USER ###################################
 USER ${USER}
-
-RUN ./config/shell/bash_setup.sh "${USER}" "${GROUP}" \
-    && ./config/shell/terminator/terminator_setup.sh "${USER}" "${GROUP}" \
-    && ./config/shell/tmux/tmux_setup.sh "${USER}" "${GROUP}" \
-    && sudo rm -rf /config
-
-# Set environment variables
-ENV CXX=g++
-ENV MAKEFLAGS="-j $(nproc)"
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && \
     echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc && \
-    echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:\$LD_LIBRARY_PATH" >> ~/.bashrc && \
-    echo "export PATH=/usr/local/cuda/bin:\$PATH" >> ~/.bashrc
+    echo "alias ll='ls -alF'" >> ~/.bashrc && \
+    echo "export LANG=zh_TW.UTF-8" >> ~/.bashrc && \
+    echo "export TZ=Asia/Taipei" >> ~/.bashrc
 
-# * Switch workspace to ~/work
-RUN sudo mkdir -p /home/"${USER}"/work
-WORKDIR /home/"${USER}"/work
+RUN mkdir -p /home/${USER}/work && sudo chown ${USER}:${GROUP} /home/${USER}/work
+WORKDIR /home/${USER}/work
 
-# * Make SSH available
 EXPOSE 22
-
-ENTRYPOINT [ "/entrypoint.sh", "terminator" ]
+ENTRYPOINT ["terminator"]

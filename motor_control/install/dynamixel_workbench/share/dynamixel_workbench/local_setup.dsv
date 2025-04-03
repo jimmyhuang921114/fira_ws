@@ -1,1 +1,2 @@
-/home/darkdemon/work/motor_control/build/dynamixel_workbench/ament_cmake_environment_hooks/local_setup.dsv
+source;share/dynamixel_workbench/environment/ament_prefix_path.sh
+source;share/dynamixel_workbench/environment/path.sh

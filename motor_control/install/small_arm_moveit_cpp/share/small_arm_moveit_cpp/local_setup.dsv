@@ -1,1 +1,2 @@
-/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/ament_cmake_environment_hooks/local_setup.dsv
+source;share/small_arm_moveit_cpp/environment/ament_prefix_path.sh
+source;share/small_arm_moveit_cpp/environment/path.sh

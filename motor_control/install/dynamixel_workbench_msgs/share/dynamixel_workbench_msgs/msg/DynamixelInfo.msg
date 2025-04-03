@@ -1,1 +1,8 @@
-/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs/msg/DynamixelInfo.msg
+# This message includes information of dynamixel's basic parameter
+
+DynamixelLoadInfo load_info
+
+string model_name
+uint16 model_number
+uint8 model_id
+

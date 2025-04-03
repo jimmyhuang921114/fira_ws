@@ -315,17 +315,17 @@ dynamixel_workbench_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : dynamixel_workbench_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_dynamixel_workbench_msgs
+# Target rules for targets named ament_cmake_python_copy_dynamixel_workbench_msgs
 
 # Build rule for target.
-ament_cmake_python_symlink_dynamixel_workbench_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_dynamixel_workbench_msgs
-.PHONY : ament_cmake_python_symlink_dynamixel_workbench_msgs
+ament_cmake_python_copy_dynamixel_workbench_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_dynamixel_workbench_msgs
+.PHONY : ament_cmake_python_copy_dynamixel_workbench_msgs
 
 # fast build rule for target.
-ament_cmake_python_symlink_dynamixel_workbench_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_dynamixel_workbench_msgs.dir/build.make CMakeFiles/ament_cmake_python_symlink_dynamixel_workbench_msgs.dir/build
-.PHONY : ament_cmake_python_symlink_dynamixel_workbench_msgs/fast
+ament_cmake_python_copy_dynamixel_workbench_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_dynamixel_workbench_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_dynamixel_workbench_msgs.dir/build
+.PHONY : ament_cmake_python_copy_dynamixel_workbench_msgs/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_dynamixel_workbench_msgs_egg
@@ -4331,7 +4331,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_dynamixel_workbench_msgs_egg"
-	@echo "... ament_cmake_python_symlink_dynamixel_workbench_msgs"
+	@echo "... ament_cmake_python_copy_dynamixel_workbench_msgs"
 	@echo "... dynamixel_workbench_msgs"
 	@echo "... dynamixel_workbench_msgs__cpp"
 	@echo "... dynamixel_workbench_msgs__py"

@@ -238,22 +238,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/ax__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/ax__functions.h
@@ -496,22 +490,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_info__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_load_info__struct.h
@@ -758,22 +746,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_load_info__struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
@@ -1019,22 +1001,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_state_list__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_state__struct.h
@@ -1282,22 +1258,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_state__struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
@@ -1543,22 +1513,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/ex__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/ex__functions.h
@@ -1801,22 +1765,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx2_ext__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx2_ext__functions.h
@@ -2059,22 +2017,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx2__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx2__functions.h
@@ -2317,22 +2269,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx_ext__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx_ext__functions.h
@@ -2575,22 +2521,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/mx__functions.h
@@ -2833,22 +2773,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/pro_ext__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/pro_ext__functions.h
@@ -3091,22 +3025,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/pro__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/pro__functions.h
@@ -3349,22 +3277,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/rx__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/rx__functions.h
@@ -3607,22 +3529,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xh__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xh__functions.h
@@ -3865,22 +3781,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xl320__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xl320__functions.h
@@ -4123,22 +4033,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xl__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xl__functions.h
@@ -4381,22 +4285,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xm_ext__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xm_ext__functions.h
@@ -4639,22 +4537,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xm__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/xm__functions.h
@@ -4897,22 +4789,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/srv/detail/dynamixel_command__struct.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
@@ -5158,22 +5044,16 @@ CMakeFiles/dynamixel_workbench_msgs__rosidl_generator_py.dir/rosidl_generator_py
  /usr/include/python3.10/cpython/pyfpe.h
  /usr/include/python3.10/tracemalloc.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarrayobject.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/ndarraytypes.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_common.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/numpyconfig.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_numpyconfig.h
- /usr/include/complex.h
- /usr/include/x86_64-linux-gnu/bits/mathdef.h
- /usr/include/x86_64-linux-gnu/bits/cmathcalls.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_endian.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_cpu.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/utils.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_neighborhood_iterator_imp.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/dtype_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/__multiarray_api.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/_public_dtype_api_table.h
- /usr/local/lib/python3.10/dist-packages/numpy/_core/include/numpy/npy_2_compat.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarrayobject.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/ndarraytypes.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_common.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_numpyconfig.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_endian.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/npy_cpu.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/utils.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+ /usr/local/lib/python3.10/dist-packages/numpy/core/include/numpy/__multiarray_api.h
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/srv/detail/get_dynamixel_info__struct.h
  /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c/dynamixel_workbench_msgs/msg/detail/dynamixel_info__struct.h

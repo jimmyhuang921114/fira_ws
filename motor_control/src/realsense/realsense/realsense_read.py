@@ -105,6 +105,13 @@ class RealSensePublisher(Node):
             self.depth_publisher.publish(depth_msg)
 
             self.get_logger().info("Successfully published images to /camera/color and /camera/depth")
+                        # 顯示對齊後影像
+            depth_colormap = cv2.applyColorMap(
+                cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET
+            )
+            images = np.hstack((color_image, depth_colormap))  # 合併顯示
+            cv2.imshow("Aligned RealSense Frames", images)
+            cv2.waitKey(1)
 
         except Exception as e:
             self.get_logger().error(f"Error occurred while publishing frames: {str(e)}")

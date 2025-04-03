@@ -73,15 +73,15 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: CMakeFiles/auto_pose_goa
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: CMakeFiles/auto_pose_goal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -MF CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o.d -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -MF CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o.d -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
 
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp > CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp > CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i
 
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
 
 # Object files for target auto_pose_goal
 auto_pose_goal_OBJECTS = \

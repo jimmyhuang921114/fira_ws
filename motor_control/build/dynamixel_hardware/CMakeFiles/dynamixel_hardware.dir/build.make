@@ -73,15 +73,15 @@ CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o: CMakeFiles/dynam
 CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp
 CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o: CMakeFiles/dynamixel_hardware.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/darkdemon/work/motor_control/build/dynamixel_hardware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o -MF CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o.d -o CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o -MF CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o.d -o CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp
 
 CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp > CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp > CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.i
 
 CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp -o CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware/src/dynamixel_hardware.cpp -o CMakeFiles/dynamixel_hardware.dir/src/dynamixel_hardware.cpp.s
 
 # Object files for target dynamixel_hardware
 dynamixel_hardware_OBJECTS = \

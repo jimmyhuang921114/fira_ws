@@ -1,1 +1,1 @@
-/home/darkdemon/work/motor_control/build/small_arm_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/small_arm_description
+joint_state_publisher;joint_state_publisher_gui;robot_state_publisher;xacro;urdf;rviz2;launch;launch_ros;ros2_control;ros2_controllers;dynamixel_hardware;realsense2_description;ament_lint_auto;ament_lint_common

@@ -1,1 +1,1 @@
-/home/darkdemon/work/motor_control/build/dynamixel_hardware/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_hardware
+rclcpp;rclcpp_lifecycle;lifecycle_msgs;hardware_interface;pluginlib;dynamixel_workbench_toolbox;ament_lint_auto;ament_lint_common

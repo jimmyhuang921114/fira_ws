@@ -1,1 +1,1 @@
-/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/small_arm_moveit_cpp
+moveit_ros_planning_interface;rclcpp;ament_lint_auto;ament_lint_common

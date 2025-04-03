@@ -1,1 +1,10 @@
-/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config/.setup_assistant
+moveit_setup_assistant_config:
+  urdf:
+    package: small_arm_description
+    relative_path: urdf/small_arm.urdf.xacro
+  srdf:
+    relative_path: config/small_arm.srdf
+  package_settings:
+    author_name: Taiting Tsai
+    author_email: errrr0501done@gmail.com
+    generated_timestamp: 1742389857

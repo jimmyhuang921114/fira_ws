@@ -73,15 +73,15 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: CMakeFiles/named_goal.dir/flags.
 CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp
 CMakeFiles/named_goal.dir/src/named_goal.cpp.o: CMakeFiles/named_goal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/named_goal.dir/src/named_goal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/named_goal.dir/src/named_goal.cpp.o -MF CMakeFiles/named_goal.dir/src/named_goal.cpp.o.d -o CMakeFiles/named_goal.dir/src/named_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/named_goal.dir/src/named_goal.cpp.o -MF CMakeFiles/named_goal.dir/src/named_goal.cpp.o.d -o CMakeFiles/named_goal.dir/src/named_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp
 
 CMakeFiles/named_goal.dir/src/named_goal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/named_goal.dir/src/named_goal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp > CMakeFiles/named_goal.dir/src/named_goal.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp > CMakeFiles/named_goal.dir/src/named_goal.cpp.i
 
 CMakeFiles/named_goal.dir/src/named_goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/named_goal.dir/src/named_goal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp -o CMakeFiles/named_goal.dir/src/named_goal.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp -o CMakeFiles/named_goal.dir/src/named_goal.cpp.s
 
 # Object files for target named_goal
 named_goal_OBJECTS = \

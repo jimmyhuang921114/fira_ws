@@ -1,9 +1,0 @@
-[0.180s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp
-[0.192s] [31mCMake Error at CMakeLists.txt:86:
-[0.192s]   Parse error.  Expected "(", got newline with text "
-[0.192s] 
-[0.192s]   ".
-[0.192s] 
-[0.192s] [0m
-[0.192s] -- Configuring incomplete, errors occurred!
-[0.215s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp

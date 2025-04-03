@@ -1,0 +1,24 @@
+[0.375s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.404s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.530s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.531s]   By not providing "Findmoveit_ros_planning_interface.cmake" in
+[0.531s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[0.531s]   configuration file provided by "moveit_ros_planning_interface", but CMake
+[0.531s]   did not find one.
+[0.531s] 
+[0.531s]   Could not find a package configuration file provided by
+[0.531s]   "moveit_ros_planning_interface" with any of the following names:
+[0.531s] 
+[0.531s]     moveit_ros_planning_interfaceConfig.cmake
+[0.531s]     moveit_ros_planning_interface-config.cmake
+[0.531s] 
+[0.531s]   Add the installation prefix of "moveit_ros_planning_interface" to
+[0.531s]   CMAKE_PREFIX_PATH or set "moveit_ros_planning_interface_DIR" to a directory
+[0.531s]   containing one of the above files.  If "moveit_ros_planning_interface"
+[0.531s]   provides a separate development package or SDK, be sure it has been
+[0.531s]   installed.
+[0.531s] 
+[0.531s] [0m
+[0.531s] -- Configuring incomplete, errors occurred!
+[0.531s] See also "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/CMakeOutput.log".
+[0.532s] gmake: *** [Makefile:390: cmake_check_build_system] Error 1

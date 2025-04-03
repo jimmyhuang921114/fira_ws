@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"dynamixel_workbench_msgs\" -Ddynamixel_workbench_msgs__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c -I/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_py -I/usr/include/python3.10 -I/usr/local/lib/python3.10/dist-packages/numpy/_core/include -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_c -I/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_generator_py -I/usr/include/python3.10 -I/usr/local/lib/python3.10/dist-packages/numpy/core/include -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -fPIC -Wall -Wextra
 

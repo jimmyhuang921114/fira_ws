@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
-[ 12%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
-[ 62%] Built target named_goal
-[ 62%] Built target eye_hand_pose
-[ 87%] Built target auto_pose_goal

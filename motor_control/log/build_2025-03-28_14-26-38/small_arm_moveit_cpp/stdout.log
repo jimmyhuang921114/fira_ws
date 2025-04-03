@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
-[ 10%] [32m[1mLinking CXX executable joint_goal[0m
-[ 30%] Built target ee_pose_in_base
-[ 50%] Built target named_goal
-[ 70%] Built target eye_hand_pose
-[ 80%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
-[ 90%] [32m[1mLinking CXX executable auto_pose_goal[0m
-[ 90%] Built target auto_pose_goal

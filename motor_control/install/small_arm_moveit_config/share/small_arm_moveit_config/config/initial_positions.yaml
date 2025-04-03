@@ -1,1 +1,10 @@
-/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config/config/initial_positions.yaml
+# Default initial positions for small_arm's ros2_control fake system
+
+initial_positions:
+  joint1: 0.0
+  joint2: 0.0
+  joint3: 0.0
+  joint4: 0.0
+  joint5: 0.0
+  joint6: 0.0
+  joint7: 0.0

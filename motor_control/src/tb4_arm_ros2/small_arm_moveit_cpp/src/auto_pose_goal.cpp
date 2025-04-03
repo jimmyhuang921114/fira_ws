@@ -25,7 +25,7 @@ private:
     void cmdCallback(const geometry_msgs::msg::Pose::SharedPtr msg)
     {
         if (!move_group_interface_)
-        {
+        {   
             move_group_interface_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
                 shared_from_this(), "small_arm");
             move_group_interface_->setPlanningTime(5.0);  // Optional: Set a max planning time

@@ -1,1 +1,11 @@
-/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs/msg/DynamixelState.msg
+# This message includes basic data of dynamixel
+
+string name
+uint8  id
+
+int32  present_position
+int32  present_velocity
+int16  present_current
+
+
+

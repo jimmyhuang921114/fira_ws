@@ -24,6 +24,10 @@ class RealSensePublisher(Node):
 
         # Set image publishing frequency (every 0.1 seconds)
         self.timer = self.create_timer(0.1, self.publish_frames)
+        
+        # align
+        self.align= rs.align(rs.stream.color)
+        
 
         # Connection status tracking
         self.connected = False
@@ -75,8 +79,9 @@ class RealSensePublisher(Node):
         try:
             # Capture frames
             frames = self.pipeline.wait_for_frames()
-            color_frame = frames.get_color_frame()
-            depth_frame = frames.get_depth_frame()
+            aligned_frames = self.align.process(frames)
+            color_frame = aligned_frames.get_color_frame()
+            depth_frame = aligned_frames.get_depth_frame()
 
             if not color_frame or not depth_frame:
                 self.get_logger().warn("No valid frames received. Skipping this frame.")
@@ -100,6 +105,13 @@ class RealSensePublisher(Node):
             self.depth_publisher.publish(depth_msg)
 
             self.get_logger().info("Successfully published images to /camera/color and /camera/depth")
+                        # 顯示對齊後影像
+            depth_colormap = cv2.applyColorMap(
+                cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET
+            )
+            images = np.hstack((color_image, depth_colormap))  # 合併顯示
+            cv2.imshow("Aligned RealSense Frames", images)
+            cv2.waitKey(1)
 
         except Exception as e:
             self.get_logger().error(f"Error occurred while publishing frames: {str(e)}")

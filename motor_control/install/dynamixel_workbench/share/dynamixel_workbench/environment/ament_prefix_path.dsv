@@ -1,1 +1,1 @@
-/home/darkdemon/work/motor_control/build/dynamixel_workbench/ament_cmake_environment_hooks/ament_prefix_path.dsv
+prepend-non-duplicate;AMENT_PREFIX_PATH;

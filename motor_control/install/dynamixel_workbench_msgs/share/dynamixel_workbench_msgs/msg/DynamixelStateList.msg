@@ -1,1 +1,3 @@
-/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs/msg/DynamixelStateList.msg
+# DynamixelState List
+
+DynamixelState[] dynamixel_state

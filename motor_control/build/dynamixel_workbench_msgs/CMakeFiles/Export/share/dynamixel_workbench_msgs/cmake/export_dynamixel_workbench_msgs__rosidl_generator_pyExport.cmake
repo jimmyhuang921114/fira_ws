@@ -54,7 +54,7 @@ endif()
 add_library(dynamixel_workbench_msgs::dynamixel_workbench_msgs__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(dynamixel_workbench_msgs::dynamixel_workbench_msgs__rosidl_generator_py PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/lib/python3.10/dist-packages/numpy/_core/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/lib/python3.10/dist-packages/numpy/core/include"
   INTERFACE_LINK_LIBRARIES "dynamixel_workbench_msgs::dynamixel_workbench_msgs__rosidl_generator_c;/usr/lib/x86_64-linux-gnu/libpython3.10.so;dynamixel_workbench_msgs::dynamixel_workbench_msgs__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py"
 )
 

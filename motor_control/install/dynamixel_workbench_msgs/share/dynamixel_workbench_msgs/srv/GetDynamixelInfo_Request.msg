@@ -1,1 +1,3 @@
-/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/rosidl_cmake/srv/GetDynamixelInfo_Request.msg
+# It is Served by 'single_dynamixel_monitor' node
+# This message is used to get information of dynamixel
+
