@@ -15,7 +15,7 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.035, 0.035, -0.065});
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.04, 0.035, -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
 
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(
@@ -35,7 +35,7 @@ private:
     auto cam_to_ee_q = this->get_parameter("camera_to_ee_quaternion").as_double_array();
 
     if (cam_to_ee_t.size() != 3 || cam_to_ee_q.size() != 4) {
-      RCLCPP_WARN(this->get_logger(), "❌ camera_to_ee parameter wrong");
+      RCLCPP_WARN(this->get_logger(), "camera_to_ee parameter wrong");
       return;
     }
 
@@ -62,7 +62,7 @@ private:
       publisher_->publish(target_pose);
 
       RCLCPP_INFO(this->get_logger(),
-        "📌 Publish base_link coordinate: x=%.3f y=%.3f z=%.3f",
+        "Publish base_link coordinate: x=%.3f y=%.3f z=%.3f",
         point_in_base.x(), point_in_base.y(), point_in_base.z());
 
     } catch (const tf2::TransformException & ex) {

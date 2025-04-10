@@ -43,7 +43,7 @@ class DepthToWorldNode(Node):
         world_coordinates = []
         for text, u, v in self.detected_texts:
             u, v = int(u), int(v)
-            depth = depth_image[v, u] / 1000.0  # 假设深度单位是 mm 转换为米
+            depth = depth_image[v, u] / 1000.0  #    假设深度单位是 mm 转换为米
             world_coords = self.pixel_to_world(u, v, depth)
             if world_coords:
                 world_coordinates.append(f"{text},{world_coords[0]},{world_coords[1]},{world_coords[2]}")

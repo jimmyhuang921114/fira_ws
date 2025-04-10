@@ -1,14 +1,12 @@
-import os
+ import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
 
 def generate_launch_description():
 
-    # build moveit
+    # Build moveit config
     moveit_config = (
         MoveItConfigsBuilder(
             robot_name="small_arm", package_name="small_arm_moveit_config"
@@ -25,24 +23,32 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    # 宣告 Launch 參數 cpp_node，只宣告一次！可從命令列傳入
-    declare_cpp_node = DeclareLaunchArgument(
-        "cpp_node",
-        default_value="auto_pose_goal",  # 預設值
-        # default_value="ee_pose_in_base",
-        description="C++ node executable name to launch",
-    )
-
-    # 根據 launch 參數執行對應的 Node
-    moveit_cpp_node = Node(
-        name="moveit_cpp",
+    auto_pose_node = Node(
+        name="moveit_auto_pose",
         package="small_arm_moveit_cpp",
-        executable=LaunchConfiguration("cpp_node"),
-        output="both",
+        executable="auto_pose_goal",
+        output="screen",
         parameters=[moveit_config.to_dict()],
     )
 
+    ee_pose_node = Node(
+        name="moveit_ee_pose",
+        package="small_arm_moveit_cpp",
+        executable="ee_pose_in_base",
+        output="screen",
+        parameters=[moveit_config.to_dict()],
+    )
+
+    gripper_open_node = Node(
+       name="moveit_gripper_open",
+       package="small_arm_moveit_cpp",
+       executable="gripper_open",
+       output="screen",
+       parameters=[moveit_config.to_dict()],
+    ) 
+
     return LaunchDescription([
-        declare_cpp_node,        # 把參數註冊進 launch
-        moveit_cpp_node,         # 執行節點
+        auto_pose_node,
+        ee_pose_node,
+        gripper_open_node,
     ])

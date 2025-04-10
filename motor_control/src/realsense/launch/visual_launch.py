@@ -26,5 +26,11 @@ def generate_launch_description():
             executable='realsense_read',
             name='realsense_read_node',
             output='screen'
+        ),
+        Node(
+            package='realsense',
+            executable='visiual',
+            name='visiual_node',
+            output='screen'
         )
     ])

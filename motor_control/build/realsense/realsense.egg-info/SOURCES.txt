@@ -8,6 +8,7 @@ setup.py
 ../../build/realsense/realsense.egg-info/requires.txt
 ../../build/realsense/realsense.egg-info/top_level.txt
 ../../build/realsense/realsense.egg-info/zip-safe
+launch/visual_launch.py
 realsense/2d_plane.py
 realsense/__init__.py
 realsense/box_edge_detect.py

@@ -22,6 +22,7 @@
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__pycache__/interface_robot.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/realsense/share/ament_index/resource_index/packages/realsense
 /home/darkdemon/work/motor_control/install/realsense/share/realsense/package.xml
+/home/darkdemon/work/motor_control/install/realsense/share/realsense/launch/visual_launch.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/requires.txt
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/top_level.txt
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/entry_points.txt
@@ -29,7 +30,6 @@
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/PKG-INFO
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/dependency_links.txt
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info/SOURCES.txt
-/home/darkdemon/work/motor_control/install/realsense/lib/realsense/2d_plane
 /home/darkdemon/work/motor_control/install/realsense/lib/realsense/box_edge_detect
 /home/darkdemon/work/motor_control/install/realsense/lib/realsense/color_detect
 /home/darkdemon/work/motor_control/install/realsense/lib/realsense/color_range
