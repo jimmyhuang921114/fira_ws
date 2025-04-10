@@ -88,6 +88,12 @@ ros2 topic pub --once /pose_goal_position geometry_msgs/msg/Pose \
 "{position: {x: -0.061, y: 0.287, z: 0.030}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"
 ```
 
+## 測試夾爪開啟或關閉
+
+ros2 topic pub /gripper_command std_msgs/msg/Bool "data: false"
+
+ros2 topic pub /gripper_command std_msgs/msg/Bool "data: true"
+
 ---
 
 ## 💡 備註

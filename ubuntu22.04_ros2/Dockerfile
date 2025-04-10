@@ -57,11 +57,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ############################## INSTALL RealSense SDK ##########################
 RUN apt-get update && apt-get install -y libssl-dev libusb-1.0-0-dev \
     libgtk-3-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libudev-dev
-RUN pip install pyrealsense2
 
 WORKDIR /opt
 RUN git clone https://github.com/IntelRealSense/librealsense.git && \
-    cd librealsense && git checkout v2.54.2 && \
+    cd librealsense && git checkout v2.55.1 && \
     cp config/99-realsense-libusb.rules /etc/udev/rules.d/ && \
     mkdir build && cd build && \
     cmake ../ -DCMAKE_BUILD_TYPE=Release \
@@ -74,6 +73,8 @@ RUN git clone https://github.com/IntelRealSense/librealsense.git && \
 ############################## INSTALL rosdep & vcs ###########################
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-rosdep python3-vcstool && \
+    rosdep init && \
+    rosdep update && \
     rosdep update || true
 
 ############################## pyrealsense2 Python Link ########################
