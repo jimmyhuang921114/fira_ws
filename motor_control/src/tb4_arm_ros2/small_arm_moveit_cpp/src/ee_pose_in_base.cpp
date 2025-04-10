@@ -15,7 +15,7 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.053, 0.08, -0.6});
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.035, 0.035, -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
 
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(

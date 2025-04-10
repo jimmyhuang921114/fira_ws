@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "small_arm_moveit_config")
 set(small_arm_moveit_config_VERSION "0.3.0")
-set(small_arm_moveit_config_MAINTAINER "Taiting Tsai <errrr0501done@gmail.com>")
+set(small_arm_moveit_config_MAINTAINER "Luis Tsai <errrr0501done@gmail.com>")
 set(small_arm_moveit_config_BUILD_DEPENDS )
 set(small_arm_moveit_config_BUILDTOOL_DEPENDS "ament_cmake")
 set(small_arm_moveit_config_BUILD_EXPORT_DEPENDS )

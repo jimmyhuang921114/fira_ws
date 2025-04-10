@@ -21,7 +21,7 @@ public:
         RCLCPP_INFO(logger_, "PoseGoalNode started.");
     }
 
-private:
+private:    
     void cmdCallback(const geometry_msgs::msg::Pose::SharedPtr msg)
     {
         if (!move_group_interface_)

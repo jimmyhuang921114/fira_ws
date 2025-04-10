@@ -134,16 +134,19 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
  /usr/include/linux/close_range.h \
  /opt/ros/humble/include/dynamixel_sdk/dynamixel_sdk.h \
  /opt/ros/humble/include/dynamixel_sdk/group_bulk_read.h \
+ /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
+ /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /opt/ros/humble/include/dynamixel_sdk/group_handler.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
- /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
- /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
+ /usr/include/c++/11/bits/erase_if.h \
  /opt/ros/humble/include/dynamixel_sdk/group_bulk_write.h \
  /opt/ros/humble/include/dynamixel_sdk/group_sync_read.h \
- /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h
+ /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h \
+ /opt/ros/humble/include/dynamixel_sdk/group_fast_sync_read.h \
+ /opt/ros/humble/include/dynamixel_sdk/group_fast_bulk_read.h

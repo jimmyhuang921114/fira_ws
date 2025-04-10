@@ -156,21 +156,24 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
   /usr/include/linux/close_range.h \
   /opt/ros/humble/include/dynamixel_sdk/dynamixel_sdk.h \
   /opt/ros/humble/include/dynamixel_sdk/group_bulk_read.h \
+  /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
+  /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /opt/ros/humble/include/dynamixel_sdk/group_handler.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
-  /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
   /opt/ros/humble/include/dynamixel_sdk/group_bulk_write.h \
   /opt/ros/humble/include/dynamixel_sdk/group_sync_read.h \
-  /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h
+  /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h \
+  /opt/ros/humble/include/dynamixel_sdk/group_fast_sync_read.h \
+  /opt/ros/humble/include/dynamixel_sdk/group_fast_bulk_read.h
 
 CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o: /home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_item.cpp \
   /usr/include/stdc-predef.h \
@@ -283,8 +286,9 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
   /usr/include/linux/close_range.h \
   /opt/ros/humble/include/dynamixel_sdk/dynamixel_sdk.h \
   /opt/ros/humble/include/dynamixel_sdk/group_bulk_read.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
+  /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
+  /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
+  /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -312,36 +316,38 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
   /usr/include/c++/11/new \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /opt/ros/humble/include/dynamixel_sdk/group_handler.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
   /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /opt/ros/humble/include/dynamixel_sdk/port_handler.h \
-  /opt/ros/humble/include/dynamixel_sdk/packet_handler.h \
   /opt/ros/humble/include/dynamixel_sdk/group_bulk_write.h \
   /opt/ros/humble/include/dynamixel_sdk/group_sync_read.h \
-  /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h
+  /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h \
+  /opt/ros/humble/include/dynamixel_sdk/group_fast_sync_read.h \
+  /opt/ros/humble/include/dynamixel_sdk/group_fast_bulk_read.h
 
 
 /home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/dynamixel_workbench_toolbox/dynamixel_workbench.h:
@@ -352,7 +358,11 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
 
 /home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox/src/dynamixel_workbench_toolbox/dynamixel_item.cpp:
 
+/opt/ros/humble/include/dynamixel_sdk/group_fast_sync_read.h:
+
 /opt/ros/humble/include/dynamixel_sdk/group_sync_write.h:
+
+/usr/include/c++/11/bits/erase_if.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -360,11 +370,9 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
 
 /usr/include/c++/11/bits/stl_vector.h:
 
-/usr/include/c++/11/bits/erase_if.h:
+/usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/dynamixel_sdk/port_handler.h:
-
-/usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/dynamixel_sdk/dynamixel_sdk.h:
 
@@ -512,6 +520,8 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
 
 /usr/include/features-time64.h:
 
+/opt/ros/humble/include/dynamixel_sdk/group_handler.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -613,6 +623,8 @@ CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynam
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/opt/ros/humble/include/dynamixel_sdk/group_fast_bulk_read.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
