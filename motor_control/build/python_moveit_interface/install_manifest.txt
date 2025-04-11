@@ -1,0 +1,15 @@
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/package_run_dependencies/python_moveit_interface
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/parent_prefix_path/python_moveit_interface
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/ament_prefix_path.sh
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/ament_prefix_path.dsv
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/path.sh
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/path.dsv
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.bash
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.sh
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.zsh
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.dsv
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.dsv
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/packages/python_moveit_interface
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interfaceConfig.cmake
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interfaceConfig-version.cmake
+/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.xml

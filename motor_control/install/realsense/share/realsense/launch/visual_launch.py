@@ -29,8 +29,8 @@ def generate_launch_description():
         ),
         Node(
             package='realsense',
-            executable='visual',
-            name='visual_node',
+            executable='visiual',
+            name='visiual_node',
             output='screen'
         )
     ])

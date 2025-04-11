@@ -1,5 +1,6 @@
 /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/uninstall.dir
 /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/small_arm_moveit_cpp_uninstall.dir
+/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/gripper_open.dir
 /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/named_goal.dir
 /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/ee_pose_in_base.dir
 /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/eye_hand_pose.dir

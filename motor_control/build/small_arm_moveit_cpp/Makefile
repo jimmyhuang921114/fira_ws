@@ -198,6 +198,19 @@ small_arm_moveit_cpp_uninstall/fast:
 .PHONY : small_arm_moveit_cpp_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named gripper_open
+
+# Build rule for target.
+gripper_open: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gripper_open
+.PHONY : gripper_open
+
+# fast build rule for target.
+gripper_open/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/build
+.PHONY : gripper_open/fast
+
+#=============================================================================
 # Target rules for targets named named_goal
 
 # Build rule for target.
@@ -321,6 +334,30 @@ src/eye_hand_pose.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/eye_hand_pose.dir/build.make CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.s
 .PHONY : src/eye_hand_pose.cpp.s
 
+src/gripper_open.o: src/gripper_open.cpp.o
+.PHONY : src/gripper_open.o
+
+# target to build an object file
+src/gripper_open.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o
+.PHONY : src/gripper_open.cpp.o
+
+src/gripper_open.i: src/gripper_open.cpp.i
+.PHONY : src/gripper_open.i
+
+# target to preprocess a source file
+src/gripper_open.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/src/gripper_open.cpp.i
+.PHONY : src/gripper_open.cpp.i
+
+src/gripper_open.s: src/gripper_open.cpp.s
+.PHONY : src/gripper_open.s
+
+# target to generate assembly for a file
+src/gripper_open.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s
+.PHONY : src/gripper_open.cpp.s
+
 src/named_goal.o: src/named_goal.cpp.o
 .PHONY : src/named_goal.o
 
@@ -363,6 +400,7 @@ help:
 	@echo "... auto_pose_goal"
 	@echo "... ee_pose_in_base"
 	@echo "... eye_hand_pose"
+	@echo "... gripper_open"
 	@echo "... named_goal"
 	@echo "... src/auto_pose_goal.o"
 	@echo "... src/auto_pose_goal.i"
@@ -373,6 +411,9 @@ help:
 	@echo "... src/eye_hand_pose.o"
 	@echo "... src/eye_hand_pose.i"
 	@echo "... src/eye_hand_pose.s"
+	@echo "... src/gripper_open.o"
+	@echo "... src/gripper_open.i"
+	@echo "... src/gripper_open.s"
 	@echo "... src/named_goal.o"
 	@echo "... src/named_goal.i"
 	@echo "... src/named_goal.s"

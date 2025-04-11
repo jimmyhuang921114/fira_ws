@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/gripper_open.dir/all
 all: CMakeFiles/named_goal.dir/all
 all: CMakeFiles/ee_pose_in_base.dir/all
 all: CMakeFiles/eye_hand_pose.dir/all
@@ -76,6 +77,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/small_arm_moveit_cpp_uninstall.dir/clean
+clean: CMakeFiles/gripper_open.dir/clean
 clean: CMakeFiles/named_goal.dir/clean
 clean: CMakeFiles/ee_pose_in_base.dir/clean
 clean: CMakeFiles/eye_hand_pose.dir/clean
@@ -135,13 +137,39 @@ CMakeFiles/small_arm_moveit_cpp_uninstall.dir/clean:
 .PHONY : CMakeFiles/small_arm_moveit_cpp_uninstall.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/gripper_open.dir
+
+# All Build rule for target.
+CMakeFiles/gripper_open.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=7,8 "Built target gripper_open"
+.PHONY : CMakeFiles/gripper_open.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gripper_open.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gripper_open.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/gripper_open.dir/rule
+
+# Convenience name for target.
+gripper_open: CMakeFiles/gripper_open.dir/rule
+.PHONY : gripper_open
+
+# clean rule for target.
+CMakeFiles/gripper_open.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/clean
+.PHONY : CMakeFiles/gripper_open.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/named_goal.dir
 
 # All Build rule for target.
 CMakeFiles/named_goal.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/named_goal.dir/build.make CMakeFiles/named_goal.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/named_goal.dir/build.make CMakeFiles/named_goal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=7,8 "Built target named_goal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=9,10 "Built target named_goal"
 .PHONY : CMakeFiles/named_goal.dir/all
 
 # Build rule for subdir invocation for target.

@@ -23,7 +23,6 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    # 節點 1：auto_pose_goal
     auto_pose_node = Node(
         name="moveit_auto_pose",
         package="small_arm_moveit_cpp",
@@ -32,7 +31,6 @@ def generate_launch_description():
         parameters=[moveit_config.to_dict()],
     )
 
-    # 節點 2：ee_pose_in_base
     ee_pose_node = Node(
         name="moveit_ee_pose",
         package="small_arm_moveit_cpp",
@@ -41,7 +39,16 @@ def generate_launch_description():
         parameters=[moveit_config.to_dict()],
     )
 
+    gripper_open_node = Node(
+       name="moveit_gripper_open",
+       package="small_arm_moveit_cpp",
+       executable="gripper_open",
+       output="screen",
+       parameters=[moveit_config.to_dict()],
+    ) 
+
     return LaunchDescription([
         auto_pose_node,
-        ee_pose_node
+        ee_pose_node,
+        gripper_open_node,
     ])

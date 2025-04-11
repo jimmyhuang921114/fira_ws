@@ -5,6 +5,6 @@ color_range = realsense.color_range:main
 depth_calculate = realsense.depth_calculate:main
 paddleorc = realsense.paddleorc:main
 realsense_read = realsense.realsense_read:main
-visual = realsense.visiual:main
+visiual = realsense.visiual:main
 yolo_number_detect = realsense.yolo_number_detect:main
 

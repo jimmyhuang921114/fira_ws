@@ -16,6 +16,8 @@ find_package(std_msgs REQUIRED)
 # === Executables ===
 # add_executable(joint_goal src/joint_goal.cpp)
 # ament_target_dependencies(joint_goal moveit_ros_planning_interface rclcpp)
+add_executable(gripper_open src/gripper_open.cpp)
+ament_target_dependencies(gripper_open moveit_ros_planning_interface rclcpp geometry_msgs std_msgs)
 
 add_executable(named_goal src/named_goal.cpp)
 ament_target_dependencies(named_goal moveit_ros_planning_interface rclcpp)
@@ -36,6 +38,7 @@ install(TARGETS
   ee_pose_in_base
   eye_hand_pose
   auto_pose_goal
+  gripper_open
   DESTINATION lib/${PROJECT_NAME}
 )
 

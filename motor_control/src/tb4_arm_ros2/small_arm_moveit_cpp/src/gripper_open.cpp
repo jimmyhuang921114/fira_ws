@@ -24,7 +24,8 @@ private:
     double target_value = msg->data ? 0.0 : 0.8;  // true=關閉, false=打開
     std::string action = msg->data ? "close" : "open";
 
-    RCLCPP_INFO(this->get_logger(), "receive the command", action.c_str(), target_value);
+    RCLCPP_INFO(this->get_logger(), "Receive command: action = %s, target = %f", action.c_str(), target_value);
+
 
     //setting target value
     move_group_interface_->setJointValueTarget("robotiq_85_left_knuckle_joint", target_value);
