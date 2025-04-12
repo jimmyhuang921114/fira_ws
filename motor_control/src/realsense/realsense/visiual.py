@@ -10,11 +10,13 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import cv2
+import os
+os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms"
 
 class DualAreaViewer(QWidget, Node):
     def __init__(self):
-        QWidget.__init__(self)
-        Node.__init__(self, "dual_area_viewer_node")
+        QWidget.__init__(self)  # 手動初始化 QWidget          # 初始化 QWidget
+        Node.__init__(self, 'dual_area_viewer')  # 🟢 這行不可省略
 
         self.setWindowTitle("Left-Right Area with 4 Screens")
         self.setGeometry(100, 100, 1600, 900)
@@ -98,9 +100,13 @@ def main():
     timer.start(10)
 
     viewer.show()
-    sys.exit(app.exec_())
+    exit_code = app.exec_()
+
+    # 清理 ROS
     viewer.destroy_node()
     rclpy.shutdown()
+    sys.exit(exit_code)
+
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[ 50%] Built target ee_pose_in_base
+[ 50%] Built target auto_pose_goal
+[ 70%] Built target eye_hand_pose
+[ 90%] Built target named_goal

@@ -8,6 +8,7 @@
 #include <tf2/LinearMath/Transform.h>
 #include <tf2/LinearMath/Quaternion.h>
 
+
 class CameraToBasePrinter : public rclcpp::Node {
 public:
   CameraToBasePrinter()
@@ -15,7 +16,7 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {0.04, -0.03, 0.065});
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.04, 0.04, -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
 
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(

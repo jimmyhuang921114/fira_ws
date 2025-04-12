@@ -1,0 +1,28 @@
+[  0%] Built target dynamixel_workbench_msgs__cpp
+[ 12%] Built target dynamixel_workbench_msgs__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_dynamixel_workbench_msgs
+[ 40%] Built target dynamixel_workbench_msgs__rosidl_typesupport_c
+[ 49%] Built target dynamixel_workbench_msgs__rosidl_typesupport_introspection_c
+[ 49%] Built target dynamixel_workbench_msgs__rosidl_typesupport_introspection_cpp
+[ 73%] Built target dynamixel_workbench_msgs__rosidl_typesupport_fastrtps_cpp
+[ 73%] Built target dynamixel_workbench_msgs__rosidl_typesupport_cpp
+[ 85%] Built target dynamixel_workbench_msgs__rosidl_typesupport_fastrtps_c
+[ 85%] Built target dynamixel_workbench_msgs
+Traceback (most recent call last):
+  File "/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/ament_cmake_python/dynamixel_workbench_msgs/setup.py", line 1, in <module>
+gmake[1]: *** [CMakeFiles/Makefile2:590: dynamixel_workbench_msgs__py/CMakeFiles/dynamixel_workbench_msgs__py.dir/all] Interrupt
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 76, in <module>
+    __import__('pkg_resources.extern.packaging.version')
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 9, in <module>
+    from typing import Callable, Iterator, List, Optional, SupportsInt, Tuple, Union
+  File "/usr/lib/python3.10/typing.py", line 2667, in <module>
+    class re:
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
