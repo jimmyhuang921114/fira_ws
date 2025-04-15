@@ -1,66 +1,66 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/bool.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
+#include "python_moveit_interface/srv/gripper_control.hpp"
 
-class GripperControlNode : public rclcpp::Node
+using std::placeholders::_1;
+using std::placeholders::_2;
+
+class GripperControlService : public rclcpp::Node
 {
 public:
-  GripperControlNode()
-  : Node("gripper_control_node")
+  GripperControlService()
+  : Node("gripper_control_service"),
+    move_group_interface_(std::make_shared<moveit::planning_interface::MoveGroup  Interface>(shared_from_this(), "gripper"))
   {
-    gripper_cmd_sub_ = this->create_subscription<std_msgs::msg::Bool>(
-      "/gripper_command", 10,
-      std::bind(&GripperControlNode::gripperCallback, this, std::placeholders::_1));
-  }
+    gripper_service_ = this->create_service<python_moveit_interface::srv::GripperControl>(
+      "gripper_control_service", std::bind(&GripperControlService::handle_service, this, _1, _2));
 
-  void init()
-  {
-    // 修正版本：使用 this->shared_from_this()
-    move_group_interface_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
-      this->shared_from_this(), "gripper");
+    RCLCPP_INFO(this->get_logger(), "✅ GripperControlService is ready.");
   }
-
 
 private:
-  void gripperCallback(const std_msgs::msg::Bool::SharedPtr msg)
+  void handle_service(
+    const std::shared_ptr<python_moveit_interface::srv::GripperControl::Request> request,
+    std::shared_ptr<python_moveit_interface::srv::GripperControl::Response> response)
   {
     if (!move_group_interface_) {
       RCLCPP_ERROR(this->get_logger(), "MoveGroupInterface not initialized yet!");
+      response->success = false;
+      response->message = "MoveGroupInterface not initialized.";
       return;
     }
 
-    double target_value = msg->data ? 0.0 : 3.0;
-    std::string action = msg->data ? "close" : "open";
+    double target_value = request->close ? 0.0 : 3.0;
+    std::string action = request->close ? "close" : "open";
 
-    RCLCPP_INFO(this->get_logger(), "Received command: %s (target=%.2f)", action.c_str(), target_value);
+    RCLCPP_INFO(this->get_logger(), "Received gripper command: %s (target=%.2f)", action.c_str(), target_value);
 
-    // 設定目標關節角度
     move_group_interface_->setJointValueTarget("robotiq_85_left_knuckle_joint", target_value);
 
-    // 規劃並執行
     moveit::planning_interface::MoveGroupInterface::Plan plan;
     bool success = (move_group_interface_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
 
     if (success) {
       move_group_interface_->execute(plan);
       RCLCPP_INFO(this->get_logger(), "Gripper executed %s successfully.", action.c_str());
+      response->success = true;
+      response->message = "Gripper executed successfully.";
     } else {
       RCLCPP_ERROR(this->get_logger(), "Gripper planning failed.");
+      response->success = false;
+      response->message = "Gripper planning failed.";
     }
   }
 
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_interface_;
-  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr gripper_cmd_sub_;
+  rclcpp::Service<python_moveit_interface::srv::GripperControl>::SharedPtr gripper_service_;
 };
 
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-
-  auto node = std::make_shared<GripperControlNode>();
-  node->init();  // 初始化 MoveGroupInterface
-
+  auto node = std::make_shared<GripperControlService>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;

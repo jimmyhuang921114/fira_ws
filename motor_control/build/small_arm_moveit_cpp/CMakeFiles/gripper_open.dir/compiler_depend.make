@@ -684,12 +684,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
   /opt/ros/humble/include/moveit/macros/class_forward.h \
   /opt/ros/humble/include/moveit/macros/declare_ptr.h \
@@ -1144,6 +1138,7 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
@@ -1366,8 +1361,22 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/moveit_move_group_interface_export.h
+  /opt/ros/humble/include/moveit_move_group_interface_export.h \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/gripper_control.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__struct.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__builder.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__traits.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp
 
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__struct.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/gripper_control.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1583,6 +1592,10 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__type_support.hpp:
 
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__traits.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/planner_interface_description.hpp:
 
 /opt/ros/humble/include/shape_msgs/shape_msgs/msg/detail/plane__traits.hpp:
@@ -1598,6 +1611,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/multi_dof_joint_state__traits.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__traits.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__builder.hpp:
 
@@ -1633,6 +1648,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp:
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
@@ -1654,16 +1671,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
@@ -1704,6 +1711,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
@@ -1876,6 +1885,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /usr/include/c++/11/optional:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/c++/11/condition_variable:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
@@ -2080,6 +2091,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
@@ -2514,10 +2527,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
-
-/usr/include/c++/11/initializer_list:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -3253,10 +3262,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
-/usr/include/c++/11/condition_variable:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
-
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
@@ -3373,28 +3378,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/planner_interface_description__traits.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__traits.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
-
-/usr/include/boost/mpl/if.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
-
 /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
@@ -3478,6 +3461,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__builder.hpp:
 
 /opt/ros/humble/include/random_numbers/random_numbers.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /usr/include/boost/config/compiler/gcc.hpp:
 
@@ -3587,6 +3572,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/boost/type_traits/remove_cv.hpp:
 
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__builder.hpp:
+
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
 
 /usr/include/boost/random/detail/int_float_pair.hpp:
@@ -3606,6 +3593,10 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
 /usr/include/boost/type_traits/add_volatile.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__traits.hpp:
+
+/usr/include/boost/mpl/if.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
@@ -3869,6 +3860,12 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
+
 /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
@@ -4031,8 +4028,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
-
 /usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Translation.h:
@@ -4084,3 +4079,11 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:

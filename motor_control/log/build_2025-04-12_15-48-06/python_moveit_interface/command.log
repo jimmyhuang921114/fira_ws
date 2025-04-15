@@ -1,4 +1,0 @@
-Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
-Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
-Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/python_moveit_interface
-Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/python_moveit_interface

@@ -1,75 +1,85 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Pose
+from std_msgs.msg import String, Bool
+from python_moveit_interface.srv import PoseRequest, GripperControl, DetectPose, ArmControl  # 假設三個子 service 已經定義
 
-from your_package.srv import DetectPose, MoveToPose, GripperControl  # 替換為你的 package 名稱
-
-class MainController(Node):
+class ArmControlRouter(Node):
     def __init__(self):
-        super().__init__('main_controller')
+        super().__init__('arm_control_router')
 
-        self.detect_cli = self.create_client(DetectPose, 'detect_pose')
-        self.move_cli = self.create_client(MoveToPose, 'move_to_pose')
-        self.gripper_cli = self.create_client(GripperControl, 'gripper_control')
+        # 建立子功能的 Client
+        self.auto_pose_client = self.create_client(DetectPose, 'auto_pose_service')
+        self.named_pose_client = self.create_client(PoseRequest, 'named_pose_service')
+        self.gripper_client = self.create_client(GripperControl, 'gripper_control_service')
 
-        self.timer = self.create_timer(1.0, self.run_sequence)
+        # 建立接收主控的 service
+        self.main_service = self.create_service(ArmControl, 'arm_control', self.handle_command)
+        self.get_logger().info('✅ ArmControlRouter is ready.')
 
-    def wait_for_service(self, client, name):
-        if not client.wait_for_service(timeout_sec=2.0):
-            self.get_logger().error(f'{name} service not available!')
-            return False
-        return True
+    def handle_command(self, request, response):
+        try:
+            if request.trigger_grab_flow:
+                self.get_logger().info("🚀 Trigger grab flow")
+                return self.send_named_pose("grab_pose_a", response)
 
-    def run_sequence(self):
-        self.timer.cancel()
-        self.get_logger().info('🟢 Starting control sequence...')
+            if request.trigger_place_flow:
+                self.get_logger().info("📦 Trigger place flow")
+                return self.send_named_pose("put_1", response)
 
-        # 1️⃣ 呼叫 detect_pose
-        if not self.wait_for_service(self.detect_cli, "detect_pose"):
-            return
+            if request.named_pose:
+                return self.send_named_pose(request.named_pose, response)
 
-        detect_future = self.detect_cli.call_async(DetectPose.Request())
-        rclpy.spin_until_future_complete(self, detect_future)
-        if detect_future.result() is None:
-            self.get_logger().error('❌ detect_pose failed')
-            return
+            if request.target_pose:
+                return self.send_auto_pose(request.target_pose, response)
 
-        target_pose = detect_future.result().target_pose
-        self.get_logger().info('✅ Received target pose.')
+            return self.send_gripper(request.gripper_close, response)
 
-        # 2️⃣ 呼叫 move_to_pose
-        if not self.wait_for_service(self.move_cli, "move_to_pose"):
-            return
+        except Exception as e:
+            response.success = False
+            response.message = f"❌ Exception: {e}"
+            return response
 
-        move_req = MoveToPose.Request()
-        move_req.target_pose = target_pose
+    def send_named_pose(self, name, response):
+        if not self.named_pose_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "named_pose_service not available"
+            return response
 
-        move_future = self.move_cli.call_async(move_req)
-        rclpy.spin_until_future_complete(self, move_future)
-        if move_future.result() is None or not move_future.result().success:
-            self.get_logger().error('❌ move_to_pose failed')
-            return
+        req = PoseRequest.Request()
+        req.message = name
+        future = self.named_pose_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        self.get_logger().info('✅ Move completed.')
+    def send_auto_pose(self, pose, response):
+        if not self.auto_pose_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "auto_pose_service not available"
+            return response
 
-        # 3️⃣ 呼叫 gripper_control（關閉）
-        if not self.wait_for_service(self.gripper_cli, "gripper_control"):
-            return
+        req = DetectPose.Request()
+        req.target_pose = pose
+        future = self.auto_pose_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        grip_req = GripperControl.Request()
-        grip_req.close = True
+    def send_gripper(self, close, response):
+        if not self.gripper_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "gripper_control_service not available"
+            return response
 
-        grip_future = self.gripper_cli.call_async(grip_req)
-        rclpy.spin_until_future_complete(self, grip_future)
-        if grip_future.result() is None or not grip_future.result().success:
-            self.get_logger().error('❌ gripper_control failed')
-            return
+        req = GripperControl.Request()
+        req.close = close
+        future = self.gripper_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        self.get_logger().info('✅ Gripper closed.')
 
-def main(args=None):
-    rclpy.init(args=args)
-    node = MainController()
+def main():
+    rclpy.init()
+    node = ArmControlRouter()
     rclpy.spin(node)
     rclpy.shutdown()
 

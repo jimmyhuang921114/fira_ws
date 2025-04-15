@@ -1,0 +1,3 @@
+# PoseRequest.srv
+geometry_msgs/Pose target_pose  # 目標點位
+string message                  # 可選，表示命名姿態名稱

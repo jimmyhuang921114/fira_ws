@@ -1,8 +1,8 @@
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__init__.py
-/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/arm_control.py
+/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/main_control.py
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/arm_test.py
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__pycache__/__init__.cpython-310.pyc
-/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__pycache__/arm_control.cpython-310.pyc
+/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__pycache__/main_control.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2/__pycache__/arm_test.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/python_moveit2/share/ament_index/resource_index/packages/python_moveit2
 /home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.xml
@@ -13,3 +13,5 @@
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2-0.0.0-py3.10.egg-info/PKG-INFO
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages/python_moveit2-0.0.0-py3.10.egg-info/SOURCES.txt
+/home/darkdemon/work/motor_control/install/python_moveit2/lib/python_moveit2/arm_test
+/home/darkdemon/work/motor_control/install/python_moveit2/lib/python_moveit2/main_control

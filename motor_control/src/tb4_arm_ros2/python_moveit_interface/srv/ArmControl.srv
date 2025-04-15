@@ -1,0 +1,4 @@
+string task_name           # 指定命名姿態，例如 put_1、home 等
+---
+bool success               # 是否成功完成
+string message             # 回傳訊息

@@ -1,47 +1,57 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/string.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
+#include <geometry_msgs/msg/pose.hpp>
+#include "python_moveit_interface/srv/pose_request.hpp"  // 替換成實際 srv 的路徑
 
-class NamedGoalControl : public rclcpp::Node {
+using PoseRequest = python_moveit_interface::srv::PoseRequest;
+
+class NamedGoalService : public rclcpp::Node {
 public:
-  NamedGoalControl() : Node("named_goal_controller") {
+  NamedGoalService() : Node("named_goal_service") {
     move_group_interface_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
       shared_from_this(), "small_arm");
 
-    goal_subscriber_ = this->create_subscription<std_msgs::msg::String>(
-      "named_goal_target", 10,
-      std::bind(&NamedGoalControl::goal_callback, this, std::placeholders::_1));
+    service_ = this->create_service<PoseRequest>(
+      "named_goal_service",
+      std::bind(&NamedGoalService::handle_goal_request, this,
+                std::placeholders::_1, std::placeholders::_2));
 
-    RCLCPP_INFO(this->get_logger(), "NamedGoalControl ready: Waiting for command");
+    RCLCPP_INFO(this->get_logger(), "NamedGoalService ready: Waiting for service calls");
   }
 
 private:
-  void goal_callback(const std_msgs::msg::String::SharedPtr msg) {
-    std::string target = msg->data;
-    RCLCPP_INFO(this->get_logger(), "Received target: %s", target.c_str());
+  void handle_goal_request(
+    const std::shared_ptr<PoseRequest::Request> request,
+    std::shared_ptr<PoseRequest::Response> response)
+  {
+    std::string target_name = request->message;
+    RCLCPP_INFO(this->get_logger(), "Received service target: %s", target_name.c_str());
 
-    move_group_interface_->setNamedTarget(target);
+    move_group_interface_->setNamedTarget(target_name);
 
     moveit::planning_interface::MoveGroupInterface::Plan plan;
     bool success = (move_group_interface_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
 
     if (success) {
-      RCLCPP_INFO(this->get_logger(), "Planning succeeded for target: %s", target.c_str());
+      RCLCPP_INFO(this->get_logger(), "Planning succeeded, executing...");
       move_group_interface_->execute(plan);
+      response->success = true;
+      response->message = "Executed: " + target_name;
     } else {
-      RCLCPP_ERROR(this->get_logger(), "Planning failed for target: %s", target.c_str());
+      RCLCPP_ERROR(this->get_logger(), "Planning failed");
+      response->success = false;
+      response->message = "Planning failed: " + target_name;
     }
   }
 
-  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr goal_subscriber_;
+  rclcpp::Service<PoseRequest>::SharedPtr service_;
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_interface_;
 };
 
 int main(int argc, char * argv[]) {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<NamedGoalControl>();
-  rclcpp::spin(node);
+  rclcpp::spin(std::make_shared<NamedGoalService>());
   rclcpp::shutdown();
   return 0;
 }

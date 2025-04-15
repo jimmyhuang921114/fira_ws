@@ -1,75 +1,113 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Pose
+from std_msgs.msg import String
+import time
+import yaml
+import os
+from python_moveit_interface.srv import PoseRequest, GripperControl, DetectPose, ArmControl
 
-from your_package.srv import DetectPose, MoveToPose, GripperControl  # 替換為你的 package 名稱
-
-class MainController(Node):
+class ArmControlRouter(Node):
     def __init__(self):
-        super().__init__('main_controller')
+        super().__init__('arm_control_router')
 
-        self.detect_cli = self.create_client(DetectPose, 'detect_pose')
-        self.move_cli = self.create_client(MoveToPose, 'move_to_pose')
-        self.gripper_cli = self.create_client(GripperControl, 'gripper_control')
+        self.auto_pose_client = self.create_client(DetectPose, 'auto_pose_service')
+        self.named_pose_client = self.create_client(PoseRequest, 'named_pose_service')
+        self.gripper_client = self.create_client(GripperControl, 'gripper_control_service')
 
-        self.timer = self.create_timer(1.0, self.run_sequence)
+        self.text_receiving = False
+        self.latest_text_coordinate = ""
+        self.text_subscriber = self.create_subscription(String, 'text_coordinate', self.text_callback, 10)
+        self.pose_subscriber = self.create_subscription(Pose, 'target_pose_in_base', self.target_pose_callback, 10)
+        self.latest_detect_pose = Pose()
 
-    def wait_for_service(self, client, name):
-        if not client.wait_for_service(timeout_sec=2.0):
-            self.get_logger().error(f'{name} service not available!')
-            return False
-        return True
+        self.main_service = self.create_service(ArmControl, 'arm_control', self.run_task_service)
 
-    def run_sequence(self):
-        self.timer.cancel()
-        self.get_logger().info('🟢 Starting control sequence...')
+        config_path = os.path.join(os.path.dirname(__file__), 'task_config.yaml')
+        with open(config_path, 'r') as f:
+            self.task_config = yaml.safe_load(f)
 
-        # 1️⃣ 呼叫 detect_pose
-        if not self.wait_for_service(self.detect_cli, "detect_pose"):
-            return
+        self.get_logger().info('✅ ArmControlRouter is ready.')
 
-        detect_future = self.detect_cli.call_async(DetectPose.Request())
-        rclpy.spin_until_future_complete(self, detect_future)
-        if detect_future.result() is None:
-            self.get_logger().error('❌ detect_pose failed')
-            return
+    def text_callback(self, msg):
+        if self.text_receiving:
+            self.get_logger().info(f"📦 Text coordinate received: {msg.data}")
+            self.latest_text_coordinate = msg.data
+        else:
+            self.get_logger().warn("❌ Text coordinate not accepted (waiting flag off).")
 
-        target_pose = detect_future.result().target_pose
-        self.get_logger().info('✅ Received target pose.')
+    def target_pose_callback(self, msg):
+        self.latest_detect_pose = msg
 
-        # 2️⃣ 呼叫 move_to_pose
-        if not self.wait_for_service(self.move_cli, "move_to_pose"):
-            return
+    def run_task_service(self, request, response):
+        task = request.task_name.lower()
+        try:
+            if task in self.task_config:
+                return self.run_task_sequence(self.task_config[task], response)
+            else:
+                response.success = False
+                response.message = f"❌ Unknown task: {task}"
+                return response
+        except Exception as e:
+            response.success = False
+            response.message = f"❌ Exception: {e}"
+            return response
 
-        move_req = MoveToPose.Request()
-        move_req.target_pose = target_pose
+    def run_task_sequence(self, steps, response):
+        for step in steps:
+            if 'name_pose' in step:
+                self.send_named_pose(step['name_pose'], response)
+            elif 'gripper' in step:
+                close = step['gripper'] == 'close'
+                self.send_gripper(close, response)
+            elif 'detect_pose' in step:
+                self.send_auto_pose(self.latest_detect_pose, response)
+            elif 'log' in step:
+                self.get_logger().info(f"📝 {step['log']}")
+            elif 'wait' in step:
+                time.sleep(float(step['wait']))
+            else:
+                self.get_logger().warn(f"⚠️ Unknown step: {step}")
+        response.success = True
+        response.message = "✔️ 任務完成"
+        return response
 
-        move_future = self.move_cli.call_async(move_req)
-        rclpy.spin_until_future_complete(self, move_future)
-        if move_future.result() is None or not move_future.result().success:
-            self.get_logger().error('❌ move_to_pose failed')
-            return
+    def send_named_pose(self, name, response):
+        if not self.named_pose_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "named_pose_service not available"
+            return response
+        req = PoseRequest.Request()
+        req.message = name
+        future = self.named_pose_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        self.get_logger().info('✅ Move completed.')
+    def send_auto_pose(self, pose, response):
+        if not self.auto_pose_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "auto_pose_service not available"
+            return response
+        req = DetectPose.Request()
+        req.target_pose = pose
+        future = self.auto_pose_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        # 3️⃣ 呼叫 gripper_control（關閉）
-        if not self.wait_for_service(self.gripper_cli, "gripper_control"):
-            return
+    def send_gripper(self, close, response):
+        if not self.gripper_client.wait_for_service(timeout_sec=1.0):
+            response.success = False
+            response.message = "gripper_control_service not available"
+            return response
+        req = GripperControl.Request()
+        req.close = close
+        future = self.gripper_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
 
-        grip_req = GripperControl.Request()
-        grip_req.close = True
-
-        grip_future = self.gripper_cli.call_async(grip_req)
-        rclpy.spin_until_future_complete(self, grip_future)
-        if grip_future.result() is None or not grip_future.result().success:
-            self.get_logger().error('❌ gripper_control failed')
-            return
-
-        self.get_logger().info('✅ Gripper closed.')
-
-def main(args=None):
-    rclpy.init(args=args)
-    node = MainController()
+def main():
+    rclpy.init()
+    node = ArmControlRouter()
     rclpy.spin(node)
     rclpy.shutdown()
 

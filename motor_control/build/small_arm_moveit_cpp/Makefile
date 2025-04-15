@@ -198,17 +198,17 @@ small_arm_moveit_cpp_uninstall/fast:
 .PHONY : small_arm_moveit_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named gripper_open
+# Target rules for targets named auto_pose_goal
 
 # Build rule for target.
-gripper_open: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gripper_open
-.PHONY : gripper_open
+auto_pose_goal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_pose_goal
+.PHONY : auto_pose_goal
 
 # fast build rule for target.
-gripper_open/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/build
-.PHONY : gripper_open/fast
+auto_pose_goal/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_pose_goal.dir/build.make CMakeFiles/auto_pose_goal.dir/build
+.PHONY : auto_pose_goal/fast
 
 #=============================================================================
 # Target rules for targets named named_goal
@@ -224,43 +224,17 @@ named_goal/fast:
 .PHONY : named_goal/fast
 
 #=============================================================================
-# Target rules for targets named ee_pose_in_base
+# Target rules for targets named gripper_open
 
 # Build rule for target.
-ee_pose_in_base: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ee_pose_in_base
-.PHONY : ee_pose_in_base
+gripper_open: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gripper_open
+.PHONY : gripper_open
 
 # fast build rule for target.
-ee_pose_in_base/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/build
-.PHONY : ee_pose_in_base/fast
-
-#=============================================================================
-# Target rules for targets named eye_hand_pose
-
-# Build rule for target.
-eye_hand_pose: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eye_hand_pose
-.PHONY : eye_hand_pose
-
-# fast build rule for target.
-eye_hand_pose/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/eye_hand_pose.dir/build.make CMakeFiles/eye_hand_pose.dir/build
-.PHONY : eye_hand_pose/fast
-
-#=============================================================================
-# Target rules for targets named auto_pose_goal
-
-# Build rule for target.
-auto_pose_goal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_pose_goal
-.PHONY : auto_pose_goal
-
-# fast build rule for target.
-auto_pose_goal/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_pose_goal.dir/build.make CMakeFiles/auto_pose_goal.dir/build
-.PHONY : auto_pose_goal/fast
+gripper_open/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/build
+.PHONY : gripper_open/fast
 
 src/auto_pose_goal.o: src/auto_pose_goal.cpp.o
 .PHONY : src/auto_pose_goal.o
@@ -285,54 +259,6 @@ src/auto_pose_goal.s: src/auto_pose_goal.cpp.s
 src/auto_pose_goal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_pose_goal.dir/build.make CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
 .PHONY : src/auto_pose_goal.cpp.s
-
-src/ee_pose_in_base.o: src/ee_pose_in_base.cpp.o
-.PHONY : src/ee_pose_in_base.o
-
-# target to build an object file
-src/ee_pose_in_base.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o
-.PHONY : src/ee_pose_in_base.cpp.o
-
-src/ee_pose_in_base.i: src/ee_pose_in_base.cpp.i
-.PHONY : src/ee_pose_in_base.i
-
-# target to preprocess a source file
-src/ee_pose_in_base.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.i
-.PHONY : src/ee_pose_in_base.cpp.i
-
-src/ee_pose_in_base.s: src/ee_pose_in_base.cpp.s
-.PHONY : src/ee_pose_in_base.s
-
-# target to generate assembly for a file
-src/ee_pose_in_base.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.s
-.PHONY : src/ee_pose_in_base.cpp.s
-
-src/eye_hand_pose.o: src/eye_hand_pose.cpp.o
-.PHONY : src/eye_hand_pose.o
-
-# target to build an object file
-src/eye_hand_pose.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/eye_hand_pose.dir/build.make CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.o
-.PHONY : src/eye_hand_pose.cpp.o
-
-src/eye_hand_pose.i: src/eye_hand_pose.cpp.i
-.PHONY : src/eye_hand_pose.i
-
-# target to preprocess a source file
-src/eye_hand_pose.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/eye_hand_pose.dir/build.make CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.i
-.PHONY : src/eye_hand_pose.cpp.i
-
-src/eye_hand_pose.s: src/eye_hand_pose.cpp.s
-.PHONY : src/eye_hand_pose.s
-
-# target to generate assembly for a file
-src/eye_hand_pose.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/eye_hand_pose.dir/build.make CMakeFiles/eye_hand_pose.dir/src/eye_hand_pose.cpp.s
-.PHONY : src/eye_hand_pose.cpp.s
 
 src/gripper_open.o: src/gripper_open.cpp.o
 .PHONY : src/gripper_open.o
@@ -398,19 +324,11 @@ help:
 	@echo "... small_arm_moveit_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... auto_pose_goal"
-	@echo "... ee_pose_in_base"
-	@echo "... eye_hand_pose"
 	@echo "... gripper_open"
 	@echo "... named_goal"
 	@echo "... src/auto_pose_goal.o"
 	@echo "... src/auto_pose_goal.i"
 	@echo "... src/auto_pose_goal.s"
-	@echo "... src/ee_pose_in_base.o"
-	@echo "... src/ee_pose_in_base.i"
-	@echo "... src/ee_pose_in_base.s"
-	@echo "... src/eye_hand_pose.o"
-	@echo "... src/eye_hand_pose.i"
-	@echo "... src/eye_hand_pose.s"
 	@echo "... src/gripper_open.o"
 	@echo "... src/gripper_open.i"
 	@echo "... src/gripper_open.s"

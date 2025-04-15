@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "arm_test = python_moveit2.arm_test:main",
+            "main_control = python_moveit2.main_control:main",
         ],
     },
 )

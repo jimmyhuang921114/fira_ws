@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/arm_control__type_support_c.cpp.o"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/arm_control__type_support_c.cpp.o.d"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/detect_pose__type_support_c.cpp.o"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/detect_pose__type_support_c.cpp.o.d"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/gripper_control__type_support_c.cpp.o"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/gripper_control__type_support_c.cpp.o.d"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/pose_request__type_support_c.cpp.o"
+  "CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/pose_request__type_support_c.cpp.o.d"
+  "libpython_moveit_interface__rosidl_typesupport_fastrtps_c.pdb"
+  "libpython_moveit_interface__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/arm_control__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/arm_control__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/detect_pose__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/detect_pose__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/gripper_control__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/gripper_control__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/pose_request__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/pose_request__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

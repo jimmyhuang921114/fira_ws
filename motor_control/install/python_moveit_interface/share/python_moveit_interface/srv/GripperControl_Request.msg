@@ -1,0 +1,2 @@
+# GripperControl.srv
+bool close        # True = 關閉（夾），False = 打開

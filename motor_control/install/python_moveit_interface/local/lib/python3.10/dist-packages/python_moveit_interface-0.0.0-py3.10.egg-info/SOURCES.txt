@@ -1,0 +1,11 @@
+setup.py
+python_moveit_interface/__init__.py
+python_moveit_interface.egg-info/PKG-INFO
+python_moveit_interface.egg-info/SOURCES.txt
+python_moveit_interface.egg-info/dependency_links.txt
+python_moveit_interface.egg-info/top_level.txt
+python_moveit_interface/srv/__init__.py
+python_moveit_interface/srv/_arm_control.py
+python_moveit_interface/srv/_detect_pose.py
+python_moveit_interface/srv/_gripper_control.py
+python_moveit_interface/srv/_pose_request.py

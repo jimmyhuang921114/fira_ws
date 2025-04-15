@@ -9,13 +9,11 @@ setup.py
 ../../build/realsense/realsense.egg-info/top_level.txt
 ../../build/realsense/realsense.egg-info/zip-safe
 launch/visual_launch.py
-realsense/2d_plane.py
 realsense/__init__.py
 realsense/box_edge_detect.py
 realsense/color_detect.py
 realsense/color_range.py
 realsense/depth_calculate.py
-realsense/interface.py
 realsense/interface_robot.py
 realsense/paddleorc.py
 realsense/realsense_read.py

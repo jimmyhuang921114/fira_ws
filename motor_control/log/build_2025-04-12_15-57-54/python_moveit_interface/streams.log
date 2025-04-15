@@ -1,1 +1,0 @@
-[0.151s] Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20

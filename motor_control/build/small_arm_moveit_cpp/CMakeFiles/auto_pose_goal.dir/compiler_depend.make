@@ -684,12 +684,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
@@ -1144,6 +1138,7 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
@@ -1366,8 +1361,129 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/moveit_move_group_interface_export.h
+  /opt/ros/humble/include/moveit_move_group_interface_export.h \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detect_pose.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__struct.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__builder.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__traits.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp \
+  /usr/include/kdl/frames.hpp \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/utilities/utility.h \
+  /usr/include/kdl/utilities/kdl-config.h \
+  /usr/include/kdl/frames.inl \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp
 
+
+/usr/include/kdl/frames.inl:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__builder.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__struct.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detect_pose.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1441,9 +1557,13 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp:
+
 /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__functions.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.h:
 
@@ -1527,6 +1647,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__struct.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_scale__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/link_padding__struct.hpp:
@@ -1548,6 +1670,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/action/move_group.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
@@ -1619,9 +1743,13 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/multi_dof_joint_state__struct.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_state__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/robot_state.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/multi_dof_joint_trajectory_point__traits.hpp:
 
@@ -1636,6 +1764,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/robot_trajectory__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp:
 
@@ -1655,19 +1785,11 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp:
+
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
@@ -1708,6 +1830,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
@@ -1776,6 +1902,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
 /usr/include/signal.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
@@ -1885,6 +2017,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
@@ -1918,6 +2052,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
@@ -1969,6 +2105,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
+/usr/include/kdl/utilities/kdl-config.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
@@ -2002,6 +2140,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/bits/list.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
@@ -2043,6 +2183,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
+/usr/include/kdl/frames.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/workspace_parameters__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/types.h:
@@ -2054,8 +2198,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rcl/rcl/macros.h:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
@@ -2074,6 +2216,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
@@ -2132,6 +2276,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
@@ -2425,6 +2571,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
@@ -2478,10 +2626,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/c++/11/typeinfo:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
-
-/usr/include/c++/11/initializer_list:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -2540,6 +2684,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/unistd.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
@@ -2717,6 +2863,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp:
+
 /usr/include/boost/mpl/aux_/config/integral.hpp:
 
 /usr/include/c++/11/bits/align.h:
@@ -2785,10 +2933,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/linux/errno.h:
@@ -2838,6 +2982,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -2892,6 +3038,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/limits:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
+/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__traits.hpp:
 
@@ -2974,6 +3122,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/iomanip:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
 
 /usr/include/c++/11/cctype:
 
@@ -3299,6 +3449,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/boost/mpl/int.hpp:
 
+/usr/include/kdl/utilities/utility.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
 /opt/ros/humble/include/tf2/tf2/time.hpp:
@@ -3337,6 +3489,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /usr/include/boost/random/uniform_01.hpp:
@@ -3361,6 +3515,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/limits.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp:
+
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
@@ -3377,27 +3533,11 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/c++/11/ios:
 
@@ -3515,11 +3655,15 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/moveit/robot_model/joint_model.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__builder.hpp:
 
 /opt/ros/humble/include/random_numbers/random_numbers.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /usr/include/boost/config/compiler/gcc.hpp:
 
@@ -3587,6 +3731,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/move_it_error_codes__builder.hpp:
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
@@ -3622,8 +3768,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/boost/integer/static_log2.hpp:
 
 /usr/include/boost/preprocessor/comma_if.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
 /usr/include/boost/random/traits.hpp:
 
@@ -3663,9 +3807,13 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -3734,8 +3882,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/boost/preprocessor/list/fold_right.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
@@ -3887,6 +4033,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
+
 /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
@@ -3932,6 +4084,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/eigen3/Eigen/src/Core/Array.h:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
@@ -4069,6 +4223,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/moveit/transforms/transforms.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
@@ -4084,3 +4240,11 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:

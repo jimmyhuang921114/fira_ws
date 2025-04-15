@@ -1,0 +1,4 @@
+/home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_adapter/python_moveit_interface:srv/PoseRequest.idl
+/home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_adapter/python_moveit_interface:srv/GripperControl.idl
+/home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_adapter/python_moveit_interface:srv/DetectPose.idl
+/home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_adapter/python_moveit_interface:srv/ArmControl.idl

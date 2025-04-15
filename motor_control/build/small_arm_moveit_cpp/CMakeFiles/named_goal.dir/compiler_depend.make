@@ -684,12 +684,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
   /opt/ros/humble/include/moveit/macros/class_forward.h \
   /opt/ros/humble/include/moveit/macros/declare_ptr.h \
@@ -1144,6 +1138,7 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
   /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
@@ -1366,8 +1361,22 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/moveit_move_group_interface_export.h
+  /opt/ros/humble/include/moveit_move_group_interface_export.h \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/pose_request.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__struct.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__builder.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__traits.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.hpp \
+  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp
 
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__builder.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__struct.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1549,6 +1558,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__struct.hpp:
@@ -1637,6 +1648,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp:
 
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
@@ -1658,16 +1671,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
@@ -1709,6 +1712,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
@@ -1734,6 +1739,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
@@ -1776,6 +1783,10 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
 /usr/include/signal.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
@@ -2063,8 +2074,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
-
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
 /opt/ros/humble/include/rmw/rmw/visibility_control.h:
@@ -2082,6 +2091,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
@@ -2445,10 +2456,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
-
-/usr/include/c++/11/initializer_list:
-
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
@@ -2782,10 +2789,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
@@ -3385,28 +3388,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
-
-/usr/include/boost/preprocessor/tuple/rem.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
-
 /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
@@ -3422,6 +3403,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/srdfdom/srdfdom/model.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/pose_request.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp:
 
@@ -3482,6 +3465,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__builder.hpp:
 
 /opt/ros/humble/include/random_numbers/random_numbers.h:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
 /usr/include/boost/config/compiler/gcc.hpp:
 
@@ -3585,8 +3570,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
-
 /usr/include/boost/random/traits.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
@@ -3636,6 +3619,8 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /usr/include/c++/11/ios:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -3719,8 +3704,6 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
-
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
@@ -3734,6 +3717,12 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
 /usr/include/boost/preprocessor/variadic/size.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
+
+/usr/include/boost/preprocessor/tuple/rem.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
 
@@ -3870,6 +3859,12 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
 
@@ -4084,3 +4079,11 @@ CMakeFiles/named_goal.dir/src/named_goal.cpp.o: /home/darkdemon/work/motor_contr
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__struct.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__type_support.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:

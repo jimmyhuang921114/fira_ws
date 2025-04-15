@@ -1,1 +1,0 @@
-[0.242s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

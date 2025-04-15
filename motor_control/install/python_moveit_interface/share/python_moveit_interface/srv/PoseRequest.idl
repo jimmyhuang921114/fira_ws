@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from python_moveit_interface/srv/PoseRequest.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module python_moveit_interface {
+  module srv {
+    @verbatim (language="comment", text=
+      "PoseRequest.srv")
+    struct PoseRequest_Request {
+      @verbatim (language="comment", text=
+        "目標點位")
+      geometry_msgs::msg::Pose target_pose;
+
+      @verbatim (language="comment", text=
+        "可選，表示命名姿態名稱")
+      string message;
+    };
+    struct PoseRequest_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -73,15 +73,15 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: CMakeFiles/gripper_open.dir/
 CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp
 CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: CMakeFiles/gripper_open.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o -MF CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o.d -o CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o -MF CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o.d -o CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp
 
 CMakeFiles/gripper_open.dir/src/gripper_open.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gripper_open.dir/src/gripper_open.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp > CMakeFiles/gripper_open.dir/src/gripper_open.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp > CMakeFiles/gripper_open.dir/src/gripper_open.cpp.i
 
 CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp -o CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp -o CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s
 
 # Object files for target gripper_open
 gripper_open_OBJECTS = \
@@ -93,6 +93,12 @@ gripper_open_EXTERNAL_OBJECTS =
 gripper_open: CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o
 gripper_open: CMakeFiles/gripper_open.dir/build.make
 gripper_open: /opt/ros/humble/lib/libmoveit_move_group_interface.so.2.5.8
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_c.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_c.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_cpp.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_cpp.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_cpp.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_py.so
 gripper_open: /opt/ros/humble/lib/libmoveit_common_planning_interface_objects.so.2.5.8
 gripper_open: /opt/ros/humble/lib/libmoveit_planning_scene_interface.so.2.5.8
 gripper_open: /opt/ros/humble/lib/libmoveit_move_group_default_capabilities.so.2.5.8
@@ -311,45 +317,47 @@ gripper_open: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py
 gripper_open: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 gripper_open: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 gripper_open: /opt/ros/humble/lib/libtf2.so
+gripper_open: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+gripper_open: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+gripper_open: /usr/lib/x86_64-linux-gnu/libcrypto.so
 gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 gripper_open: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 gripper_open: /opt/ros/humble/lib/librmw.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_c.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+gripper_open: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_c.so
+gripper_open: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+gripper_open: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 gripper_open: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 gripper_open: /opt/ros/humble/lib/librosidl_typesupport_c.so
 gripper_open: /opt/ros/humble/lib/librcpputils.so
 gripper_open: /opt/ros/humble/lib/librosidl_runtime_c.so
 gripper_open: /opt/ros/humble/lib/librcutils.so
 gripper_open: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-gripper_open: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-gripper_open: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
-gripper_open: /usr/lib/x86_64-linux-gnu/libcrypto.so
 gripper_open: CMakeFiles/gripper_open.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gripper_open"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gripper_open.dir/link.txt --verbose=$(VERBOSE)

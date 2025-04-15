@@ -1,0 +1,378 @@
+// generated from rosidl_generator_cpp/resource/idl__traits.hpp.em
+// with input from python_moveit_interface:srv/ArmControl.idl
+// generated code does not contain a copyright notice
+
+#ifndef PYTHON_MOVEIT_INTERFACE__SRV__DETAIL__ARM_CONTROL__TRAITS_HPP_
+#define PYTHON_MOVEIT_INTERFACE__SRV__DETAIL__ARM_CONTROL__TRAITS_HPP_
+
+#include <stdint.h>
+
+#include <sstream>
+#include <string>
+#include <type_traits>
+
+#include "python_moveit_interface/srv/detail/arm_control__struct.hpp"
+#include "rosidl_runtime_cpp/traits.hpp"
+
+// Include directives for member types
+// Member 'target_pose'
+#include "geometry_msgs/msg/detail/pose__traits.hpp"
+
+namespace python_moveit_interface
+{
+
+namespace srv
+{
+
+inline void to_flow_style_yaml(
+  const ArmControl_Request & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: task_name
+  {
+    out << "task_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.task_name, out);
+    out << ", ";
+  }
+
+  // member: trigger_grab_flow
+  {
+    out << "trigger_grab_flow: ";
+    rosidl_generator_traits::value_to_yaml(msg.trigger_grab_flow, out);
+    out << ", ";
+  }
+
+  // member: trigger_place_flow
+  {
+    out << "trigger_place_flow: ";
+    rosidl_generator_traits::value_to_yaml(msg.trigger_place_flow, out);
+    out << ", ";
+  }
+
+  // member: target_zone
+  {
+    out << "target_zone: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_zone, out);
+    out << ", ";
+  }
+
+  // member: target_pose
+  {
+    out << "target_pose: ";
+    to_flow_style_yaml(msg.target_pose, out);
+    out << ", ";
+  }
+
+  // member: named_pose
+  {
+    out << "named_pose: ";
+    rosidl_generator_traits::value_to_yaml(msg.named_pose, out);
+    out << ", ";
+  }
+
+  // member: gripper_close
+  {
+    out << "gripper_close: ";
+    rosidl_generator_traits::value_to_yaml(msg.gripper_close, out);
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const ArmControl_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: task_name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "task_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.task_name, out);
+    out << "\n";
+  }
+
+  // member: trigger_grab_flow
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "trigger_grab_flow: ";
+    rosidl_generator_traits::value_to_yaml(msg.trigger_grab_flow, out);
+    out << "\n";
+  }
+
+  // member: trigger_place_flow
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "trigger_place_flow: ";
+    rosidl_generator_traits::value_to_yaml(msg.trigger_place_flow, out);
+    out << "\n";
+  }
+
+  // member: target_zone
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "target_zone: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_zone, out);
+    out << "\n";
+  }
+
+  // member: target_pose
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "target_pose:\n";
+    to_block_style_yaml(msg.target_pose, out, indentation + 2);
+  }
+
+  // member: named_pose
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "named_pose: ";
+    rosidl_generator_traits::value_to_yaml(msg.named_pose, out);
+    out << "\n";
+  }
+
+  // member: gripper_close
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "gripper_close: ";
+    rosidl_generator_traits::value_to_yaml(msg.gripper_close, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ArmControl_Request & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace srv
+
+}  // namespace python_moveit_interface
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use python_moveit_interface::srv::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const python_moveit_interface::srv::ArmControl_Request & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  python_moveit_interface::srv::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use python_moveit_interface::srv::to_yaml() instead")]]
+inline std::string to_yaml(const python_moveit_interface::srv::ArmControl_Request & msg)
+{
+  return python_moveit_interface::srv::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<python_moveit_interface::srv::ArmControl_Request>()
+{
+  return "python_moveit_interface::srv::ArmControl_Request";
+}
+
+template<>
+inline const char * name<python_moveit_interface::srv::ArmControl_Request>()
+{
+  return "python_moveit_interface/srv/ArmControl_Request";
+}
+
+template<>
+struct has_fixed_size<python_moveit_interface::srv::ArmControl_Request>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<python_moveit_interface::srv::ArmControl_Request>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct is_message<python_moveit_interface::srv::ArmControl_Request>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+namespace python_moveit_interface
+{
+
+namespace srv
+{
+
+inline void to_flow_style_yaml(
+  const ArmControl_Response & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: success
+  {
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+    out << ", ";
+  }
+
+  // member: message
+  {
+    out << "message: ";
+    rosidl_generator_traits::value_to_yaml(msg.message, out);
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const ArmControl_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: success
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+    out << "\n";
+  }
+
+  // member: message
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "message: ";
+    rosidl_generator_traits::value_to_yaml(msg.message, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const ArmControl_Response & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace srv
+
+}  // namespace python_moveit_interface
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use python_moveit_interface::srv::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const python_moveit_interface::srv::ArmControl_Response & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  python_moveit_interface::srv::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use python_moveit_interface::srv::to_yaml() instead")]]
+inline std::string to_yaml(const python_moveit_interface::srv::ArmControl_Response & msg)
+{
+  return python_moveit_interface::srv::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<python_moveit_interface::srv::ArmControl_Response>()
+{
+  return "python_moveit_interface::srv::ArmControl_Response";
+}
+
+template<>
+inline const char * name<python_moveit_interface::srv::ArmControl_Response>()
+{
+  return "python_moveit_interface/srv/ArmControl_Response";
+}
+
+template<>
+struct has_fixed_size<python_moveit_interface::srv::ArmControl_Response>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<python_moveit_interface::srv::ArmControl_Response>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct is_message<python_moveit_interface::srv::ArmControl_Response>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+namespace rosidl_generator_traits
+{
+
+template<>
+inline const char * data_type<python_moveit_interface::srv::ArmControl>()
+{
+  return "python_moveit_interface::srv::ArmControl";
+}
+
+template<>
+inline const char * name<python_moveit_interface::srv::ArmControl>()
+{
+  return "python_moveit_interface/srv/ArmControl";
+}
+
+template<>
+struct has_fixed_size<python_moveit_interface::srv::ArmControl>
+  : std::integral_constant<
+    bool,
+    has_fixed_size<python_moveit_interface::srv::ArmControl_Request>::value &&
+    has_fixed_size<python_moveit_interface::srv::ArmControl_Response>::value
+  >
+{
+};
+
+template<>
+struct has_bounded_size<python_moveit_interface::srv::ArmControl>
+  : std::integral_constant<
+    bool,
+    has_bounded_size<python_moveit_interface::srv::ArmControl_Request>::value &&
+    has_bounded_size<python_moveit_interface::srv::ArmControl_Response>::value
+  >
+{
+};
+
+template<>
+struct is_service<python_moveit_interface::srv::ArmControl>
+  : std::true_type
+{
+};
+
+template<>
+struct is_service_request<python_moveit_interface::srv::ArmControl_Request>
+  : std::true_type
+{
+};
+
+template<>
+struct is_service_response<python_moveit_interface::srv::ArmControl_Response>
+  : std::true_type
+{
+};
+
+}  // namespace rosidl_generator_traits
+
+#endif  // PYTHON_MOVEIT_INTERFACE__SRV__DETAIL__ARM_CONTROL__TRAITS_HPP_

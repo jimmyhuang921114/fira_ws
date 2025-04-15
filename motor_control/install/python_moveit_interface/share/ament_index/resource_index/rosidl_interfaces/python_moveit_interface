@@ -1,0 +1,16 @@
+srv/ArmControl.idl
+srv/ArmControl.srv
+srv/ArmControl_Request.msg
+srv/ArmControl_Response.msg
+srv/DetectPose.idl
+srv/DetectPose.srv
+srv/DetectPose_Request.msg
+srv/DetectPose_Response.msg
+srv/GripperControl.idl
+srv/GripperControl.srv
+srv/GripperControl_Request.msg
+srv/GripperControl_Response.msg
+srv/PoseRequest.idl
+srv/PoseRequest.srv
+srv/PoseRequest_Request.msg
+srv/PoseRequest_Response.msg

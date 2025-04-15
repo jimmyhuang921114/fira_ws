@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from python_moveit_interface/srv/ArmControl.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module python_moveit_interface {
+  module srv {
+    struct ArmControl_Request {
+      @verbatim (language="comment", text=
+        "指定命名姿態，例如 put_1、home 等")
+      string task_name;
+
+      @verbatim (language="comment", text=
+        "執行抓取流程")
+      boolean trigger_grab_flow;
+
+      @verbatim (language="comment", text=
+        "執行放置流程")
+      boolean trigger_place_flow;
+
+      @verbatim (language="comment", text=
+        "指定抓取或放置的區域（例如 grab_a、put_left）")
+      string target_zone;
+
+      @verbatim (language="comment", text=
+        "可選：給定實際三維目標位置")
+      geometry_msgs::msg::Pose target_pose;
+
+      @verbatim (language="comment", text=
+        "可選：移動至指定 named pose")
+      string named_pose;
+
+      @verbatim (language="comment", text=
+        "控制夾爪關閉/開啟")
+      boolean gripper_close;
+    };
+    struct ArmControl_Response {
+      @verbatim (language="comment", text=
+        "是否成功完成")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "回傳訊息")
+      string message;
+    };
+  };
+};

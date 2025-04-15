@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
+[35m[1mConsolidate compiler generated dependencies of target named_goal[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[ 50%] Built target named_goal
+[ 66%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m

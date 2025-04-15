@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/darkdemon/work/motor_control/build/python_moveit_interface/python_moveit_interface__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "python_moveit_interface::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "python_moveit_interface__py::@5560c1f247f440d3b38b",
+	"name" : "python_moveit_interface__py",
+	"paths" : 
+	{
+		"build" : "python_moveit_interface__py",
+		"source" : "/home/darkdemon/work/motor_control/build/python_moveit_interface/python_moveit_interface__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/darkdemon/work/motor_control/build/python_moveit_interface/python_moveit_interface__py/CMakeFiles/python_moveit_interface__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/darkdemon/work/motor_control/build/python_moveit_interface/python_moveit_interface__py/CMakeFiles/python_moveit_interface__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_generator_py/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

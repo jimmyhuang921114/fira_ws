@@ -73,15 +73,15 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: CMakeFiles/auto_pose_goa
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: CMakeFiles/auto_pose_goal.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -MF CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o.d -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -MF CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o.d -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o -c /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp
 
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp > CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp > CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.i
 
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp -o CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
 
 # Object files for target auto_pose_goal
 auto_pose_goal_OBJECTS = \
@@ -93,6 +93,12 @@ auto_pose_goal_EXTERNAL_OBJECTS =
 auto_pose_goal: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
 auto_pose_goal: CMakeFiles/auto_pose_goal.dir/build.make
 auto_pose_goal: /opt/ros/humble/lib/libmoveit_move_group_interface.so.2.5.8
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_c.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_c.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_cpp.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_cpp.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_cpp.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_py.so
 auto_pose_goal: /opt/ros/humble/lib/libmoveit_common_planning_interface_objects.so.2.5.8
 auto_pose_goal: /opt/ros/humble/lib/libmoveit_planning_scene_interface.so.2.5.8
 auto_pose_goal: /opt/ros/humble/lib/libmoveit_move_group_default_capabilities.so.2.5.8
@@ -311,45 +317,47 @@ auto_pose_goal: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_
 auto_pose_goal: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 auto_pose_goal: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 auto_pose_goal: /opt/ros/humble/lib/libtf2.so
+auto_pose_goal: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+auto_pose_goal: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+auto_pose_goal: /usr/lib/x86_64-linux-gnu/libcrypto.so
 auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 auto_pose_goal: /opt/ros/humble/lib/librmw.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_c.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+auto_pose_goal: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_c.so
+auto_pose_goal: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+auto_pose_goal: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 auto_pose_goal: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_typesupport_c.so
 auto_pose_goal: /opt/ros/humble/lib/librcpputils.so
 auto_pose_goal: /opt/ros/humble/lib/librosidl_runtime_c.so
 auto_pose_goal: /opt/ros/humble/lib/librcutils.so
 auto_pose_goal: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-auto_pose_goal: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-auto_pose_goal: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
-auto_pose_goal: /usr/lib/x86_64-linux-gnu/libcrypto.so
 auto_pose_goal: CMakeFiles/auto_pose_goal.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable auto_pose_goal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/auto_pose_goal.dir/link.txt --verbose=$(VERBOSE)

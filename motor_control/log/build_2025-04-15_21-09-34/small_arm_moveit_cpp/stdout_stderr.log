@@ -1,0 +1,117 @@
+[35m[1mConsolidate compiler generated dependencies of target named_goal[0m
+[35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
+[ 33%] Built target named_goal
+[ 66%] Built target gripper_open
+[ 83%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:10:51:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ in namespace ‘[01m[Kpython_moveit_interface::srv[m[K’ does not name a type
+   10 | using PoseRequest = python_moveit_interface::srv::[01;31m[KPoseRequest[m[K;
+      |                                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ is not a member of ‘[01m[Kpython_moveit_interface::srv[m[K’
+   29 |     const std::shared_ptr<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K::Request> request,
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |     const std::shared_ptr<python_moveit_interface::srv::PoseRequest::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ is not a member of ‘[01m[Kpython_moveit_interface::srv[m[K’
+   29 |     const std::shared_ptr<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K::Request> request,
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |     const std::shared_ptr<python_moveit_interface::srv::PoseRequest::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ is not a member of ‘[01m[Kpython_moveit_interface::srv[m[K’
+   29 |     const std::shared_ptr<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K::Request> request,
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |     const std::shared_ptr<python_moveit_interface::srv::PoseRequest::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:11:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   29 |     const [01;31m[Kstd[m[K::shared_ptr<python_moveit_interface::srv::PoseRequest::Request> request,
+      |           [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kpython_moveit_interface::srv::PoseRequest[m[K’ has not been declared
+   29 |     const std::shared_ptr<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K::Request> request,
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:29:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   29 |     [01;31m[Kconst[m[K std::shared_ptr<python_moveit_interface::srv::PoseRequest::Request> request,
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ was not declared in this scope
+   30 |     std::shared_ptr<[01;31m[KPoseRequest[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |     std::shared_ptr<PoseRequest::Response[01;31m[K>[m[K response)
+      |                                          [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ was not declared in this scope
+   30 |     std::shared_ptr<[01;31m[KPoseRequest[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |     std::shared_ptr<PoseRequest::Response[01;31m[K>[m[K response)
+      |                                          [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ was not declared in this scope
+   30 |     std::shared_ptr<[01;31m[KPoseRequest[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |     std::shared_ptr<PoseRequest::Response[01;31m[K>[m[K response)
+      |                                          [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:5:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   30 |     [01;31m[Kstd[m[K::shared_ptr<PoseRequest::Response> response)
+      |     [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ has not been declared
+   30 |     std::shared_ptr<[01;31m[KPoseRequest[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:30:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   30 |     [01;31m[Kstd[m[K::shared_ptr<PoseRequest::Response> response)
+      |     [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:62:49:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ is not a member of ‘[01m[Kpython_moveit_interface::srv[m[K’
+   62 |   rclcpp::Service<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K>::SharedPtr service_;
+      |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:62:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   62 |   rclcpp::Service<python_moveit_interface::srv::PoseRequest[01;31m[K>[m[K::SharedPtr service_;
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:62:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   62 |   rclcpp::Service<python_moveit_interface::srv::PoseRequest>::[01;31m[KSharedPtr[m[K service_;
+      |                                                               [01;31m[K^~~~~~~~~[m[K
+      |                                                                        [32m[K;[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:62:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ does not name a type
+   62 |   rclcpp::Service<python_moveit_interface::srv::PoseRequest>::SharedPtr [01;31m[Kservice_[m[K;
+      |                                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In constructor ‘[01m[KAutoPoseService::AutoPoseService()[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ was not declared in this scope
+   20 |     [01;31m[Kservice_[m[K = this->create_service<python_moveit_interface::srv::PoseRequest>(
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:20:67:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseRequest[m[K’ is not a member of ‘[01m[Kpython_moveit_interface::srv[m[K’
+   20 |     service_ = this->create_service<python_moveit_interface::srv::[01;31m[KPoseRequest[m[K>(
+      |                                                                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:20:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAutoPoseService::create_service<<expression error> >(const char [18], std::_Bind_helper<false, void (AutoPoseService::*)(...), AutoPoseService*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+   20 |     service_ = [01;31m[Kthis->create_service<python_moveit_interface::srv::PoseRequest>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   21 | [01;31m[K      "auto_pose_service", std::bind(&AutoPoseService::handle_service, this, _1, _2))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  267 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:20:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     service_ = [01;31m[Kthis->create_service<python_moveit_interface::srv::PoseRequest>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   21 | [01;31m[K      "auto_pose_service", std::bind(&AutoPoseService::handle_service, this, _1, _2))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In member function ‘[01m[Kvoid AutoPoseService::handle_service(...)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:32:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+   32 |     auto pose = [01;31m[Krequest[m[K->target_pose;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:42:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   42 |       [01;31m[Kresponse[m[K->success = false;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:54:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   54 |       [01;31m[Kresponse[m[K->success = true;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:57:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   57 |       [01;31m[Kresponse[m[K->success = false;
+      |       [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/auto_pose_goal.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

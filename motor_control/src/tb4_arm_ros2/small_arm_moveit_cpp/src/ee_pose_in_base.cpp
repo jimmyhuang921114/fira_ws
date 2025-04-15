@@ -8,7 +8,6 @@
 #include <tf2/LinearMath/Transform.h>
 #include <tf2/LinearMath/Quaternion.h>
 
-
 class CameraToBasePrinter : public rclcpp::Node {
 public:
   CameraToBasePrinter()
@@ -30,8 +29,11 @@ public:
 private:
   void callback(const geometry_msgs::msg::Pose::SharedPtr msg)
   {
+    // 讀入輸入位置與方向（在 camera_link）
     tf2::Vector3 point_in_camera(msg->position.x, msg->position.y, msg->position.z);
+    tf2::Quaternion rotation_in_camera(msg->orientation.x, msg->orientation.y, msg->orientation.z, msg->orientation.w);
 
+    // 取得參數
     auto cam_to_ee_t = this->get_parameter("camera_to_ee_translate").as_double_array();
     auto cam_to_ee_q = this->get_parameter("camera_to_ee_quaternion").as_double_array();
 
@@ -40,31 +42,46 @@ private:
       return;
     }
 
+    // 建立 camera → ee 轉換矩陣
     tf2::Vector3 translation_cam_to_ee(cam_to_ee_t[0], cam_to_ee_t[1], cam_to_ee_t[2]);
     tf2::Quaternion rotation_cam_to_ee(cam_to_ee_q[0], cam_to_ee_q[1], cam_to_ee_q[2], cam_to_ee_q[3]);
     tf2::Transform T_cam_to_ee(rotation_cam_to_ee, translation_cam_to_ee);
 
     try {
+      // 取得 ee → base 的 TF
       geometry_msgs::msg::TransformStamped ee_to_base_tf =
         tf_buffer_.lookupTransform("base_link", "link6", tf2::TimePointZero);
 
       tf2::Transform T_ee_to_base;
       tf2::fromMsg(ee_to_base_tf.transform, T_ee_to_base);
 
+      // 🔁 位置轉換：camera → ee → base
       tf2::Vector3 point_in_ee = T_cam_to_ee * point_in_camera;
       tf2::Vector3 point_in_base = T_ee_to_base * point_in_ee;
 
+      // 🔁 方向轉換：camera → ee → base
+      tf2::Quaternion rotation_in_ee = rotation_cam_to_ee * rotation_in_camera;
+      tf2::Quaternion rotation_in_base = T_ee_to_base.getRotation() * rotation_in_ee;
+
+      // 包裝轉換後的 Pose
       geometry_msgs::msg::Pose target_pose;
       target_pose.position.x = point_in_base.x();
       target_pose.position.y = point_in_base.y();
       target_pose.position.z = point_in_base.z();
-      target_pose.orientation.w = 1.0;  // 單位四元數，其餘為 0
+      target_pose.orientation = tf2::toMsg(rotation_in_base);
 
       publisher_->publish(target_pose);
 
       RCLCPP_INFO(this->get_logger(),
-        "Publish base_link coordinate: x=%.3f y=%.3f z=%.3f",
-        point_in_base.x(), point_in_base.y(), point_in_base.z());
+        "📌 base_link Pose:\n  Position: x=%.3f y=%.3f z=%.3f\n  Orientation (quat): x=%.3f y=%.3f z=%.3f w=%.3f",
+        target_pose.position.x,
+        target_pose.position.y,
+        target_pose.position.z,
+        target_pose.orientation.x,
+        target_pose.orientation.y,
+        target_pose.orientation.z,
+        target_pose.orientation.w
+      );
 
     } catch (const tf2::TransformException & ex) {
       RCLCPP_WARN(this->get_logger(), "TF translate fail: %s", ex.what());
@@ -73,7 +90,6 @@ private:
 
   tf2_ros::Buffer tf_buffer_;
   tf2_ros::TransformListener tf_listener_;
-
   rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr subscription_;
   rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr publisher_;
 };

@@ -1,0 +1,102 @@
+##three kind of mode (grab control , detect pose control , name pose control)
+
+initial_pose:
+ - name_pose: home
+ - gripper: close
+
+detect_pose:
+ - name_pose: detect_pose
+ 
+gripper_test:
+ - gripper: open
+ - gripper: close
+ - gripper: open
+ - gripper: close
+
+grab_detect_pose_left_up:
+ - name_pose: detect_pose
+ - gripper : open
+ - detect_pose : 
+ - gripper : close
+ - name_pose: detect_pose
+ - name_pose: left_up_putting
+ - gripper: open
+ - name_pose: right_up
+ - name_pose: detect_pose
+
+grab_detect_pose_left_down:
+ - name_pose: detect_pose
+ - gripper : open
+ - detect_pose : 
+ - gripper : close
+ - name_pose: detect_pose
+ - name_pose: left_down_putting
+ - gripper: open
+ - name_pose: right_up
+ - name_pose: detect_pose
+ 
+grab_detect_pose_right_up:
+ - name_pose: detect_pose
+ - gripper : open
+ - detect_pose : 
+ - gripper : close
+ - name_pose: detect_pose
+ - name_pose: right_up_putting
+ - gripper: open
+ - name_pose: right_up
+ - name_pose: detect_pose
+ 
+grab_detect_pose_left_up:
+ - name_pose: detect_pose
+ - gripper : open
+ - detect_pose : 
+ - gripper : close
+ - name_pose: detect_pose
+ - name_pose: right_down_putting
+ - gripper: open
+ - name_pose: right_up
+ - name_pose: detect_pose
+ 
+put_left_up_block:
+ - gripper: open
+ - name_pose: left_up
+ - name_pose: left_up_putting
+ - gripper: close
+ - name_pose: left_up
+ - name_pose: detect_pose
+ - detect_pose: 
+ - gripper: open 
+ - name_pose: detect_pose
+
+put_left_down_block:
+ - gripper: open
+ - name_pose: left_down
+ - name_pose: left_down_putting
+ - gripper: close
+ - name_pose: left_down
+ - name_pose: detect_pose
+ - detect_pose: 
+ - gripper: open 
+ - name_pose: detect_pose
+ 
+put_right_up_block:
+ - gripper: open
+ - name_pose: right_up
+ - name_pose: right_up_putting
+ - gripper: close
+ - name_pose: right_up
+ - name_pose: detect_pose
+ - detect_pose: 
+ - gripper: open 
+ - name_pose: detect_pose
+ 
+put_right_down_block:
+ - gripper: open
+ - name_pose: right_down
+ - name_pose: right_down_putting
+ - gripper: close
+ - name_pose: right_down
+ - name_pose: detect_pose
+ - detect_pose: 
+ - gripper: open 
+ - name_pose: detect_pose

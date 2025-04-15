@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-536a200b0a131d04bcb5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "python_moveit_interface__py",
+					"jsonFile" : "directory-python_moveit_interface__py-af37fabe39472146d0bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/darkdemon/work/motor_control/build/python_moveit_interface/python_moveit_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "python_moveit_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_python_moveit_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_python_moveit_interface_egg-9ee2ddabd8b60df32741.json",
+					"name" : "ament_cmake_python_build_python_moveit_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_python_moveit_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_python_moveit_interface-52edec1587dcd94476d5.json",
+					"name" : "ament_cmake_python_copy_python_moveit_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface-2eab74094ed53127ed8f.json",
+					"name" : "python_moveit_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__cpp-eb965835be3a3a184876.json",
+					"name" : "python_moveit_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "python_moveit_interface__py::@5560c1f247f440d3b38b",
+					"jsonFile" : "target-python_moveit_interface__py-9a7f47ed7dc3b4b7d75e.json",
+					"name" : "python_moveit_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_generator_c-2a790183c6f0493a93ec.json",
+					"name" : "python_moveit_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_generator_py-9baca5cd10d123e731f6.json",
+					"name" : "python_moveit_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_c-3e69237c29c287c9b05e.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_c__pyext-95c5b64817f4fccfabf0.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_cpp-eb85d978648e1db6640c.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_fastrtps_c-b3fd9119c6bc5c7b5e50.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext-9552295fb22cf9ee2587.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_fastrtps_cpp-b0b94cd4dcc19e160cad.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_introspection_c-006f4e38e8a13d4b9ac1.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_introspection_c__pyext-432c0a418a7f42bcec1e.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface__rosidl_typesupport_introspection_cpp-0cde104f2df5a5f6f0b1.json",
+					"name" : "python_moveit_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "python_moveit_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-python_moveit_interface_uninstall-ef8a970a52b1c7c6dce4.json",
+					"name" : "python_moveit_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-39594b2bc60f77a98c27.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/darkdemon/work/motor_control/build/python_moveit_interface",
+		"source" : "/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

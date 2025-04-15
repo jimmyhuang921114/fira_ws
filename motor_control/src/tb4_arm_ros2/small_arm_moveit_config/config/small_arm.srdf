@@ -33,12 +33,28 @@
         <joint name="joint6" value="-0.0873"/>
     </group_state>
     <group_state name="left_put_point" group="small_arm">
-        <joint name="joint1" value="2.2863"/>
-        <joint name="joint2" value="-0.12217"/>
-        <joint name="joint3" value="-0.38397"/>
-        <joint name="joint4" value="0"/>
-        <joint name="joint5" value="0.50615"/>
-        <joint name="joint6" value="0.03491"/>
+        <joint name="joint1" value="2.042"/>
+        <joint name="joint2" value="-0.07"/>
+        <joint name="joint3" value="-0.541"/>
+        <joint name="joint4" value="0.157"/>
+        <joint name="joint5" value="0.628"/>
+        <joint name="joint6" value="0.384"/>
+    </group_state>
+    <group_state name="back_put_point" group="small_arm">
+        <joint name="joint1" value="3.072"/>
+        <joint name="joint2" value="0.192"/>
+        <joint name="joint3" value="-0.209"/>
+        <joint name="joint4" value="0.122"/>
+        <joint name="joint5" value="0.035"/>
+        <joint name="joint6" value="-0.227"/>
+    </group_state>
+    <group_state name="right_put_point" group="small_arm">
+        <joint name="joint1" value="-1.728"/>
+        <joint name="joint2" value="-0.07"/>
+        <joint name="joint3" value="-0.244"/>
+        <joint name="joint4" value="-0.209"/>
+        <joint name="joint5" value="0.332"/>
+        <joint name="joint6" value="-0.122"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="link6" group="gripper"/>
