@@ -16,30 +16,6 @@
 
 
 // forward declaration of message dependencies and their conversion functions
-namespace geometry_msgs
-{
-namespace msg
-{
-namespace typesupport_fastrtps_cpp
-{
-bool cdr_serialize(
-  const geometry_msgs::msg::Pose &,
-  eprosima::fastcdr::Cdr &);
-bool cdr_deserialize(
-  eprosima::fastcdr::Cdr &,
-  geometry_msgs::msg::Pose &);
-size_t get_serialized_size(
-  const geometry_msgs::msg::Pose &,
-  size_t current_alignment);
-size_t
-max_serialized_size_Pose(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-}  // namespace typesupport_fastrtps_cpp
-}  // namespace msg
-}  // namespace geometry_msgs
-
 
 namespace python_moveit_interface
 {
@@ -58,20 +34,6 @@ cdr_serialize(
 {
   // Member: task_name
   cdr << ros_message.task_name;
-  // Member: trigger_grab_flow
-  cdr << (ros_message.trigger_grab_flow ? true : false);
-  // Member: trigger_place_flow
-  cdr << (ros_message.trigger_place_flow ? true : false);
-  // Member: target_zone
-  cdr << ros_message.target_zone;
-  // Member: target_pose
-  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.target_pose,
-    cdr);
-  // Member: named_pose
-  cdr << ros_message.named_pose;
-  // Member: gripper_close
-  cdr << (ros_message.gripper_close ? true : false);
   return true;
 }
 
@@ -83,37 +45,6 @@ cdr_deserialize(
 {
   // Member: task_name
   cdr >> ros_message.task_name;
-
-  // Member: trigger_grab_flow
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.trigger_grab_flow = tmp ? true : false;
-  }
-
-  // Member: trigger_place_flow
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.trigger_place_flow = tmp ? true : false;
-  }
-
-  // Member: target_zone
-  cdr >> ros_message.target_zone;
-
-  // Member: target_pose
-  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.target_pose);
-
-  // Member: named_pose
-  cdr >> ros_message.named_pose;
-
-  // Member: gripper_close
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.gripper_close = tmp ? true : false;
-  }
 
   return true;
 }
@@ -135,37 +66,6 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.task_name.size() + 1);
-  // Member: trigger_grab_flow
-  {
-    size_t item_size = sizeof(ros_message.trigger_grab_flow);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: trigger_place_flow
-  {
-    size_t item_size = sizeof(ros_message.trigger_place_flow);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: target_zone
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.target_zone.size() + 1);
-  // Member: target_pose
-
-  current_alignment +=
-    geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.target_pose, current_alignment);
-  // Member: named_pose
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.named_pose.size() + 1);
-  // Member: gripper_close
-  {
-    size_t item_size = sizeof(ros_message.gripper_close);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
 
   return current_alignment - initial_alignment;
 }
@@ -203,75 +103,6 @@ max_serialized_size_ArmControl_Request(
     }
   }
 
-  // Member: trigger_grab_flow
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: trigger_place_flow
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Member: target_zone
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: target_pose
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Pose(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
-  // Member: named_pose
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: gripper_close
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -280,7 +111,7 @@ max_serialized_size_ArmControl_Request(
     using DataType = python_moveit_interface::srv::ArmControl_Request;
     is_plain =
       (
-      offsetof(DataType, gripper_close) +
+      offsetof(DataType, task_name) +
       last_member_size
       ) == ret_val;
   }

@@ -103,6 +103,54 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp" TYPE EXECUTABLE FILES "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/ee_pose_in_base")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base"
+         OLD_RPATH "/opt/ros/humble/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/opt/ros/humble/lib/x86_64-linux-gnu:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/ee_pose_in_base")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp" TYPE EXECUTABLE FILES "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/manual_pose_topic")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic"
+         OLD_RPATH "/opt/ros/humble/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/opt/ros/humble/lib/x86_64-linux-gnu:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/manual_pose_topic")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/small_arm_moveit_cpp/launch" TYPE DIRECTORY FILES "/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/launch/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/small_arm_moveit_cpp/config" TYPE DIRECTORY FILES "/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/config/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/small_arm_moveit_cpp")
 endif()
 

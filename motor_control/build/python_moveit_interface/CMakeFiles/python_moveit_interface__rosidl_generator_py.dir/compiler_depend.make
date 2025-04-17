@@ -251,9 +251,6 @@ CMakeFiles/python_moveit_interface__rosidl_generator_py.dir/rosidl_generator_py/
   rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
   rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__functions.h \
   rosidl_generator_c/python_moveit_interface/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
@@ -1035,6 +1032,8 @@ rosidl_generator_c/python_moveit_interface/srv/detail/gripper_control__struct.h:
 
 rosidl_generator_c/python_moveit_interface/srv/detail/detect_pose__functions.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
+
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/linux/stddef.h:
@@ -1130,8 +1129,6 @@ rosidl_generator_c/python_moveit_interface/srv/detail/detect_pose__functions.h:
 /usr/include/python3.10/cpython/objimpl.h:
 
 /usr/include/python3.10/cpython/pythonrun.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -1539,10 +1536,6 @@ rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__functions.h:
@@ -1556,3 +1549,7 @@ rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__functions.h:
 /usr/include/python3.10/ceval.h:
 
 rosidl_generator_py/python_moveit_interface/srv/_detect_pose_s.c:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:

@@ -21,112 +21,16 @@ namespace srv
 namespace builder
 {
 
-class Init_ArmControl_Request_gripper_close
-{
-public:
-  explicit Init_ArmControl_Request_gripper_close(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  ::python_moveit_interface::srv::ArmControl_Request gripper_close(::python_moveit_interface::srv::ArmControl_Request::_gripper_close_type arg)
-  {
-    msg_.gripper_close = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
-class Init_ArmControl_Request_named_pose
-{
-public:
-  explicit Init_ArmControl_Request_named_pose(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  Init_ArmControl_Request_gripper_close named_pose(::python_moveit_interface::srv::ArmControl_Request::_named_pose_type arg)
-  {
-    msg_.named_pose = std::move(arg);
-    return Init_ArmControl_Request_gripper_close(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
-class Init_ArmControl_Request_target_pose
-{
-public:
-  explicit Init_ArmControl_Request_target_pose(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  Init_ArmControl_Request_named_pose target_pose(::python_moveit_interface::srv::ArmControl_Request::_target_pose_type arg)
-  {
-    msg_.target_pose = std::move(arg);
-    return Init_ArmControl_Request_named_pose(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
-class Init_ArmControl_Request_target_zone
-{
-public:
-  explicit Init_ArmControl_Request_target_zone(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  Init_ArmControl_Request_target_pose target_zone(::python_moveit_interface::srv::ArmControl_Request::_target_zone_type arg)
-  {
-    msg_.target_zone = std::move(arg);
-    return Init_ArmControl_Request_target_pose(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
-class Init_ArmControl_Request_trigger_place_flow
-{
-public:
-  explicit Init_ArmControl_Request_trigger_place_flow(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  Init_ArmControl_Request_target_zone trigger_place_flow(::python_moveit_interface::srv::ArmControl_Request::_trigger_place_flow_type arg)
-  {
-    msg_.trigger_place_flow = std::move(arg);
-    return Init_ArmControl_Request_target_zone(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
-class Init_ArmControl_Request_trigger_grab_flow
-{
-public:
-  explicit Init_ArmControl_Request_trigger_grab_flow(::python_moveit_interface::srv::ArmControl_Request & msg)
-  : msg_(msg)
-  {}
-  Init_ArmControl_Request_trigger_place_flow trigger_grab_flow(::python_moveit_interface::srv::ArmControl_Request::_trigger_grab_flow_type arg)
-  {
-    msg_.trigger_grab_flow = std::move(arg);
-    return Init_ArmControl_Request_trigger_place_flow(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::ArmControl_Request msg_;
-};
-
 class Init_ArmControl_Request_task_name
 {
 public:
   Init_ArmControl_Request_task_name()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_ArmControl_Request_trigger_grab_flow task_name(::python_moveit_interface::srv::ArmControl_Request::_task_name_type arg)
+  ::python_moveit_interface::srv::ArmControl_Request task_name(::python_moveit_interface::srv::ArmControl_Request::_task_name_type arg)
   {
     msg_.task_name = std::move(arg);
-    return Init_ArmControl_Request_trigger_grab_flow(msg_);
+    return std::move(msg_);
   }
 
 private:

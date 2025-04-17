@@ -8,6 +8,7 @@ setup.py
 ../../../build/python_moveit2/python_moveit2.egg-info/requires.txt
 ../../../build/python_moveit2/python_moveit2.egg-info/top_level.txt
 ../../../build/python_moveit2/python_moveit2.egg-info/zip-safe
+config/task_config.yaml
 python_moveit2/__init__.py
 python_moveit2/arm_test.py
 python_moveit2/main_control.py

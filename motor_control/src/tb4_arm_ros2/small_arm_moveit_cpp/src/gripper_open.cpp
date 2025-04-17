@@ -10,13 +10,18 @@ class GripperControlService : public rclcpp::Node
 {
 public:
   GripperControlService()
-  : Node("gripper_control_service"),
-    move_group_interface_(std::make_shared<moveit::planning_interface::MoveGroup  Interface>(shared_from_this(), "gripper"))
+  : Node("gripper_control_service")
   {
     gripper_service_ = this->create_service<python_moveit_interface::srv::GripperControl>(
       "gripper_control_service", std::bind(&GripperControlService::handle_service, this, _1, _2));
+    
+    RCLCPP_INFO(this->get_logger(), "🛠️ Node initialized, waiting for MoveGroupInterface...");
+  }
 
-    RCLCPP_INFO(this->get_logger(), "✅ GripperControlService is ready.");
+  void initialize()
+  {
+    move_group_interface_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(shared_from_this(), "gripper");
+    RCLCPP_INFO(this->get_logger(), "✅ MoveGroupInterface initialized.");
   }
 
 private:
@@ -25,13 +30,13 @@ private:
     std::shared_ptr<python_moveit_interface::srv::GripperControl::Response> response)
   {
     if (!move_group_interface_) {
-      RCLCPP_ERROR(this->get_logger(), "MoveGroupInterface not initialized yet!");
+      RCLCPP_ERROR(this->get_logger(), "MoveGroupInterface not initialized!");
       response->success = false;
       response->message = "MoveGroupInterface not initialized.";
       return;
     }
 
-    double target_value = request->close ? 0.0 : 3.0;
+    double target_value = request->close ? 0.0873 : -0.5236;
     std::string action = request->close ? "close" : "open";
 
     RCLCPP_INFO(this->get_logger(), "Received gripper command: %s (target=%.2f)", action.c_str(), target_value);
@@ -61,6 +66,7 @@ int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<GripperControlService>();
+  node->initialize();  // ✅ 這裡才安全地使用 shared_from_this()
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;

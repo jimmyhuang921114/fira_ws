@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+from std_msgs.msg import String
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
@@ -26,7 +27,7 @@ class ColorDetect(Node):
         # 訂閱彩色影像
         self.create_subscription(Image, COLOR_IMAGE, self.color_callback, 10)
         self.color_image = None
-
+        self.color_sort=self.create_publisher(String,'color_sort',10)
         # 遮罩顯示模式 (0: 單獨窗口, 1: 合併顯示, 2: 疊加顯示)
         self.mask_mode = 2  
         self.init_windows()

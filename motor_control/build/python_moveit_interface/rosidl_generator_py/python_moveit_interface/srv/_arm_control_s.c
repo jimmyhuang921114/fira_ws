@@ -19,10 +19,6 @@
 #include "rosidl_runtime_c/string.h"
 #include "rosidl_runtime_c/string_functions.h"
 
-ROSIDL_GENERATOR_C_IMPORT
-bool geometry_msgs__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * geometry_msgs__msg__pose__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool python_moveit_interface__srv__arm_control__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -72,74 +68,6 @@ bool python_moveit_interface__srv__arm_control__request__convert_from_py(PyObjec
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // trigger_grab_flow
-    PyObject * field = PyObject_GetAttrString(_pymsg, "trigger_grab_flow");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->trigger_grab_flow = (Py_True == field);
-    Py_DECREF(field);
-  }
-  {  // trigger_place_flow
-    PyObject * field = PyObject_GetAttrString(_pymsg, "trigger_place_flow");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->trigger_place_flow = (Py_True == field);
-    Py_DECREF(field);
-  }
-  {  // target_zone
-    PyObject * field = PyObject_GetAttrString(_pymsg, "target_zone");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->target_zone, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
-  {  // target_pose
-    PyObject * field = PyObject_GetAttrString(_pymsg, "target_pose");
-    if (!field) {
-      return false;
-    }
-    if (!geometry_msgs__msg__pose__convert_from_py(field, &ros_message->target_pose)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
-  {  // named_pose
-    PyObject * field = PyObject_GetAttrString(_pymsg, "named_pose");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->named_pose, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
-  {  // gripper_close
-    PyObject * field = PyObject_GetAttrString(_pymsg, "gripper_close");
-    if (!field) {
-      return false;
-    }
-    assert(PyBool_Check(field));
-    ros_message->gripper_close = (Py_True == field);
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -173,87 +101,6 @@ PyObject * python_moveit_interface__srv__arm_control__request__convert_to_py(voi
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "task_name", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // trigger_grab_flow
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->trigger_grab_flow ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "trigger_grab_flow", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // trigger_place_flow
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->trigger_place_flow ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "trigger_place_flow", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // target_zone
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->target_zone.data,
-      strlen(ros_message->target_zone.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "target_zone", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // target_pose
-    PyObject * field = NULL;
-    field = geometry_msgs__msg__pose__convert_to_py(&ros_message->target_pose);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "target_pose", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // named_pose
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->named_pose.data,
-      strlen(ros_message->named_pose.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "named_pose", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // gripper_close
-    PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->gripper_close ? 1 : 0);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "gripper_close", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

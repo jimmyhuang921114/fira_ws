@@ -1311,7 +1311,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/small_arm_moveit_cpp_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/ee_pose_in_base.dir/DependInfo.cmake"
   "CMakeFiles/auto_pose_goal.dir/DependInfo.cmake"
   "CMakeFiles/named_goal.dir/DependInfo.cmake"
   "CMakeFiles/gripper_open.dir/DependInfo.cmake"
+  "CMakeFiles/manual_pose_topic.dir/DependInfo.cmake"
   )

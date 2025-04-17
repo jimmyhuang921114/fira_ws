@@ -14,10 +14,6 @@
 #include "python_moveit_interface/srv/detail/arm_control__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
-// Include directives for member types
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__traits.hpp"
-
 namespace python_moveit_interface
 {
 
@@ -33,48 +29,6 @@ inline void to_flow_style_yaml(
   {
     out << "task_name: ";
     rosidl_generator_traits::value_to_yaml(msg.task_name, out);
-    out << ", ";
-  }
-
-  // member: trigger_grab_flow
-  {
-    out << "trigger_grab_flow: ";
-    rosidl_generator_traits::value_to_yaml(msg.trigger_grab_flow, out);
-    out << ", ";
-  }
-
-  // member: trigger_place_flow
-  {
-    out << "trigger_place_flow: ";
-    rosidl_generator_traits::value_to_yaml(msg.trigger_place_flow, out);
-    out << ", ";
-  }
-
-  // member: target_zone
-  {
-    out << "target_zone: ";
-    rosidl_generator_traits::value_to_yaml(msg.target_zone, out);
-    out << ", ";
-  }
-
-  // member: target_pose
-  {
-    out << "target_pose: ";
-    to_flow_style_yaml(msg.target_pose, out);
-    out << ", ";
-  }
-
-  // member: named_pose
-  {
-    out << "named_pose: ";
-    rosidl_generator_traits::value_to_yaml(msg.named_pose, out);
-    out << ", ";
-  }
-
-  // member: gripper_close
-  {
-    out << "gripper_close: ";
-    rosidl_generator_traits::value_to_yaml(msg.gripper_close, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -90,65 +44,6 @@ inline void to_block_style_yaml(
     }
     out << "task_name: ";
     rosidl_generator_traits::value_to_yaml(msg.task_name, out);
-    out << "\n";
-  }
-
-  // member: trigger_grab_flow
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "trigger_grab_flow: ";
-    rosidl_generator_traits::value_to_yaml(msg.trigger_grab_flow, out);
-    out << "\n";
-  }
-
-  // member: trigger_place_flow
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "trigger_place_flow: ";
-    rosidl_generator_traits::value_to_yaml(msg.trigger_place_flow, out);
-    out << "\n";
-  }
-
-  // member: target_zone
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "target_zone: ";
-    rosidl_generator_traits::value_to_yaml(msg.target_zone, out);
-    out << "\n";
-  }
-
-  // member: target_pose
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "target_pose:\n";
-    to_block_style_yaml(msg.target_pose, out, indentation + 2);
-  }
-
-  // member: named_pose
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "named_pose: ";
-    rosidl_generator_traits::value_to_yaml(msg.named_pose, out);
-    out << "\n";
-  }
-
-  // member: gripper_close
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "gripper_close: ";
-    rosidl_generator_traits::value_to_yaml(msg.gripper_close, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

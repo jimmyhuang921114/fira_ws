@@ -1,52 +1,77 @@
-from geometry_msgs.msg import Pose
-from std.msgs.msg import String
-from rclpy.node import Node
-from python_moveit_interface.srv import ArmControl
 import rclpy
-import time
+from rclpy.node import Node
+from std_msgs.msg import String
+from geometry_msgs.msg import Pose
+from python_moveit_interface.srv import ArmControl
+# from map_if.srv import Command
+import yaml
 import os
-import sys
+import time
 
-
-class  MainControl(Node):
+class MainControl(Node):
     def __init__(self):
-        super().__init__("fira_main_contorl")
-        
-        #-----visiual node-----
-        #color_detect_mode
-        self.create_subscription(Pose,"/realsense/color_range",self.color_callback,10)
-        #word_detect_mode
-        self.create_subscription(list,"/realsense/depth_calculate",self.text_callback,10)
-        
-        #-----arm_control node-----
-        self.arm_state_control=self.create_client(String,"/realsense/paddleorc",self.paddle_callback,10)
-        
-        #-----car_control node-----
-        # self.car_state_client = self.create_client(PoseRequest, 'pose_goal_service')
-    
+        super().__init__('fira_main_control')
 
-    def color_callback(self,msg):
-        self.get_logger().info("color_callback")
-        self.color_sort = msg.color_sort
+        self.create_subscription(String, "/color/sort", self.color_callback, 10)
+        self.create_subscription(Pose, "/text_coordinate", self.text_callback, 10)
 
-    def text_callback(self,msg):
-        self.get_logger().info("text_callback")
-        self.text_sort = msg.text_sort
-        self.box_count = msg.box_count
-        self.box_name = msg.box_name
-        self.color = msg.color
-        self.get_logger().info(f"box_count: {self.box_count}")
-        self.get_logger().info(f"box_name: {self.box_name}")
+        self.arm_state_control = self.create_client(ArmControl, '/arm_statue_service')
+        while not self.arm_state_control.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Waiting for ArmControl service...')
 
-    
+        self.arm_task_sequence = [
+            "initial_pose",
+            "detect_pose",
+            "grab_detect_pose_left_up",
+            "put_left_up_block"
+        ]
+
+        self.car_task_sequence = [
+            # e.g. ['home', 'left'], ['left', 'top'], ... 可擴充
+        ]
+
+        self.execute_task_sequence()
+
+    def execute_task_sequence(self):
+        self.get_logger().info("[START] Executing full arm task sequence")
+        for task_name in self.arm_task_sequence:
+            self.get_logger().info(f"[TASK] Sending arm command: {task_name}")
+            success = self.send_arm_state(task_name)
+            if not success:
+                self.get_logger().error(f"[ABORT] Task failed: {task_name}")
+                break
+            time.sleep(1.0)  # 可調整等待時間
+        self.get_logger().info("[DONE] Arm task sequence completed")
+
+    def send_arm_state(self, command):
+        req = ArmControl.Request()
+        req.message = command
+        future = self.arm_state_control.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+        if future.result() is not None:
+            self.get_logger().info(f"[SUCCESS] Arm state sent: {command}")
+            return True
+        else:
+            self.get_logger().error(f"[FAIL] Failed to send arm state: {command}")
+            return False
+
+    def color_callback(self, msg):
+        self.get_logger().info(f"[COLOR] Detected: {msg.data}")
+
+    def text_callback(self, msg):
+        self.get_logger().info(f"[TEXT] Pose received: x={msg.position.x:.2f}, y={msg.position.y:.2f}, z={msg.position.z:.2f}")
 
 
 def main(args=None):
     rclpy.init(args=args)
-    main_control = MainControl()
-    rclpy.spin(main_control)
-    main_control.destroy_node()
-    rclpy.shutdown()
+    node = MainControl()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -34,25 +34,10 @@ extern "C"
 {
 #endif
 
-#include "geometry_msgs/msg/detail/pose__functions.h"  // target_pose
-#include "rosidl_runtime_c/string.h"  // named_pose, target_zone, task_name
-#include "rosidl_runtime_c/string_functions.h"  // named_pose, target_zone, task_name
+#include "rosidl_runtime_c/string.h"  // task_name
+#include "rosidl_runtime_c/string_functions.h"  // task_name
 
 // forward declare type support functions
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_python_moveit_interface
-size_t get_serialized_size_geometry_msgs__msg__Pose(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_python_moveit_interface
-size_t max_serialized_size_geometry_msgs__msg__Pose(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_python_moveit_interface
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose)();
 
 
 using _ArmControl_Request__ros_msg_type = python_moveit_interface__srv__ArmControl_Request;
@@ -78,63 +63,6 @@ static bool _ArmControl_Request__cdr_serialize(
       return false;
     }
     cdr << str->data;
-  }
-
-  // Field name: trigger_grab_flow
-  {
-    cdr << (ros_message->trigger_grab_flow ? true : false);
-  }
-
-  // Field name: trigger_place_flow
-  {
-    cdr << (ros_message->trigger_place_flow ? true : false);
-  }
-
-  // Field name: target_zone
-  {
-    const rosidl_runtime_c__String * str = &ros_message->target_zone;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
-  // Field name: target_pose
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->target_pose, cdr))
-    {
-      return false;
-    }
-  }
-
-  // Field name: named_pose
-  {
-    const rosidl_runtime_c__String * str = &ros_message->named_pose;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
-  // Field name: gripper_close
-  {
-    cdr << (ros_message->gripper_close ? true : false);
   }
 
   return true;
@@ -165,73 +93,6 @@ static bool _ArmControl_Request__cdr_deserialize(
     }
   }
 
-  // Field name: trigger_grab_flow
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->trigger_grab_flow = tmp ? true : false;
-  }
-
-  // Field name: trigger_place_flow
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->trigger_place_flow = tmp ? true : false;
-  }
-
-  // Field name: target_zone
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->target_zone.data) {
-      rosidl_runtime_c__String__init(&ros_message->target_zone);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->target_zone,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'target_zone'\n");
-      return false;
-    }
-  }
-
-  // Field name: target_pose
-  {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Pose
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->target_pose))
-    {
-      return false;
-    }
-  }
-
-  // Field name: named_pose
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->named_pose.data) {
-      rosidl_runtime_c__String__init(&ros_message->named_pose);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->named_pose,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'named_pose'\n");
-      return false;
-    }
-  }
-
-  // Field name: gripper_close
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->gripper_close = tmp ? true : false;
-  }
-
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -253,36 +114,6 @@ size_t get_serialized_size_python_moveit_interface__srv__ArmControl_Request(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->task_name.size + 1);
-  // field.name trigger_grab_flow
-  {
-    size_t item_size = sizeof(ros_message->trigger_grab_flow);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name trigger_place_flow
-  {
-    size_t item_size = sizeof(ros_message->trigger_place_flow);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name target_zone
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->target_zone.size + 1);
-  // field.name target_pose
-
-  current_alignment += get_serialized_size_geometry_msgs__msg__Pose(
-    &(ros_message->target_pose), current_alignment);
-  // field.name named_pose
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->named_pose.size + 1);
-  // field.name gripper_close
-  {
-    size_t item_size = sizeof(ros_message->gripper_close);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
 
   return current_alignment - initial_alignment;
 }
@@ -324,70 +155,6 @@ size_t max_serialized_size_python_moveit_interface__srv__ArmControl_Request(
         1;
     }
   }
-  // member: trigger_grab_flow
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-  // member: trigger_place_flow
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-  // member: target_zone
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-  // member: target_pose
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_geometry_msgs__msg__Pose(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-  // member: named_pose
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-  // member: gripper_close
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -397,7 +164,7 @@ size_t max_serialized_size_python_moveit_interface__srv__ArmControl_Request(
     using DataType = python_moveit_interface__srv__ArmControl_Request;
     is_plain =
       (
-      offsetof(DataType, gripper_close) +
+      offsetof(DataType, task_name) +
       last_member_size
       ) == ret_val;
   }

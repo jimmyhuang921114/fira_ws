@@ -12,11 +12,7 @@
 
 // Include directives for member types
 // Member `task_name`
-// Member `target_zone`
-// Member `named_pose`
 #include "rosidl_runtime_c/string_functions.h"
-// Member `target_pose`
-#include "geometry_msgs/msg/detail/pose__functions.h"
 
 bool
 python_moveit_interface__srv__ArmControl_Request__init(python_moveit_interface__srv__ArmControl_Request * msg)
@@ -29,24 +25,6 @@ python_moveit_interface__srv__ArmControl_Request__init(python_moveit_interface__
     python_moveit_interface__srv__ArmControl_Request__fini(msg);
     return false;
   }
-  // trigger_grab_flow
-  // trigger_place_flow
-  // target_zone
-  if (!rosidl_runtime_c__String__init(&msg->target_zone)) {
-    python_moveit_interface__srv__ArmControl_Request__fini(msg);
-    return false;
-  }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__init(&msg->target_pose)) {
-    python_moveit_interface__srv__ArmControl_Request__fini(msg);
-    return false;
-  }
-  // named_pose
-  if (!rosidl_runtime_c__String__init(&msg->named_pose)) {
-    python_moveit_interface__srv__ArmControl_Request__fini(msg);
-    return false;
-  }
-  // gripper_close
   return true;
 }
 
@@ -58,15 +36,6 @@ python_moveit_interface__srv__ArmControl_Request__fini(python_moveit_interface__
   }
   // task_name
   rosidl_runtime_c__String__fini(&msg->task_name);
-  // trigger_grab_flow
-  // trigger_place_flow
-  // target_zone
-  rosidl_runtime_c__String__fini(&msg->target_zone);
-  // target_pose
-  geometry_msgs__msg__Pose__fini(&msg->target_pose);
-  // named_pose
-  rosidl_runtime_c__String__fini(&msg->named_pose);
-  // gripper_close
 }
 
 bool
@@ -79,36 +48,6 @@ python_moveit_interface__srv__ArmControl_Request__are_equal(const python_moveit_
   if (!rosidl_runtime_c__String__are_equal(
       &(lhs->task_name), &(rhs->task_name)))
   {
-    return false;
-  }
-  // trigger_grab_flow
-  if (lhs->trigger_grab_flow != rhs->trigger_grab_flow) {
-    return false;
-  }
-  // trigger_place_flow
-  if (lhs->trigger_place_flow != rhs->trigger_place_flow) {
-    return false;
-  }
-  // target_zone
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->target_zone), &(rhs->target_zone)))
-  {
-    return false;
-  }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__are_equal(
-      &(lhs->target_pose), &(rhs->target_pose)))
-  {
-    return false;
-  }
-  // named_pose
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->named_pose), &(rhs->named_pose)))
-  {
-    return false;
-  }
-  // gripper_close
-  if (lhs->gripper_close != rhs->gripper_close) {
     return false;
   }
   return true;
@@ -128,30 +67,6 @@ python_moveit_interface__srv__ArmControl_Request__copy(
   {
     return false;
   }
-  // trigger_grab_flow
-  output->trigger_grab_flow = input->trigger_grab_flow;
-  // trigger_place_flow
-  output->trigger_place_flow = input->trigger_place_flow;
-  // target_zone
-  if (!rosidl_runtime_c__String__copy(
-      &(input->target_zone), &(output->target_zone)))
-  {
-    return false;
-  }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__copy(
-      &(input->target_pose), &(output->target_pose)))
-  {
-    return false;
-  }
-  // named_pose
-  if (!rosidl_runtime_c__String__copy(
-      &(input->named_pose), &(output->named_pose)))
-  {
-    return false;
-  }
-  // gripper_close
-  output->gripper_close = input->gripper_close;
   return true;
 }
 

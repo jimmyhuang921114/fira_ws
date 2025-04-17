@@ -15,10 +15,6 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
-// Include directives for member types
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__struct.hpp"
-
 #ifndef _WIN32
 # define DEPRECATED__python_moveit_interface__srv__ArmControl_Request __attribute__((deprecated))
 #else
@@ -38,35 +34,21 @@ struct ArmControl_Request_
   using Type = ArmControl_Request_<ContainerAllocator>;
 
   explicit ArmControl_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : target_pose(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->task_name = "";
-      this->trigger_grab_flow = false;
-      this->trigger_place_flow = false;
-      this->target_zone = "";
-      this->named_pose = "";
-      this->gripper_close = false;
     }
   }
 
   explicit ArmControl_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : task_name(_alloc),
-    target_zone(_alloc),
-    target_pose(_alloc, _init),
-    named_pose(_alloc)
+  : task_name(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->task_name = "";
-      this->trigger_grab_flow = false;
-      this->trigger_place_flow = false;
-      this->target_zone = "";
-      this->named_pose = "";
-      this->gripper_close = false;
     }
   }
 
@@ -74,66 +56,12 @@ struct ArmControl_Request_
   using _task_name_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _task_name_type task_name;
-  using _trigger_grab_flow_type =
-    bool;
-  _trigger_grab_flow_type trigger_grab_flow;
-  using _trigger_place_flow_type =
-    bool;
-  _trigger_place_flow_type trigger_place_flow;
-  using _target_zone_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _target_zone_type target_zone;
-  using _target_pose_type =
-    geometry_msgs::msg::Pose_<ContainerAllocator>;
-  _target_pose_type target_pose;
-  using _named_pose_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _named_pose_type named_pose;
-  using _gripper_close_type =
-    bool;
-  _gripper_close_type gripper_close;
 
   // setters for named parameter idiom
   Type & set__task_name(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->task_name = _arg;
-    return *this;
-  }
-  Type & set__trigger_grab_flow(
-    const bool & _arg)
-  {
-    this->trigger_grab_flow = _arg;
-    return *this;
-  }
-  Type & set__trigger_place_flow(
-    const bool & _arg)
-  {
-    this->trigger_place_flow = _arg;
-    return *this;
-  }
-  Type & set__target_zone(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->target_zone = _arg;
-    return *this;
-  }
-  Type & set__target_pose(
-    const geometry_msgs::msg::Pose_<ContainerAllocator> & _arg)
-  {
-    this->target_pose = _arg;
-    return *this;
-  }
-  Type & set__named_pose(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->named_pose = _arg;
-    return *this;
-  }
-  Type & set__gripper_close(
-    const bool & _arg)
-  {
-    this->gripper_close = _arg;
     return *this;
   }
 
@@ -180,24 +108,6 @@ struct ArmControl_Request_
   bool operator==(const ArmControl_Request_ & other) const
   {
     if (this->task_name != other.task_name) {
-      return false;
-    }
-    if (this->trigger_grab_flow != other.trigger_grab_flow) {
-      return false;
-    }
-    if (this->trigger_place_flow != other.trigger_place_flow) {
-      return false;
-    }
-    if (this->target_zone != other.target_zone) {
-      return false;
-    }
-    if (this->target_pose != other.target_pose) {
-      return false;
-    }
-    if (this->named_pose != other.named_pose) {
-      return false;
-    }
-    if (this->gripper_close != other.gripper_close) {
       return false;
     }
     return true;

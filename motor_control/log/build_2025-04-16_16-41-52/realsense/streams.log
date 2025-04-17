@@ -1,0 +1,66 @@
+[0.569s] Invoking command in '/home/darkdemon/work/motor_control/src/realsense': PYTHONPATH=/home/darkdemon/work/motor_control/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense build --build-base /home/darkdemon/work/motor_control/build/realsense/build install --record /home/darkdemon/work/motor_control/build/realsense/install.log --single-version-externally-managed install_data
+[0.704s] running egg_info
+[0.704s] creating ../../build/realsense/realsense.egg-info
+[0.704s] writing ../../build/realsense/realsense.egg-info/PKG-INFO
+[0.705s] writing dependency_links to ../../build/realsense/realsense.egg-info/dependency_links.txt
+[0.705s] writing entry points to ../../build/realsense/realsense.egg-info/entry_points.txt
+[0.705s] writing requirements to ../../build/realsense/realsense.egg-info/requires.txt
+[0.705s] writing top-level names to ../../build/realsense/realsense.egg-info/top_level.txt
+[0.705s] writing manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'
+[0.706s] reading manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'
+[0.706s] writing manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'
+[0.706s] running build
+[0.706s] running build_py
+[0.706s] creating /home/darkdemon/work/motor_control/build/realsense/build
+[0.706s] creating /home/darkdemon/work/motor_control/build/realsense/build/lib
+[0.706s] creating /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/box_edge_detect.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/depth_calculate.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/color_detect.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/__init__.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/realsense_read.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/paddleorc.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/visiual.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/color_range.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.707s] copying realsense/interface_robot.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[0.708s] running install
+[0.708s] running install_lib
+[0.708s] creating /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/box_edge_detect.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/depth_calculate.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/color_detect.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/__init__.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/realsense_read.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/paddleorc.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/visiual.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.708s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/color_range.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.709s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/interface_robot.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[0.709s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/box_edge_detect.py to box_edge_detect.cpython-310.pyc
+[0.709s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/depth_calculate.py to depth_calculate.cpython-310.pyc
+[0.709s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/color_detect.py to color_detect.cpython-310.pyc
+[0.710s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__init__.py to __init__.cpython-310.pyc
+[0.710s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/realsense_read.py to realsense_read.cpython-310.pyc
+[0.710s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/paddleorc.py to paddleorc.cpython-310.pyc
+[0.711s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/visiual.py to visiual.cpython-310.pyc
+[0.712s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/color_range.py to color_range.cpython-310.pyc
+[0.712s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/interface_robot.py to interface_robot.cpython-310.pyc
+[0.713s] running install_data
+[0.713s] creating /home/darkdemon/work/motor_control/install/realsense/share/ament_index
+[0.713s] creating /home/darkdemon/work/motor_control/install/realsense/share/ament_index/resource_index
+[0.713s] creating /home/darkdemon/work/motor_control/install/realsense/share/ament_index/resource_index/packages
+[0.713s] copying resource/realsense -> /home/darkdemon/work/motor_control/install/realsense/share/ament_index/resource_index/packages
+[0.714s] copying package.xml -> /home/darkdemon/work/motor_control/install/realsense/share/realsense
+[0.714s] creating /home/darkdemon/work/motor_control/install/realsense/share/realsense/launch
+[0.714s] copying launch/visual_launch.py -> /home/darkdemon/work/motor_control/install/realsense/share/realsense/launch
+[0.714s] running install_egg_info
+[0.715s] Copying ../../build/realsense/realsense.egg-info to /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info
+[0.715s] running install_scripts
+[0.729s] Installing box_edge_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing color_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing color_range script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing depth_calculate script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing paddleorc script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing realsense_read script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing visiual script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] Installing yolo_number_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[0.730s] writing list of installed files to '/home/darkdemon/work/motor_control/build/realsense/install.log'

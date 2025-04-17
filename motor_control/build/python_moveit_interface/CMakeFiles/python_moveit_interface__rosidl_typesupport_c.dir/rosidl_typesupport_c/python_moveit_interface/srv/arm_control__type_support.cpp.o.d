@@ -27,9 +27,6 @@ CMakeFiles/python_moveit_interface__rosidl_typesupport_c.dir/rosidl_typesupport_
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
  /home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__type_support.h \
  /home/darkdemon/work/motor_control/build/python_moveit_interface/rosidl_generator_c/python_moveit_interface/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \

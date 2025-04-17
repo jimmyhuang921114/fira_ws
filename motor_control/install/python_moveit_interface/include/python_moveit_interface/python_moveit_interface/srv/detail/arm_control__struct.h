@@ -20,29 +20,13 @@ extern "C"
 
 // Include directives for member types
 // Member 'task_name'
-// Member 'target_zone'
-// Member 'named_pose'
 #include "rosidl_runtime_c/string.h"
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__struct.h"
 
 /// Struct defined in srv/ArmControl in the package python_moveit_interface.
 typedef struct python_moveit_interface__srv__ArmControl_Request
 {
   /// 指定命名姿態，例如 put_1、home 等
   rosidl_runtime_c__String task_name;
-  /// 執行抓取流程
-  bool trigger_grab_flow;
-  /// 執行放置流程
-  bool trigger_place_flow;
-  /// 指定抓取或放置的區域（例如 grab_a、put_left）
-  rosidl_runtime_c__String target_zone;
-  /// 可選：給定實際三維目標位置
-  geometry_msgs__msg__Pose target_pose;
-  /// 可選：移動至指定 named pose
-  rosidl_runtime_c__String named_pose;
-  /// 控制夾爪關閉/開啟
-  bool gripper_close;
 } python_moveit_interface__srv__ArmControl_Request;
 
 // Struct for a sequence of python_moveit_interface__srv__ArmControl_Request.

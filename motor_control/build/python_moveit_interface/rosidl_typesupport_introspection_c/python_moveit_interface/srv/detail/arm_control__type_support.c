@@ -14,13 +14,7 @@
 
 // Include directives for member types
 // Member `task_name`
-// Member `target_zone`
-// Member `named_pose`
 #include "rosidl_runtime_c/string_functions.h"
-// Member `target_pose`
-#include "geometry_msgs/msg/pose.h"
-// Member `target_pose`
-#include "geometry_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -41,7 +35,7 @@ void python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_intros
   python_moveit_interface__srv__ArmControl_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_member_array[7] = {
+static rosidl_typesupport_introspection_c__MessageMember python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_member_array[1] = {
   {
     "task_name",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -58,115 +52,13 @@ static rosidl_typesupport_introspection_c__MessageMember python_moveit_interface
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "trigger_grab_flow",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, trigger_grab_flow),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "trigger_place_flow",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, trigger_place_flow),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "target_zone",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, target_zone),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "target_pose",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, target_pose),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "named_pose",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, named_pose),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "gripper_close",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(python_moveit_interface__srv__ArmControl_Request, gripper_close),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_members = {
   "python_moveit_interface__srv",  // message namespace
   "ArmControl_Request",  // message name
-  7,  // number of fields
+  1,  // number of fields
   sizeof(python_moveit_interface__srv__ArmControl_Request),
   python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_member_array,  // message members
   python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -184,8 +76,6 @@ static rosidl_message_type_support_t python_moveit_interface__srv__ArmControl_Re
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_python_moveit_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, python_moveit_interface, srv, ArmControl_Request)() {
-  python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_member_array[4].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Pose)();
   if (!python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_type_support_handle.typesupport_identifier) {
     python_moveit_interface__srv__ArmControl_Request__rosidl_typesupport_introspection_c__ArmControl_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

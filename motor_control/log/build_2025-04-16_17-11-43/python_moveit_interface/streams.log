@@ -1,0 +1,80 @@
+[0.168s] Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
+[0.329s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.329s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.329s] [  3%] Built target ament_cmake_python_copy_python_moveit_interface
+[0.395s] running egg_info
+[0.395s] creating python_moveit_interface.egg-info
+[0.395s] writing python_moveit_interface.egg-info/PKG-INFO
+[0.397s] writing dependency_links to python_moveit_interface.egg-info/dependency_links.txt
+[0.397s] writing top-level names to python_moveit_interface.egg-info/top_level.txt
+[0.397s] writing manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+[0.398s] reading manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+[0.398s] writing manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+[0.419s] [  3%] Built target ament_cmake_python_build_python_moveit_interface_egg
+[0.540s] [  5%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_c.dir/rosidl_generator_c/python_moveit_interface/srv/detail/pose_request__functions.c.o[0m
+[0.540s] [  7%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_c.dir/rosidl_generator_c/python_moveit_interface/srv/detail/arm_control__functions.c.o[0m
+[0.540s] [  9%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_c.dir/rosidl_generator_c/python_moveit_interface/srv/detail/detect_pose__functions.c.o[0m
+[0.547s] [ 10%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_c.dir/rosidl_generator_c/python_moveit_interface/srv/detail/gripper_control__functions.c.o[0m
+[0.562s] [ 10%] Built target python_moveit_interface__cpp
+[0.569s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.570s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.570s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.594s] [ 18%] [32m[1mLinking C shared library libpython_moveit_interface__rosidl_generator_c.so[0m
+[0.630s] [ 18%] Built target python_moveit_interface__rosidl_generator_c
+[0.636s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.638s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.640s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.821s] [ 25%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/python_moveit_interface/srv/pose_request__type_support.cpp.o[0m
+[0.823s] [ 27%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/python_moveit_interface/srv/arm_control__type_support.cpp.o[0m
+[0.823s] [ 29%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/python_moveit_interface/srv/detect_pose__type_support.cpp.o[0m
+[0.824s] [ 30%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/python_moveit_interface/srv/gripper_control__type_support.cpp.o[0m
+[0.869s] [ 34%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/python_moveit_interface/srv/detail/pose_request__type_support.cpp.o[0m
+[0.870s] [ 34%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/python_moveit_interface/srv/detail/gripper_control__type_support.cpp.o[0m
+[0.870s] [ 38%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/python_moveit_interface/srv/detail/detect_pose__type_support.cpp.o[0m
+[0.870s] [ 38%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/python_moveit_interface/srv/detail/arm_control__type_support.cpp.o[0m
+[0.919s] [ 40%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/python_moveit_interface/srv/detail/dds_fastrtps/detect_pose__type_support.cpp.o[0m
+[0.920s] [ 43%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/python_moveit_interface/srv/detail/dds_fastrtps/arm_control__type_support.cpp.o[0m
+[0.920s] [ 43%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/python_moveit_interface/srv/detect_pose__type_support.cpp.o[0m
+[0.922s] [ 45%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/python_moveit_interface/srv/detail/dds_fastrtps/pose_request__type_support.cpp.o[0m
+[0.922s] [ 47%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/python_moveit_interface/srv/detail/dds_fastrtps/gripper_control__type_support.cpp.o[0m
+[0.923s] [ 49%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/python_moveit_interface/srv/gripper_control__type_support.cpp.o[0m
+[0.927s] [ 52%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/python_moveit_interface/srv/arm_control__type_support.cpp.o[0m
+[0.927s] [ 52%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/python_moveit_interface/srv/pose_request__type_support.cpp.o[0m
+[0.996s] [ 54%] [32m[1mLinking CXX shared library libpython_moveit_interface__rosidl_typesupport_c.so[0m
+[1.045s] [ 54%] Built target python_moveit_interface__rosidl_typesupport_c
+[1.080s] [ 56%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/gripper_control__type_support_c.cpp.o[0m
+[1.080s] [ 58%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/detect_pose__type_support_c.cpp.o[0m
+[1.083s] [ 60%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/pose_request__type_support_c.cpp.o[0m
+[1.088s] [ 61%] [32mBuilding CXX object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/python_moveit_interface/srv/detail/arm_control__type_support_c.cpp.o[0m
+[1.148s] [ 63%] [32m[1mLinking CXX shared library libpython_moveit_interface__rosidl_typesupport_cpp.so[0m
+[1.167s] [ 67%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/python_moveit_interface/srv/detail/gripper_control__type_support.c.o[0m
+[1.167s] [ 69%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/python_moveit_interface/srv/detail/pose_request__type_support.c.o[0m
+[1.167s] [ 67%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/python_moveit_interface/srv/detail/detect_pose__type_support.c.o[0m
+[1.179s] [ 70%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/python_moveit_interface/srv/detail/arm_control__type_support.c.o[0m
+[1.204s] [ 70%] Built target python_moveit_interface__rosidl_typesupport_cpp
+[1.241s] [ 72%] [32m[1mLinking C shared library libpython_moveit_interface__rosidl_typesupport_introspection_c.so[0m
+[1.276s] [ 72%] Built target python_moveit_interface__rosidl_typesupport_introspection_c
+[1.384s] [ 74%] [32m[1mLinking CXX shared library libpython_moveit_interface__rosidl_typesupport_introspection_cpp.so[0m
+[1.405s] [ 76%] [32m[1mLinking CXX shared library libpython_moveit_interface__rosidl_typesupport_fastrtps_c.so[0m
+[1.405s] [ 78%] [32m[1mLinking CXX shared library libpython_moveit_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.432s] [ 78%] Built target python_moveit_interface__rosidl_typesupport_introspection_cpp
+[1.459s] [ 78%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c
+[1.466s] [ 78%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_cpp
+[1.484s] [ 78%] Built target python_moveit_interface
+[1.504s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.104s] [ 80%] Built target python_moveit_interface__py
+[2.122s] [ 85%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_py.dir/rosidl_generator_py/python_moveit_interface/srv/_detect_pose_s.c.o[0m
+[2.123s] [ 85%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_py.dir/rosidl_generator_py/python_moveit_interface/srv/_gripper_control_s.c.o[0m
+[2.123s] [ 85%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_py.dir/rosidl_generator_py/python_moveit_interface/srv/_pose_request_s.c.o[0m
+[2.123s] [ 87%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_generator_py.dir/rosidl_generator_py/python_moveit_interface/srv/_arm_control_s.c.o[0m
+[2.228s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/python_moveit_interface/libpython_moveit_interface__rosidl_generator_py.so[0m
+[2.267s] [ 89%] Built target python_moveit_interface__rosidl_generator_py
+[2.287s] [ 94%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[2.287s] [ 94%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.287s] [ 94%] [32mBuilding C object CMakeFiles/python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.388s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.399s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.402s] [100%] [32m[1mLinking C shared library rosidl_generator_py/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.430s] [100%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext
+[2.436s] [100%] Built target python_moveit_interface__rosidl_typesupport_introspection_c__pyext
+[2.436s] [100%] Built target python_moveit_interface__rosidl_typesupport_c__pyext

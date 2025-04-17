@@ -198,6 +198,19 @@ small_arm_moveit_cpp_uninstall/fast:
 .PHONY : small_arm_moveit_cpp_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named ee_pose_in_base
+
+# Build rule for target.
+ee_pose_in_base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ee_pose_in_base
+.PHONY : ee_pose_in_base
+
+# fast build rule for target.
+ee_pose_in_base/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/build
+.PHONY : ee_pose_in_base/fast
+
+#=============================================================================
 # Target rules for targets named auto_pose_goal
 
 # Build rule for target.
@@ -236,6 +249,19 @@ gripper_open/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/build
 .PHONY : gripper_open/fast
 
+#=============================================================================
+# Target rules for targets named manual_pose_topic
+
+# Build rule for target.
+manual_pose_topic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manual_pose_topic
+.PHONY : manual_pose_topic
+
+# fast build rule for target.
+manual_pose_topic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_pose_topic.dir/build.make CMakeFiles/manual_pose_topic.dir/build
+.PHONY : manual_pose_topic/fast
+
 src/auto_pose_goal.o: src/auto_pose_goal.cpp.o
 .PHONY : src/auto_pose_goal.o
 
@@ -260,6 +286,30 @@ src/auto_pose_goal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_pose_goal.dir/build.make CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
 .PHONY : src/auto_pose_goal.cpp.s
 
+src/ee_pose_in_base.o: src/ee_pose_in_base.cpp.o
+.PHONY : src/ee_pose_in_base.o
+
+# target to build an object file
+src/ee_pose_in_base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o
+.PHONY : src/ee_pose_in_base.cpp.o
+
+src/ee_pose_in_base.i: src/ee_pose_in_base.cpp.i
+.PHONY : src/ee_pose_in_base.i
+
+# target to preprocess a source file
+src/ee_pose_in_base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.i
+.PHONY : src/ee_pose_in_base.cpp.i
+
+src/ee_pose_in_base.s: src/ee_pose_in_base.cpp.s
+.PHONY : src/ee_pose_in_base.s
+
+# target to generate assembly for a file
+src/ee_pose_in_base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ee_pose_in_base.dir/build.make CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.s
+.PHONY : src/ee_pose_in_base.cpp.s
+
 src/gripper_open.o: src/gripper_open.cpp.o
 .PHONY : src/gripper_open.o
 
@@ -283,6 +333,30 @@ src/gripper_open.s: src/gripper_open.cpp.s
 src/gripper_open.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_open.dir/build.make CMakeFiles/gripper_open.dir/src/gripper_open.cpp.s
 .PHONY : src/gripper_open.cpp.s
+
+src/manual_pose_topic.o: src/manual_pose_topic.cpp.o
+.PHONY : src/manual_pose_topic.o
+
+# target to build an object file
+src/manual_pose_topic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_pose_topic.dir/build.make CMakeFiles/manual_pose_topic.dir/src/manual_pose_topic.cpp.o
+.PHONY : src/manual_pose_topic.cpp.o
+
+src/manual_pose_topic.i: src/manual_pose_topic.cpp.i
+.PHONY : src/manual_pose_topic.i
+
+# target to preprocess a source file
+src/manual_pose_topic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_pose_topic.dir/build.make CMakeFiles/manual_pose_topic.dir/src/manual_pose_topic.cpp.i
+.PHONY : src/manual_pose_topic.cpp.i
+
+src/manual_pose_topic.s: src/manual_pose_topic.cpp.s
+.PHONY : src/manual_pose_topic.s
+
+# target to generate assembly for a file
+src/manual_pose_topic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_pose_topic.dir/build.make CMakeFiles/manual_pose_topic.dir/src/manual_pose_topic.cpp.s
+.PHONY : src/manual_pose_topic.cpp.s
 
 src/named_goal.o: src/named_goal.cpp.o
 .PHONY : src/named_goal.o
@@ -324,14 +398,22 @@ help:
 	@echo "... small_arm_moveit_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... auto_pose_goal"
+	@echo "... ee_pose_in_base"
 	@echo "... gripper_open"
+	@echo "... manual_pose_topic"
 	@echo "... named_goal"
 	@echo "... src/auto_pose_goal.o"
 	@echo "... src/auto_pose_goal.i"
 	@echo "... src/auto_pose_goal.s"
+	@echo "... src/ee_pose_in_base.o"
+	@echo "... src/ee_pose_in_base.i"
+	@echo "... src/ee_pose_in_base.s"
 	@echo "... src/gripper_open.o"
 	@echo "... src/gripper_open.i"
 	@echo "... src/gripper_open.s"
+	@echo "... src/manual_pose_topic.o"
+	@echo "... src/manual_pose_topic.i"
+	@echo "... src/manual_pose_topic.s"
 	@echo "... src/named_goal.o"
 	@echo "... src/named_goal.i"
 	@echo "... src/named_goal.s"
