@@ -5,8 +5,6 @@
 
 # Import statements for member types
 
-import builtins  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -42,10 +40,6 @@ class Metaclass_DetectPose_Request(type):
             cls._TYPE_SUPPORT = module.type_support_msg__srv__detect_pose__request
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__detect_pose__request
 
-            from geometry_msgs.msg import Pose
-            if Pose.__class__._TYPE_SUPPORT is None:
-                Pose.__class__.__import_type_support__()
-
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -59,23 +53,18 @@ class DetectPose_Request(metaclass=Metaclass_DetectPose_Request):
     """Message class 'DetectPose_Request'."""
 
     __slots__ = [
-        '_target_pose',
     ]
 
     _fields_and_field_types = {
-        'target_pose': 'geometry_msgs/Pose',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Pose'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        from geometry_msgs.msg import Pose
-        self.target_pose = kwargs.get('target_pose', Pose())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -106,8 +95,6 @@ class DetectPose_Request(metaclass=Metaclass_DetectPose_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.target_pose != other.target_pose:
-            return False
         return True
 
     @classmethod
@@ -115,25 +102,10 @@ class DetectPose_Request(metaclass=Metaclass_DetectPose_Request):
         from copy import copy
         return copy(cls._fields_and_field_types)
 
-    @builtins.property
-    def target_pose(self):
-        """Message field 'target_pose'."""
-        return self._target_pose
-
-    @target_pose.setter
-    def target_pose(self, value):
-        if __debug__:
-            from geometry_msgs.msg import Pose
-            assert \
-                isinstance(value, Pose), \
-                "The 'target_pose' field must be a sub message of type 'Pose'"
-        self._target_pose = value
-
 
 # Import statements for member types
 
-# already imported above
-# import builtins
+import builtins  # noqa: E402, I100
 
 # already imported above
 # import rosidl_parser.definition

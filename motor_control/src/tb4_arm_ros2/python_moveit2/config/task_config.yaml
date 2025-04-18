@@ -1,112 +1,201 @@
-##three kind of mode (grab control , detect pose control , name pose control)
-
 initial_pose:
  - name_pose: home
+ - wait: 0.5
  - log: finish
  - gripper: close
- - log:finish
+ - wait: 0.5
+ - log: finish
 
 detect_pose:
  - name_pose: detect
+ - wait: 0.5
  - log: finish
 
 gripper_open:
  - gripper: open
+ - wait: 0.5
 
 gripper_close:
- - gripper: close
- 
- 	
-gripper_test:
+ - gripper: close 
+ - wait: 0.5
+
+grap_up:
+ - name_pose: detect
+ - wait: 0.5
+ - gripper : open
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
+ - gripper : close
+ - wait: 0.5
+ - name_pose: detect
+ - wait: 0.5
+
+put_down:
+ - detect_pose: true
+ - wait: 0.5
+ - gripper: open 
+ - wait: 0.5
+ - name_pose: detect_pose
+
+gripper_test: 
  - gripper: open
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
  - gripper: open
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
 
 grab_detect_pose_left_up:
- - name_pose: detect_pose
+ - name_pose: detect
+ - wait: 0.5
  - gripper : open
- - detect_pose : 
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
  - gripper : close
- - name_pose: detect_pose
+ - wait: 0.5
+ - name_pose: detect
+ - wait: 0.5
  - name_pose: left_up_putting
+ - wait: 0.5
  - gripper: open
+ - wait: 0.5
  - name_pose: right_up
- - name_pose: detect_pose
+ - wait: 0.5
+ - name_pose: detect
 
 grab_detect_pose_left_down:
  - name_pose: detect_pose
+ - wait: 0.5
  - gripper : open
- - detect_pose : 
+ - wait: 0.5
+ - detect_pose : true
+ - wait: 0.5
  - gripper : close
+ - wait: 0.5
  - name_pose: detect_pose
+ - wait: 0.5
  - name_pose: left_down_putting
+ - wait: 0.5
  - gripper: open
+ - wait: 0.5
  - name_pose: right_up
+ - wait: 0.5
  - name_pose: detect_pose
- 
+
 grab_detect_pose_right_up:
  - name_pose: detect_pose
+ - wait: 0.5
  - gripper : open
- - detect_pose : 
+ - wait: 0.5
+ - detect_pose : true
+ - wait: 0.5
  - gripper : close
+ - wait: 0.5
  - name_pose: detect_pose
+ - wait: 0.5
  - name_pose: right_up_putting
+ - wait: 0.5
  - gripper: open
+ - wait: 0.5
  - name_pose: right_up
+ - wait: 0.5
  - name_pose: detect_pose
- 
-grab_detect_pose_left_up:
+
+grab_detect_pose_right_down:
  - name_pose: detect_pose
+ - wait: 0.5
  - gripper : open
- - detect_pose : 
+ - wait: 0.5
+ - detect_pose : true
+ - wait: 0.5
  - gripper : close
+ - wait: 0.5
  - name_pose: detect_pose
+ - wait: 0.5
  - name_pose: right_down_putting
+ - wait: 0.5
  - gripper: open
+ - wait: 0.5
  - name_pose: right_up
+ - wait: 0.5
  - name_pose: detect_pose
- 
+
 put_left_up_block:
  - gripper: open
+ - wait: 0.5
  - name_pose: left_up
+ - wait: 0.5
  - name_pose: left_up_putting
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
  - name_pose: left_up
+ - wait: 0.5
  - name_pose: detect_pose
- - detect_pose: 
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
  - gripper: open 
+ - wait: 0.5
  - name_pose: detect_pose
 
 put_left_down_block:
  - gripper: open
+ - wait: 0.5
  - name_pose: left_down
+ - wait: 0.5
  - name_pose: left_down_putting
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
  - name_pose: left_down
+ - wait: 0.5
  - name_pose: detect_pose
- - detect_pose: 
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
  - gripper: open 
+ - wait: 0.5
  - name_pose: detect_pose
- 
+
 put_right_up_block:
  - gripper: open
+ - wait: 0.5
  - name_pose: right_up
+ - wait: 0.5
  - name_pose: right_up_putting
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
  - name_pose: right_up
+ - wait: 0.5
  - name_pose: detect_pose
- - detect_pose: 
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
  - gripper: open 
+ - wait: 0.5
  - name_pose: detect_pose
- 
+
 put_right_down_block:
  - gripper: open
+ - wait: 0.5
  - name_pose: right_down
+ - wait: 0.5
  - name_pose: right_down_putting
+ - wait: 0.5
  - gripper: close
+ - wait: 0.5
  - name_pose: right_down
+ - wait: 0.5
  - name_pose: detect_pose
- - detect_pose: 
+ - wait: 0.5
+ - detect_pose: true
+ - wait: 0.5
  - gripper: open 
+ - wait: 0.5
  - name_pose: detect_pose

@@ -17,6 +17,7 @@ public:
   {
     this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.04, 0.04, -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
+    this->declare_parameter<bool>("enable_z_scale_div10", true);
 
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(
       "/text_coordinate", 10,
@@ -29,41 +30,49 @@ public:
 private:
   void callback(const geometry_msgs::msg::Pose::SharedPtr msg)
   {
-    // 讀入輸入位置與方向（在 camera_link）
-    tf2::Vector3 point_in_camera(msg->position.x, msg->position.y, msg->position.z);
-    tf2::Quaternion rotation_in_camera(msg->orientation.x, msg->orientation.y, msg->orientation.z, msg->orientation.w);
+    geometry_msgs::msg::Pose input_pose = *msg;
+    RCLCPP_INFO(this->get_logger(), "text_callback");
 
-    // 取得參數
+    
+    bool enable_div10 = this->get_parameter("enable_z_scale_div10").as_bool();
+    if (enable_div10) {
+      double original_z = input_pose.position.z;
+      input_pose.position.z /= 10.0;
+      RCLCPP_INFO(this->get_logger(), "🔢 Z-scaling enabled: original Z=%.4f → scaled Z=%.4f", original_z, input_pose.position.z);
+    }
+
+    tf2::Vector3 point_in_camera(input_pose.position.x, input_pose.position.y, input_pose.position.z);
+    tf2::Quaternion rotation_in_camera(
+      input_pose.orientation.x,
+      input_pose.orientation.y,
+      input_pose.orientation.z,
+      input_pose.orientation.w
+    );
+
     auto cam_to_ee_t = this->get_parameter("camera_to_ee_translate").as_double_array();
     auto cam_to_ee_q = this->get_parameter("camera_to_ee_quaternion").as_double_array();
 
     if (cam_to_ee_t.size() != 3 || cam_to_ee_q.size() != 4) {
-      RCLCPP_WARN(this->get_logger(), "camera_to_ee parameter wrong");
+      RCLCPP_WARN(this->get_logger(), "❌ Parameter format incorrect: camera_to_ee");
       return;
     }
 
-    // 建立 camera → ee 轉換矩陣
     tf2::Vector3 translation_cam_to_ee(cam_to_ee_t[0], cam_to_ee_t[1], cam_to_ee_t[2]);
     tf2::Quaternion rotation_cam_to_ee(cam_to_ee_q[0], cam_to_ee_q[1], cam_to_ee_q[2], cam_to_ee_q[3]);
     tf2::Transform T_cam_to_ee(rotation_cam_to_ee, translation_cam_to_ee);
 
     try {
-      // 取得 ee → base 的 TF
       geometry_msgs::msg::TransformStamped ee_to_base_tf =
         tf_buffer_.lookupTransform("base_link", "link6", tf2::TimePointZero);
-
       tf2::Transform T_ee_to_base;
       tf2::fromMsg(ee_to_base_tf.transform, T_ee_to_base);
 
-      // 🔁 位置轉換：camera → ee → base
       tf2::Vector3 point_in_ee = T_cam_to_ee * point_in_camera;
       tf2::Vector3 point_in_base = T_ee_to_base * point_in_ee;
 
-      // 🔁 方向轉換：camera → ee → base
       tf2::Quaternion rotation_in_ee = rotation_cam_to_ee * rotation_in_camera;
       tf2::Quaternion rotation_in_base = T_ee_to_base.getRotation() * rotation_in_ee;
 
-      // 包裝轉換後的 Pose
       geometry_msgs::msg::Pose target_pose;
       target_pose.position.x = point_in_base.x();
       target_pose.position.y = point_in_base.y();
@@ -73,7 +82,7 @@ private:
       publisher_->publish(target_pose);
 
       RCLCPP_INFO(this->get_logger(),
-        "📌 base_link Pose:\n  Position: x=%.3f y=%.3f z=%.3f\n  Orientation (quat): x=%.3f y=%.3f z=%.3f w=%.3f",
+        "📌 Transformed Pose in base_link:\n  Position: x=%.3f y=%.3f z=%.3f\n  Orientation: x=%.3f y=%.3f z=%.3f w=%.3f",
         target_pose.position.x,
         target_pose.position.y,
         target_pose.position.z,
@@ -84,7 +93,7 @@ private:
       );
 
     } catch (const tf2::TransformException & ex) {
-      RCLCPP_WARN(this->get_logger(), "TF translate fail: %s", ex.what());
+      RCLCPP_WARN(this->get_logger(), "⚠️ TF lookup failed: %s", ex.what());
     }
   }
 

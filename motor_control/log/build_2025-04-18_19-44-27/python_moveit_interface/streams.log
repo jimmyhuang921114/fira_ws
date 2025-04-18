@@ -1,0 +1,38 @@
+[0.587s] Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
+[0.674s] Fatal Python error: init_import_site: Failed to import the site module
+[0.674s] Python runtime state: initialized
+[0.674s] Traceback (most recent call last):
+[0.674s]   File "/usr/lib/python3.10/site.py", line 636, in <module>
+[0.674s]     main()
+[0.675s]   File "/usr/lib/python3.10/site.py", line 623, in main
+[0.675s]     known_paths = addsitepackages(known_paths)
+[0.675s]   File "/usr/lib/python3.10/site.py", line 406, in addsitepackages
+[0.675s]     addsitedir(sitedir, known_paths)
+[0.675s]   File "/usr/lib/python3.10/site.py", line 232, in addsitedir
+[0.675s]     addpackage(sitedir, name, known_paths)
+[0.675s]   File "/usr/lib/python3.10/site.py", line 192, in addpackage
+[0.675s]     exec(line)
+[0.675s]   File "<string>", line 1, in <module>
+[0.675s] gmake[2]: *** [CMakeFiles/python_moveit_interface.dir/build.make:155: CMakeFiles/python_moveit_interface.dir/depend] Interrupt
+[0.675s]   File "/usr/lib/python3.10/importlib/util.py", line 14, in <module>
+[0.675s] gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/python_moveit_interface.dir/all] Interrupt
+[0.675s]     from contextlib import contextmanager
+[0.675s]   File "/usr/lib/python3.10/contextlib.py", line 5, in <module>
+[0.675s]     from collections import deque
+[0.675s]   File "/usr/lib/python3.10/collections/__init__.py", line 1088, in <module>
+[0.675s]     class UserDict(_collections_abc.MutableMapping):
+[0.675s]   File "/usr/lib/python3.10/abc.py", line 106, in __new__
+[0.675s]     cls = super().__new__(mcls, name, bases, namespace, **kwargs)
+[0.675s] KeyboardInterrupt
+[0.675s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_python_moveit_interface_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_python_moveit_interface_egg] Interrupt
+[0.675s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_python_moveit_interface_egg.dir/all] Interrupt
+[0.675s] gmake: *** [Makefile:146: all] Interrupt
+[0.676s] [  1%] Built target python_moveit_interface__cpp
+[0.676s] [ 12%] Built target python_moveit_interface__rosidl_generator_c
+[0.676s] [ 12%] Built target ament_cmake_python_copy_python_moveit_interface
+[0.676s] [ 23%] Built target python_moveit_interface__rosidl_typesupport_c
+[0.676s] [ 34%] Built target python_moveit_interface__rosidl_typesupport_introspection_cpp
+[0.676s] [ 45%] Built target python_moveit_interface__rosidl_typesupport_cpp
+[0.677s] [ 56%] Built target python_moveit_interface__rosidl_typesupport_introspection_c
+[0.677s] [ 67%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_cpp
+[0.677s] [ 78%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c

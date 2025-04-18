@@ -1,4 +1,0 @@
-  File "/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/paddleorc.py", line 69
-    def text_sort(self):
-SyntaxError: expected 'except' or 'finally' block
-

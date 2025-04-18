@@ -17,14 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__struct.h"
-
 /// Struct defined in srv/DetectPose in the package python_moveit_interface.
 typedef struct python_moveit_interface__srv__DetectPose_Request
 {
-  geometry_msgs__msg__Pose target_pose;
+  uint8_t structure_needs_at_least_one_member;
 } python_moveit_interface__srv__DetectPose_Request;
 
 // Struct for a sequence of python_moveit_interface__srv__DetectPose_Request.

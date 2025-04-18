@@ -136,6 +136,13 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
  /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/vector
+ /usr/include/c++/11/bits/stl_vector.h
+ /usr/include/c++/11/bits/stl_bvector.h
+ /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/numeric
+ /usr/include/c++/11/bits/stl_numeric.h
+ /usr/include/c++/11/pstl/glue_numeric_defs.h
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
@@ -255,10 +262,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /usr/include/c++/11/bits/uniform_int_dist.h
  /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/functional
- /usr/include/c++/11/vector
- /usr/include/c++/11/bits/stl_vector.h
- /usr/include/c++/11/bits/stl_bvector.h
- /usr/include/c++/11/bits/vector.tcc
  /usr/include/c++/11/cassert
  /usr/include/assert.h
  /usr/include/c++/11/iostream
@@ -546,9 +549,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp
- /usr/include/c++/11/numeric
- /usr/include/c++/11/bits/stl_numeric.h
- /usr/include/c++/11/pstl/glue_numeric_defs.h
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp
  /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -685,6 +685,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp
@@ -1139,7 +1145,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp
@@ -1363,65 +1368,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/moveit_move_group_interface_export.h
- /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/pose_request.hpp
- /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__struct.hpp
- /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__builder.hpp
- /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__traits.hpp
- /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.hpp
+ /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detect_pose.hpp
+ /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__struct.hpp
+ /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__builder.hpp
+ /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__traits.hpp
+ /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.hpp
  /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp
- /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp
- /usr/include/kdl/frames.hpp
- /usr/include/kdl/utilities/kdl-config.h
- /usr/include/kdl/utilities/utility.h
- /usr/include/kdl/utilities/kdl-config.h
- /usr/include/kdl/frames.inl
- /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp
 

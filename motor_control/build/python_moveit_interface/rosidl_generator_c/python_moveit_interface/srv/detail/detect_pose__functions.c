@@ -10,21 +10,13 @@
 
 #include "rcutils/allocator.h"
 
-// Include directives for member types
-// Member `target_pose`
-#include "geometry_msgs/msg/detail/pose__functions.h"
-
 bool
 python_moveit_interface__srv__DetectPose_Request__init(python_moveit_interface__srv__DetectPose_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__init(&msg->target_pose)) {
-    python_moveit_interface__srv__DetectPose_Request__fini(msg);
-    return false;
-  }
+  // structure_needs_at_least_one_member
   return true;
 }
 
@@ -34,8 +26,7 @@ python_moveit_interface__srv__DetectPose_Request__fini(python_moveit_interface__
   if (!msg) {
     return;
   }
-  // target_pose
-  geometry_msgs__msg__Pose__fini(&msg->target_pose);
+  // structure_needs_at_least_one_member
 }
 
 bool
@@ -44,10 +35,8 @@ python_moveit_interface__srv__DetectPose_Request__are_equal(const python_moveit_
   if (!lhs || !rhs) {
     return false;
   }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__are_equal(
-      &(lhs->target_pose), &(rhs->target_pose)))
-  {
+  // structure_needs_at_least_one_member
+  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
     return false;
   }
   return true;
@@ -61,12 +50,8 @@ python_moveit_interface__srv__DetectPose_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // target_pose
-  if (!geometry_msgs__msg__Pose__copy(
-      &(input->target_pose), &(output->target_pose)))
-  {
-    return false;
-  }
+  // structure_needs_at_least_one_member
+  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
   return true;
 }
 

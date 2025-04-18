@@ -12,12 +12,6 @@
 #include "python_moveit_interface/srv/detail/detect_pose__struct.h"
 
 
-// Include directives for member types
-// Member `target_pose`
-#include "geometry_msgs/msg/pose.h"
-// Member `target_pose`
-#include "geometry_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -39,14 +33,14 @@ void python_moveit_interface__srv__DetectPose_Request__rosidl_typesupport_intros
 
 static rosidl_typesupport_introspection_c__MessageMember python_moveit_interface__srv__DetectPose_Request__rosidl_typesupport_introspection_c__DetectPose_Request_message_member_array[1] = {
   {
-    "target_pose",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    "structure_needs_at_least_one_member",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
+    NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(python_moveit_interface__srv__DetectPose_Request, target_pose),  // bytes offset in struct
+    offsetof(python_moveit_interface__srv__DetectPose_Request, structure_needs_at_least_one_member),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -78,8 +72,6 @@ static rosidl_message_type_support_t python_moveit_interface__srv__DetectPose_Re
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_python_moveit_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, python_moveit_interface, srv, DetectPose_Request)() {
-  python_moveit_interface__srv__DetectPose_Request__rosidl_typesupport_introspection_c__DetectPose_Request_message_member_array[0].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Pose)();
   if (!python_moveit_interface__srv__DetectPose_Request__rosidl_typesupport_introspection_c__DetectPose_Request_message_type_support_handle.typesupport_identifier) {
     python_moveit_interface__srv__DetectPose_Request__rosidl_typesupport_introspection_c__DetectPose_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -15,10 +15,6 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
-// Include directives for member types
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__struct.hpp"
-
 #ifndef _WIN32
 # define DEPRECATED__python_moveit_interface__srv__DetectPose_Request __attribute__((deprecated))
 #else
@@ -38,29 +34,29 @@ struct DetectPose_Request_
   using Type = DetectPose_Request_<ContainerAllocator>;
 
   explicit DetectPose_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : target_pose(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   explicit DetectPose_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : target_pose(_alloc, _init)
   {
-    (void)_init;
+    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   // field types and members
-  using _target_pose_type =
-    geometry_msgs::msg::Pose_<ContainerAllocator>;
-  _target_pose_type target_pose;
+  using _structure_needs_at_least_one_member_type =
+    uint8_t;
+  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
 
-  // setters for named parameter idiom
-  Type & set__target_pose(
-    const geometry_msgs::msg::Pose_<ContainerAllocator> & _arg)
-  {
-    this->target_pose = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -104,7 +100,7 @@ struct DetectPose_Request_
   // comparison operators
   bool operator==(const DetectPose_Request_ & other) const
   {
-    if (this->target_pose != other.target_pose) {
+    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
       return false;
     }
     return true;

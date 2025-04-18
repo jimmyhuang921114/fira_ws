@@ -1,7 +1,5 @@
 # Request：完整的目標末端位姿
-geometry_msgs/Pose target_pose
-
 ---
-# Response：是否執行成功 + 回報訊息
+# Response：是否執行成功 + 回報訊息 
 bool success
 string message

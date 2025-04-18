@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "map_if__py",
+		"source" : "/home/darkdemon/work/motor_control/build/map_if/map_if__py"
+	}
+}

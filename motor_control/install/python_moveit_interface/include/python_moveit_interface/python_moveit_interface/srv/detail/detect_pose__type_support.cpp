@@ -39,14 +39,14 @@ void DetectPose_Request_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember DetectPose_Request_message_member_array[1] = {
   {
-    "target_pose",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    "structure_needs_at_least_one_member",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Pose>(),  // members of sub message
+    nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(python_moveit_interface::srv::DetectPose_Request, target_pose),  // bytes offset in struct
+    offsetof(python_moveit_interface::srv::DetectPose_Request, structure_needs_at_least_one_member),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

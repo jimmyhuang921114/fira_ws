@@ -18,26 +18,6 @@ namespace python_moveit_interface
 namespace srv
 {
 
-namespace builder
-{
-
-class Init_DetectPose_Request_target_pose
-{
-public:
-  Init_DetectPose_Request_target_pose()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  ::python_moveit_interface::srv::DetectPose_Request target_pose(::python_moveit_interface::srv::DetectPose_Request::_target_pose_type arg)
-  {
-    msg_.target_pose = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::python_moveit_interface::srv::DetectPose_Request msg_;
-};
-
-}  // namespace builder
 
 }  // namespace srv
 
@@ -48,7 +28,7 @@ template<>
 inline
 auto build<::python_moveit_interface::srv::DetectPose_Request>()
 {
-  return python_moveit_interface::srv::builder::Init_DetectPose_Request_target_pose();
+  return ::python_moveit_interface::srv::DetectPose_Request(rosidl_runtime_cpp::MessageInitialization::ZERO);
 }
 
 }  // namespace python_moveit_interface

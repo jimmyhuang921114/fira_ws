@@ -16,10 +16,6 @@
 #include "python_moveit_interface/srv/detail/detect_pose__struct.h"
 #include "python_moveit_interface/srv/detail/detect_pose__functions.h"
 
-ROSIDL_GENERATOR_C_IMPORT
-bool geometry_msgs__msg__pose__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * geometry_msgs__msg__pose__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool python_moveit_interface__srv__detect_pose__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -54,17 +50,7 @@ bool python_moveit_interface__srv__detect_pose__request__convert_from_py(PyObjec
     assert(strncmp("python_moveit_interface.srv._detect_pose.DetectPose_Request", full_classname_dest, 59) == 0);
   }
   python_moveit_interface__srv__DetectPose_Request * ros_message = _ros_message;
-  {  // target_pose
-    PyObject * field = PyObject_GetAttrString(_pymsg, "target_pose");
-    if (!field) {
-      return false;
-    }
-    if (!geometry_msgs__msg__pose__convert_from_py(field, &ros_message->target_pose)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
+  ros_message->structure_needs_at_least_one_member = 0;
 
   return true;
 }
@@ -86,21 +72,7 @@ PyObject * python_moveit_interface__srv__detect_pose__request__convert_to_py(voi
       return NULL;
     }
   }
-  python_moveit_interface__srv__DetectPose_Request * ros_message = (python_moveit_interface__srv__DetectPose_Request *)raw_ros_message;
-  {  // target_pose
-    PyObject * field = NULL;
-    field = geometry_msgs__msg__pose__convert_to_py(&ros_message->target_pose);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "target_pose", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
+  (void)raw_ros_message;
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

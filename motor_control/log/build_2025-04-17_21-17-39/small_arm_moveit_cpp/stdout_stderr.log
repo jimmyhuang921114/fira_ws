@@ -1,0 +1,13 @@
+[ 30%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[ 30%] Built target manual_pose_topic
+[ 50%] Built target named_goal
+[ 70%] Built target auto_pose_goal
+[ 90%] Built target gripper_open
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:[m[K In member function ‘[01m[Kvoid CameraToBasePrinter::callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kon[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   46 |     [01;31m[Kon[m[K.x, msg->orientation.y, msg->orientation.z, msg->orientation.w);
+      |     [01;31m[K^~[m[K
+      |     [32m[Kyn[m[K
+gmake[2]: *** [CMakeFiles/ee_pose_in_base.dir/build.make:76: CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/ee_pose_in_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

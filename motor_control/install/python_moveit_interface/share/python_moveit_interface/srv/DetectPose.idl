@@ -2,17 +2,16 @@
 // with input from python_moveit_interface/srv/DetectPose.srv
 // generated code does not contain a copyright notice
 
-#include "geometry_msgs/msg/Pose.idl"
 
 module python_moveit_interface {
   module srv {
     @verbatim (language="comment", text=
       "Request：完整的目標末端位姿")
     struct DetectPose_Request {
-      geometry_msgs::msg::Pose target_pose;
+      uint8 structure_needs_at_least_one_member;
     };
     @verbatim (language="comment", text=
-      "Response：是否執行成功 + 回報訊息")
+      "Response：是否執行成功 + 回報訊息 ")
     struct DetectPose_Response {
       boolean success;
 

@@ -14,10 +14,6 @@
 #include "python_moveit_interface/srv/detail/detect_pose__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
-// Include directives for member types
-// Member 'target_pose'
-#include "geometry_msgs/msg/detail/pose__traits.hpp"
-
 namespace python_moveit_interface
 {
 
@@ -28,27 +24,17 @@ inline void to_flow_style_yaml(
   const DetectPose_Request & msg,
   std::ostream & out)
 {
-  out << "{";
-  // member: target_pose
-  {
-    out << "target_pose: ";
-    to_flow_style_yaml(msg.target_pose, out);
-  }
-  out << "}";
+  (void)msg;
+  out << "null";
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
   const DetectPose_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: target_pose
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "target_pose:\n";
-    to_block_style_yaml(msg.target_pose, out, indentation + 2);
-  }
+  (void)msg;
+  (void)indentation;
+  out << "null\n";
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const DetectPose_Request & msg, bool use_flow_style = false)
@@ -97,11 +83,11 @@ inline const char * name<python_moveit_interface::srv::DetectPose_Request>()
 
 template<>
 struct has_fixed_size<python_moveit_interface::srv::DetectPose_Request>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Pose>::value> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<python_moveit_interface::srv::DetectPose_Request>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Pose>::value> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<python_moveit_interface::srv::DetectPose_Request>

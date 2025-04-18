@@ -1,0 +1,5 @@
+[console_scripts]
+cmd_sender = map_tool.command_sender:main
+measure = map_tool.measure:main
+platform = map_tool.platform:main
+

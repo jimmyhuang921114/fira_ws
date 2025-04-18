@@ -40,7 +40,7 @@ class OCRNode(Node):
 
             # OCR 识别
             results = self.ocr.ocr(rgb_image, cls=True)
-            self.detected_objects = []
+            detected_objects = []
 
             if results and isinstance(results, list) and results[0] is not None:
                 for result in results:
@@ -51,28 +51,13 @@ class OCRNode(Node):
                             if text in TARGET_LETTERS and confidence > 0.5:
                                 x_center = int(sum([p[0] for p in points]) / 4)
                                 y_center = int(sum([p[1] for p in points]) / 4)
-
-
-
-
-
-                                self.detected_objects.append(f"{text},{x_center},{y_center}")
+                                detected_objects.append(f"{text},{x_center},{y_center}")
                                 points_np = np.array(points, np.int32).reshape((-1, 1, 2))
                                 cv2.polylines(cv_image, [points_np], isClosed=True, color=(0, 255, 0), thickness=2)
                                 cv2.putText(cv_image, f"{text} ({confidence:.2f})", (x_center, y_center),
                                             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2, cv2.LINE_AA)
                         except Exception as e:
                             self.get_logger().error(f"解析 OCR 结果出错: {e}")
-            cv2.imshow("OCR Detection", cv_image)
-            cv2.waitKey(1)
-
-    def text_sort(self):
-        if self.detected_objects:
-            
-
-
-
-
 
             if detected_objects:
                 output_msg = String()
@@ -80,7 +65,8 @@ class OCRNode(Node):
                 self.publisher.publish(output_msg)
                 self.get_logger().info(f"检测结果: {output_msg.data}")
 
-            
+            cv2.imshow("OCR Detection", cv_image)
+            cv2.waitKey(1)
         
         except Exception as e:
             self.get_logger().error(f"处理图像出错: {e}")

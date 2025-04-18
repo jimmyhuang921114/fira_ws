@@ -29,7 +29,6 @@ typedef struct python_moveit_interface__srv__PoseRequest_Request
 {
   /// 目標點位
   geometry_msgs__msg__Pose target_pose;
-  /// 可選，表示命名姿態名稱
   rosidl_runtime_c__String message;
 } python_moveit_interface__srv__PoseRequest_Request;
 

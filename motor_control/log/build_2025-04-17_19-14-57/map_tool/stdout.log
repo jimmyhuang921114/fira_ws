@@ -1,0 +1,49 @@
+running egg_info
+creating ../../../../build/map_tool/map_tool.egg-info
+writing ../../../../build/map_tool/map_tool.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/map_tool/map_tool.egg-info/dependency_links.txt
+writing entry points to ../../../../build/map_tool/map_tool.egg-info/entry_points.txt
+writing requirements to ../../../../build/map_tool/map_tool.egg-info/requires.txt
+writing top-level names to ../../../../build/map_tool/map_tool.egg-info/top_level.txt
+writing manifest file '../../../../build/map_tool/map_tool.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/map_tool/map_tool.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/map_tool/map_tool.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/darkdemon/work/motor_control/build/map_tool/build
+creating /home/darkdemon/work/motor_control/build/map_tool/build/lib
+creating /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+copying map_tool/measure.py -> /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+copying map_tool/__init__.py -> /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+copying map_tool/inital_pose.py -> /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+copying map_tool/command_sender.py -> /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+copying map_tool/platform.py -> /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool
+running install
+running install_lib
+creating /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+copying /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool/measure.py -> /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+copying /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool/__init__.py -> /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+copying /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool/inital_pose.py -> /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+copying /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool/command_sender.py -> /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+copying /home/darkdemon/work/motor_control/build/map_tool/build/lib/map_tool/platform.py -> /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool
+byte-compiling /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool/measure.py to measure.cpython-310.pyc
+byte-compiling /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool/inital_pose.py to inital_pose.cpython-310.pyc
+byte-compiling /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool/command_sender.py to command_sender.cpython-310.pyc
+byte-compiling /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool/platform.py to platform.cpython-310.pyc
+running install_data
+creating /home/darkdemon/work/motor_control/install/map_tool/share/ament_index
+creating /home/darkdemon/work/motor_control/install/map_tool/share/ament_index/resource_index
+creating /home/darkdemon/work/motor_control/install/map_tool/share/ament_index/resource_index/packages
+copying resource/map_tool -> /home/darkdemon/work/motor_control/install/map_tool/share/ament_index/resource_index/packages
+copying package.xml -> /home/darkdemon/work/motor_control/install/map_tool/share/map_tool
+creating /home/darkdemon/work/motor_control/install/map_tool/share/map_tool/launch
+copying launch/localization_launch.py -> /home/darkdemon/work/motor_control/install/map_tool/share/map_tool/launch
+copying launch/nav_launch.py -> /home/darkdemon/work/motor_control/install/map_tool/share/map_tool/launch
+running install_egg_info
+Copying ../../../../build/map_tool/map_tool.egg-info to /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cmd_sender script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+Installing measure script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+Installing platform script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+writing list of installed files to '/home/darkdemon/work/motor_control/build/map_tool/install.log'

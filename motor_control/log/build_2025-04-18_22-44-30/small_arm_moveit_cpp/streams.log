@@ -1,0 +1,31 @@
+[0.821s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.869s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[0.873s] [35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
+[0.882s] [ 20%] Built target ee_pose_in_base
+[0.882s] [ 30%] [32mBuilding CXX object CMakeFiles/named_goal.dir/src/named_goal.cpp.o[0m
+[0.885s] [ 50%] Built target manual_pose_topic
+[0.886s] [ 60%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[0.894s] [ 80%] Built target auto_pose_goal
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:32:[m[K [01;31m[Kerror: [m[K‘[01m[KNamed_[m[K’ was not declared in this scope
+[4.529s]    78 |   auto node = std::make_shared<[01;31m[KNamed_[m[K
+[4.529s]       |                                [01;31m[K^~~~~~[m[K
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:20:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[4.529s]    78 |   auto node = std::[01;31m[Kmake_shared<Named_[m[K
+[4.529s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:20:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto[m[K’ from ‘[01m[Kmake_shared<<expression error> >[m[K’
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:20:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[Kauto[m[K’
+[4.529s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ at end of input
+[4.529s]    78 |   auto node = std::make_shared<Named_
+[4.529s]       |                                      [01;31m[K^[m[K
+[4.530s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:78:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[4.530s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:76:35:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[4.530s]    76 | int main(int argc, char * argv[]) [01;36m[K{[m[K
+[4.530s]       |                                   [01;36m[K^[m[K
+[6.585s] gmake[2]: *** [CMakeFiles/named_goal.dir/build.make:76: CMakeFiles/named_goal.dir/src/named_goal.cpp.o] Error 1
+[6.585s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/named_goal.dir/all] Error 2
+[6.586s] gmake[1]: *** Waiting for unfinished jobs....
+[6.908s] [ 90%] [32m[1mLinking CXX executable gripper_open[0m
+[7.177s] [ 90%] Built target gripper_open
+[7.177s] gmake: *** [Makefile:146: all] Error 2
+[7.179s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

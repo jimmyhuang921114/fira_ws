@@ -11,22 +11,18 @@ class RGBPixelTo3D(Node):
     def __init__(self):
         super().__init__('rgb_pixel_to_3d_node')
 
-        # 訂閱 OCR 偵測到的文字與 pixel 座標
         self.text_sub = self.create_subscription(
             String, '/ocr_results', self.text_callback, 10)
 
-        # 訂閱對齊後深度圖像
         self.depth_sub = self.create_subscription(
             Image, '/camera/depth', self.depth_callback, 10)
 
-        # 訂閱彩色圖像（用於顯示畫面）
         self.color_sub = self.create_subscription(
             Image, '/camera/color', self.color_callback, 10)
 
         self.pose_pub = self.create_publisher(Pose, '/text_coordinate', 10)
         self.bridge = CvBridge()
 
-        # 彩色相機 內參（需根據你的實機調整）
         self.fx = 919.0689
         self.fy = 919.3917
         self.cx = 623.3080
@@ -42,8 +38,6 @@ class RGBPixelTo3D(Node):
         self.color_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
     def depth_callback(self, msg):
-        if self.color_image is None:
-            return
 
         depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
         vis_image = self.color_image.copy()
@@ -78,7 +72,7 @@ class RGBPixelTo3D(Node):
             except Exception as e:
                 self.get_logger().warn(f'Error processing point: {e}')
 
-        # 顯示視覺化結果
+
         cv2.imshow("Text Detection with 3D", vis_image)
         cv2.waitKey(1)
 

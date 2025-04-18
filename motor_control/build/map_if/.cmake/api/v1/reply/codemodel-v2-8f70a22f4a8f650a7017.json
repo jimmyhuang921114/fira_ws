@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1c82237cf7787f180661.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "map_if__py",
+					"jsonFile" : "directory-map_if__py-c0770eb9e5ee1ce0a280.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/darkdemon/work/motor_control/build/map_if/map_if__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "map_if",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_map_if_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_map_if_egg-f328c9359cd2ae8ec4b8.json",
+					"name" : "ament_cmake_python_build_map_if_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_map_if::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_map_if-05dc1e0a33d9d846df46.json",
+					"name" : "ament_cmake_python_copy_map_if",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if-f2382f6c22cc1351d259.json",
+					"name" : "map_if",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__cpp-ba707492908b82c25ff1.json",
+					"name" : "map_if__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "map_if__py::@c036ee4a49c9b0c703ec",
+					"jsonFile" : "target-map_if__py-30764fe87351a66b757c.json",
+					"name" : "map_if__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_generator_c-d4648fda64afe7a9d2f4.json",
+					"name" : "map_if__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_generator_py-13cc9583a726a6abbfa7.json",
+					"name" : "map_if__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_c-f932d19f7581d464f0f7.json",
+					"name" : "map_if__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_c__pyext-378dec95130c269e74ac.json",
+					"name" : "map_if__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_cpp-311a8093b0805c3546d7.json",
+					"name" : "map_if__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_fastrtps_c-97a91400b423a7256595.json",
+					"name" : "map_if__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_fastrtps_c__pyext-0ba38b82ecce7998e369.json",
+					"name" : "map_if__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_fastrtps_cpp-c1c1720827d993a2c0f0.json",
+					"name" : "map_if__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_introspection_c-365aa428afb0d23f7457.json",
+					"name" : "map_if__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_introspection_c__pyext-6593839e3f57e7731d17.json",
+					"name" : "map_if__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if__rosidl_typesupport_introspection_cpp-f796fb41b2950c32a481.json",
+					"name" : "map_if__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_if_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_if_uninstall-861836f9b7c49fe8f325.json",
+					"name" : "map_if_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-72a8a59b7b054cb401cc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/darkdemon/work/motor_control/build/map_if",
+		"source" : "/home/darkdemon/work/motor_control/src/RobotSot/src/map_if"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

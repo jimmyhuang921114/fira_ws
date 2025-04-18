@@ -40,7 +40,7 @@ class MainControl(Node):
             if not success:
                 self.get_logger().error(f"[ABORT] Task failed: {task_name}")
                 break
-            time.sleep(1.0)  # 可調整等待時間
+            time.sleep(1.0) 
         self.get_logger().info("[DONE] Arm task sequence completed")
 
     def send_arm_state(self, command):

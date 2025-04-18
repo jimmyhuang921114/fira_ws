@@ -1,0 +1,41 @@
+[0.784s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.841s] [ 20%] Built target manual_pose_topic
+[0.841s] [ 40%] Built target named_goal
+[0.844s] [ 60%] Built target ee_pose_in_base
+[0.845s] [ 80%] Built target gripper_open
+[0.847s] [ 90%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[4.163s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:167:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[4.163s]   167 | }
+[4.163s]       |  [01;31m[K^[m[K
+[4.163s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:18:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[4.163s]    18 | [01;36m[K{[m[K
+[4.163s]       | [01;36m[K^[m[K
+[4.192s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In member function ‘[01m[Kvoid AutoPoseService::handle_service(std::shared_ptr<python_moveit_interface::srv::DetectPose_Request_<std::allocator<void> > >, std::shared_ptr<python_moveit_interface::srv::DetectPose_Response_<std::allocator<void> > >)[m[K’:
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:137:42:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[4.193s]   137 |     geometry_msgs::msg::Pose average_pose[01;35m[K()[m[K
+[4.193s]       |                                          [01;35m[K^~[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:137:42:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[4.193s]   137 |     geometry_msgs::msg::Pose average_pose[01;36m[K()[m[K
+[4.193s]       |                                          [01;36m[K^~[m[K
+[4.193s]       |                                          [31m[K--[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:137:42:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:138:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[4.193s]   138 |     [01;31m[K{[m[K
+[4.193s]       |     [01;31m[K^[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:160:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[4.193s]   160 | [01;31m[K{[m[K
+[4.193s]       | [01;31m[K^[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:167:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[4.193s]   167 | }
+[4.193s]       |  [01;31m[K^[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:107:3:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[4.193s]   107 |   [01;36m[K{[m[K
+[4.193s]       |   [01;36m[K^[m[K
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K At global scope:
+[4.193s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:167:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[4.193s]   167 | }
+[4.193s]       |  [01;31m[K^[m[K
+[7.189s] gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+[7.189s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/auto_pose_goal.dir/all] Error 2
+[7.189s] gmake: *** [Makefile:146: all] Error 2
+[7.192s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

@@ -13,8 +13,6 @@ module python_moveit_interface {
         "目標點位")
       geometry_msgs::msg::Pose target_pose;
 
-      @verbatim (language="comment", text=
-        "可選，表示命名姿態名稱")
       string message;
     };
     struct PoseRequest_Response {
