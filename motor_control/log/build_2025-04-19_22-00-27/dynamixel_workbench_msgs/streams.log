@@ -1,0 +1,63 @@
+[0.042s] Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs -- -j20 -l20
+[0.715s] [  0%] Built target dynamixel_workbench_msgs__cpp
+[0.715s] [ 12%] Built target dynamixel_workbench_msgs__rosidl_generator_c
+[0.715s] [ 12%] Built target ament_cmake_python_copy_dynamixel_workbench_msgs
+[0.715s] [ 30%] Built target dynamixel_workbench_msgs__rosidl_typesupport_c
+[0.715s] [ 36%] Built target dynamixel_workbench_msgs__rosidl_typesupport_introspection_c
+[0.715s] [ 48%] Built target dynamixel_workbench_msgs__rosidl_typesupport_cpp
+[0.716s] [ 72%] Built target dynamixel_workbench_msgs__rosidl_typesupport_fastrtps_cpp
+[0.716s] [ 72%] Built target dynamixel_workbench_msgs__rosidl_typesupport_fastrtps_c
+[0.716s] [ 85%] Built target dynamixel_workbench_msgs__rosidl_typesupport_introspection_cpp
+[0.716s] [ 85%] Built target dynamixel_workbench_msgs
+[0.716s] [ 86%] Built target dynamixel_workbench_msgs__py
+[0.716s] [ 97%] Built target dynamixel_workbench_msgs__rosidl_generator_py
+[0.716s] [ 98%] Built target dynamixel_workbench_msgs__rosidl_typesupport_introspection_c__pyext
+[0.716s] [ 99%] Built target dynamixel_workbench_msgs__rosidl_typesupport_c__pyext
+[0.716s] [100%] Built target dynamixel_workbench_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.716s] Traceback (most recent call last):
+[0.716s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2866, in get_entry_map
+[0.717s]     ep_map = self._ep_map
+[0.717s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2828, in __getattr__
+[0.718s]     raise AttributeError(attr)
+[0.718s] AttributeError: _ep_map. Did you mean: '_dep_map'?
+[0.718s] 
+[0.718s] During handling of the above exception, another exception occurred:
+[0.718s] 
+[0.718s] Traceback (most recent call last):
+[0.718s]   File "/usr/lib/python3.10/genericpath.py", line 19, in exists
+[0.718s]     os.stat(path)
+[0.718s] FileNotFoundError: [Errno 2] No such file or directory: '/opt/ros/humble/local/lib/python3.10/dist-packages/pendulum_msgs-0.20.5-py3.10.egg-info/entry_points.txt'
+[0.718s] 
+[0.718s] During handling of the above exception, another exception occurred:
+[0.718s] 
+[0.718s] Traceback (most recent call last):
+[0.718s]   File "/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs/ament_cmake_python/dynamixel_workbench_msgs/setup.py", line 4, in <module>
+[0.718s]     setup(
+[0.719s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 152, in setup
+[0.719s]     _install_setup_requires(attrs)
+[0.719s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 142, in _install_setup_requires
+[0.719s]     dist = MinimalDistribution(attrs)
+[0.719s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 134, in __init__
+[0.719s]     distutils.core.Distribution.__init__(self, filtered)
+[0.719s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 457, in __init__
+[0.719s]     for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+[0.719s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 646, in <genexpr>
+[0.719s]     for entry in dist.get_entry_map(group).values()
+[0.719s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2868, in get_entry_map
+[0.719s]     ep_map = self._ep_map = EntryPoint.parse_map(
+[0.719s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2549, in parse_map
+[0.719s]     for group, lines in data:
+[0.720s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3205, in split_sections
+[0.720s]     for line in yield_lines(s):
+[0.720s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2779, in _get_metadata
+[0.720s]     if self.has_metadata(name):
+[0.720s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1406, in has_metadata
+[0.720s]     return self._has(path)
+[0.720s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1604, in _has
+[0.720s]     return os.path.exists(path)
+[0.720s]   File "/usr/lib/python3.10/genericpath.py", line 19, in exists
+[0.720s]     os.stat(path)
+[0.720s] KeyboardInterrupt
+[0.720s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg] Interrupt
+[0.720s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_dynamixel_workbench_msgs_egg.dir/all] Interrupt
+[0.720s] gmake: *** [Makefile:146: all] Interrupt

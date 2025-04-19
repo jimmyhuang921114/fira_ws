@@ -1,0 +1,22 @@
+[1.709s] Invoking command in '/home/darkdemon/work/motor_control/src/RobotSot/src/visual': PYTHONPATH=/home/darkdemon/work/motor_control/build/visual/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/visual/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/visual build --build-base /home/darkdemon/work/motor_control/build/visual/build install --record /home/darkdemon/work/motor_control/build/visual/install.log --single-version-externally-managed install_data
+[1.913s] running egg_info
+[1.914s] writing ../../../../build/visual/visual.egg-info/PKG-INFO
+[1.915s] writing dependency_links to ../../../../build/visual/visual.egg-info/dependency_links.txt
+[1.915s] writing entry points to ../../../../build/visual/visual.egg-info/entry_points.txt
+[1.915s] writing requirements to ../../../../build/visual/visual.egg-info/requires.txt
+[1.915s] writing top-level names to ../../../../build/visual/visual.egg-info/top_level.txt
+[1.917s] reading manifest file '../../../../build/visual/visual.egg-info/SOURCES.txt'
+[1.917s] writing manifest file '../../../../build/visual/visual.egg-info/SOURCES.txt'
+[1.917s] running build
+[1.917s] running build_py
+[1.918s] running install
+[1.918s] running install_lib
+[1.919s] running install_data
+[1.919s] running install_egg_info
+[1.921s] removing '/home/darkdemon/work/motor_control/install/visual/lib/python3.10/site-packages/visual-0.0.0-py3.10.egg-info' (and everything under it)
+[1.922s] Copying ../../../../build/visual/visual.egg-info to /home/darkdemon/work/motor_control/install/visual/lib/python3.10/site-packages/visual-0.0.0-py3.10.egg-info
+[1.922s] running install_scripts
+[1.942s] Installing main script to /home/darkdemon/work/motor_control/install/visual/lib/visual
+[1.942s] Installing slave script to /home/darkdemon/work/motor_control/install/visual/lib/visual
+[1.943s] writing list of installed files to '/home/darkdemon/work/motor_control/build/visual/install.log'
+[1.965s] Invoked command in '/home/darkdemon/work/motor_control/src/RobotSot/src/visual' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/visual/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/visual/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/visual build --build-base /home/darkdemon/work/motor_control/build/visual/build install --record /home/darkdemon/work/motor_control/build/visual/install.log --single-version-externally-managed install_data

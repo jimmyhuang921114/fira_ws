@@ -1,0 +1,17 @@
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In member function ‘[01m[Kvoid GripperControlService::handle_service(std::shared_ptr<python_moveit_interface::srv::GripperControl_Request_<std::allocator<void> > >, std::shared_ptr<python_moveit_interface::srv::GripperControl_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:73:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::execute(moveit::planning_interface::MoveGroupInterface::Plan&, bool)[m[K’
+   73 |       [01;31m[Kmove_group_interface_->execute(plan, true)[m[K;  // 等待執行結束
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:729:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const moveit::planning_interface::MoveGroupInterface::Plan&)[m[K’
+  729 |   moveit::core::MoveItErrorCode [01;36m[Kexecute[m[K(const Plan& plan);
+      |                                 [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:729:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:732:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::execute(const RobotTrajectory&)[m[K’
+  732 |   moveit::core::MoveItErrorCode [01;36m[Kexecute[m[K(const moveit_msgs::msg::RobotTrajectory& trajectory);
+      |                                 [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:732:33:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/gripper_open.dir/build.make:76: CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gripper_open.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

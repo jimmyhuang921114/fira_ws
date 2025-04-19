@@ -16,7 +16,7 @@ public:
     tf_listener_(tf_buffer_)
   {
     // 宣告相機到 EE 的位移與旋轉參數
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.04, 0.04, -0.065});
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.045, 0.05 , -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
     this->declare_parameter<bool>("enable_z_scale_div10", true);
 

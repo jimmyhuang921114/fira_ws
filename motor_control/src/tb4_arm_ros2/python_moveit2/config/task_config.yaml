@@ -27,7 +27,7 @@ grap_up:
  - detect_pose: true
  - wait: 0.5
  - gripper : close
- - wait: 0.5
+ - wait: 0.5  
  - name_pose: detect
  - wait: 0.5
 

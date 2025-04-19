@@ -3,7 +3,7 @@
 
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -43,6 +43,11 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -60,10 +65,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
@@ -135,13 +138,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/numeric \
-  /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -261,6 +257,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
   /usr/include/c++/11/iostream \
@@ -548,6 +548,9 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -684,12 +687,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
@@ -700,6 +697,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
   /opt/ros/humble/include/moveit/macros/class_forward.h \
   /opt/ros/humble/include/moveit/macros/declare_ptr.h \
@@ -1683,6 +1686,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__traits.hpp:
 
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
@@ -1890,14 +1895,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/11/condition_variable:
-
-/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
@@ -2179,15 +2176,19 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/cassert:
 
-/usr/include/c++/11/bits/uniform_int_dist.h:
+/usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+/opt/ros/humble/include/urdfdom_headers/urdf_model/types.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__traits.hpp:
 
-/usr/include/c++/11/exception:
+/usr/include/c++/11/unordered_map:
 
-/usr/include/c++/11/bits/stl_set.h:
+/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/joint_limits.hpp:
 
 /usr/include/c++/11/ext/concurrence.h:
 
@@ -2219,6 +2220,16 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/bits/quoted_string.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
+/opt/ros/humble/include/tf2/tf2/convert.hpp:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
 /opt/ros/humble/include/rcl/rcl/types.h:
 
 /opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__builder.hpp:
@@ -2228,18 +2239,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -2251,10 +2250,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/boost/mpl/bool_fwd.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__type_support.hpp:
-
 /usr/include/boost/type_traits/is_unsigned.hpp:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
@@ -2262,8 +2257,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/pthread.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
@@ -2282,6 +2275,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/c++/11/deque:
 
 /opt/ros/humble/include/rcl/rcl/publisher.h:
 
@@ -2329,21 +2324,47 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__traits.hpp:
 
 /usr/include/c++/11/cwchar:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
+/usr/include/c++/11/bits/string_view.tcc:
 
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+/usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/c++/11/bits/functional_hash.h:
 
-/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+/usr/include/c++/11/backward/binders.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/include/c++/11/bits/deque.tcc:
 
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
@@ -2361,21 +2382,27 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/Cholesky:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
 
-/usr/include/c++/11/bits/postypes.h:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/11/bits/string_view.tcc:
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/features.h:
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp:
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
 
-/usr/include/c++/11/bits/functional_hash.h:
+/usr/include/c++/11/bits/stl_algobase.h:
 
-/usr/include/c++/11/backward/binders.h:
+/usr/include/unistd.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/usr/include/boost/exception/exception.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
@@ -2483,8 +2510,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/c++/11/bits/exception_ptr.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
 /usr/include/math.h:
@@ -2493,11 +2518,9 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
+/usr/include/c++/11/bits/exception_ptr.h:
+
 /usr/include/c++/11/typeinfo:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
-
-/usr/include/c++/11/initializer_list:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -2517,61 +2540,11 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/ctime:
 
-/usr/include/c++/11/functional:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/c++/11/debug/debug.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
-
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/boost/random/detail/large_arithmetic.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/opt/ros/humble/include/rcl/rcl/graph.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
 /usr/include/boost/preprocessor/cat.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/include/unistd.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/usr/include/boost/exception/exception.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__type_support.hpp:
 
@@ -2582,6 +2555,34 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/motion_plan_request__type_support.hpp:
 
 /opt/ros/humble/include/urdf/urdf/urdfdom_compatibility.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/boost/random/detail/ptr_helper.hpp:
+
+/usr/include/errno.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
+
+/opt/ros/humble/include/rcl/rcl/allocator.h:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -2601,10 +2602,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
 /usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/c++/11/bits/shared_ptr.h:
@@ -2613,19 +2610,33 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp:
-
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
-
-/opt/ros/humble/include/rcl/rcl/allocator.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/errno.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/bits/range_access.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
+
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/boost/random/detail/large_arithmetic.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/11/debug/debug.h:
 
 /usr/include/c++/11/typeindex:
 
@@ -2641,41 +2652,23 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/11/bits/unique_ptr.h:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
 
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/opt/ros/humble/include/rcl/rcl/init_options.h:
-
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/boost/random/detail/ptr_helper.hpp:
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/opt/ros/humble/include/tf2/tf2/time.hpp:
+
+/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
+
+/usr/include/libintl.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -2737,6 +2730,40 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__type_support.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
@@ -2763,6 +2790,16 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+
+/usr/include/c++/11/exception:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
+
+/opt/ros/humble/include/rcl/rcl/graph.h:
+
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
 /opt/ros/humble/include/moveit/robot_model/prismatic_joint_model.h:
@@ -2776,36 +2813,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory__traits.hpp:
-
-/usr/include/c++/11/unordered_map:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/joint_limits.hpp:
-
-/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/opt/ros/humble/include/tf2/tf2/convert.hpp:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/opt/ros/humble/include/urdfdom_headers/urdf_model/types.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
@@ -2844,6 +2851,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/linux/errno.h:
 
 /opt/ros/humble/include/rcl_action/rcl_action/types.h:
 
@@ -2943,6 +2954,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/c++/11/limits:
 
+/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
 /usr/include/c++/11/utility:
 
 /opt/ros/humble/include/rcl/rcl/arguments.h:
@@ -2981,6 +2994,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
 
+/usr/include/c++/11/functional:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
@@ -2996,10 +3015,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
 /usr/include/boost/random/uniform_int_distribution.hpp:
 
@@ -3024,6 +3039,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -3069,9 +3086,9 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/boost/preprocessor/repeat.hpp:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
@@ -3120,6 +3137,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -3317,16 +3338,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
-/opt/ros/humble/include/tf2/tf2/time.hpp:
-
-/usr/include/libintl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory__traits.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
@@ -3393,27 +3404,17 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
+
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/c++/11/ios:
 
@@ -3452,6 +3453,16 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h:
 
@@ -3649,9 +3660,9 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
 
-/usr/include/boost/random/detail/int_float_pair.hpp:
-
 /usr/include/boost/type_traits/detail/config.hpp:
+
+/usr/include/boost/random/detail/int_float_pair.hpp:
 
 /usr/include/boost/type_traits/is_enum.hpp:
 
@@ -3688,8 +3699,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: /home/darkdemon/work/mot
 /usr/include/boost/mpl/int_fwd.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/opt/ros/humble/include/trajectory_msgs/trajectory_msgs/msg/detail/joint_trajectory_point__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
 

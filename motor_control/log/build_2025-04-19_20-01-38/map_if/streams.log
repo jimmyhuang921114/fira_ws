@@ -1,0 +1,23 @@
+[0.176s] Invoking command in '/home/darkdemon/work/motor_control/build/map_if': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/map_if -- -j20 -l20
+[0.553s] [  6%] Built target map_if__cpp
+[0.553s] [ 12%] Built target map_if__rosidl_generator_c
+[0.553s] [ 12%] Built target ament_cmake_python_copy_map_if
+[0.553s] [ 22%] Built target map_if__rosidl_typesupport_introspection_cpp
+[0.553s] [ 32%] Built target map_if__rosidl_typesupport_cpp
+[0.553s] [ 41%] Built target map_if__rosidl_typesupport_fastrtps_cpp
+[0.553s] [ 51%] Built target map_if__rosidl_typesupport_c
+[0.553s] [ 61%] Built target map_if__rosidl_typesupport_fastrtps_c
+[0.553s] [ 70%] Built target map_if__rosidl_typesupport_introspection_c
+[0.553s] [ 70%] Built target map_if
+[0.553s] [ 74%] Built target map_if__py
+[0.553s] [ 80%] Built target map_if__rosidl_generator_py
+[0.553s] [ 87%] Built target map_if__rosidl_typesupport_c__pyext
+[0.553s] [ 93%] Built target map_if__rosidl_typesupport_fastrtps_c__pyext
+[0.553s] [100%] Built target map_if__rosidl_typesupport_introspection_c__pyext
+[0.553s] running egg_info
+[0.553s] writing map_if.egg-info/PKG-INFO
+[0.553s] writing dependency_links to map_if.egg-info/dependency_links.txt
+[0.553s] writing top-level names to map_if.egg-info/top_level.txt
+[0.553s] reading manifest file 'map_if.egg-info/SOURCES.txt'
+[0.553s] writing manifest file 'map_if.egg-info/SOURCES.txt'
+[0.553s] [100%] Built target ament_cmake_python_build_map_if_egg

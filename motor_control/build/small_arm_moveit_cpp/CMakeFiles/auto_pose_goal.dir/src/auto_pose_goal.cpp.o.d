@@ -630,6 +630,12 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/moveit/move_group_interface/move_group_interface.h \
  /opt/ros/humble/include/moveit/macros/class_forward.h \
  /opt/ros/humble/include/moveit/macros/declare_ptr.h \
@@ -1059,7 +1065,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \

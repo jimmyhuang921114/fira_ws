@@ -135,40 +135,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
-  /usr/include/c++/11/csignal \
-  /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
-  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
-  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
-  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
   /usr/include/c++/11/future \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
@@ -213,6 +179,7 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/11/bits/std_abs.h \
@@ -232,6 +199,39 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
   /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_thread.h \
+  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
+  /usr/include/c++/11/csignal \
+  /usr/include/signal.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
   /usr/include/c++/11/set \
   /usr/include/c++/11/bits/stl_tree.h \
@@ -1884,9 +1884,9 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/c++/11/optional:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
 /usr/include/c++/11/condition_variable:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
@@ -2438,9 +2438,9 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
-/usr/include/c++/11/tr1/special_function_util.h:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/tr1/special_function_util.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp:
 
@@ -2476,6 +2476,8 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_trajectory_point__struct.hpp:
 
 /usr/include/c++/11/bits/stl_algobase.h:
@@ -2485,8 +2487,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
 /usr/include/boost/exception/exception.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -2756,121 +2756,13 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/11/bits/stl_list.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/c++/11/csignal:
-
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
-
-/usr/include/c++/11/tr1/gamma.tcc:
-
-/opt/ros/humble/include/rmw/rmw/message_sequence.h:
-
-/usr/include/boost/integer/integer_log2.hpp:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/c++/11/streambuf:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/linux/errno.h:
-
-/opt/ros/humble/include/rcl_action/rcl_action/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/execute_trajectory.hpp:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/strings.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__traits.hpp:
 
 /usr/include/c++/11/chrono:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
 
@@ -2887,10 +2779,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /usr/include/c++/11/cstdint:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/c++/11/limits:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
@@ -2916,20 +2804,6 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_limits__traits.hpp:
 
-/usr/include/c++/11/string:
-
-/opt/ros/humble/include/rmw/rmw/security_options.h:
-
-/opt/ros/humble/include/moveit_move_group_interface_export.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
@@ -2941,6 +2815,10 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/functional:
 
@@ -2954,15 +2832,25 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/bits/std_thread.h:
 
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
 /usr/include/c++/11/bits/localefwd.h:
+
+/opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/c++/11/streambuf:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
 /usr/include/boost/random/uniform_int_distribution.hpp:
 
@@ -3035,6 +2923,118 @@ CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o: /home/darkdemon/work/motor_c
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
 /usr/include/boost/preprocessor/repeat.hpp:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/c++/11/csignal:
+
+/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
+
+/usr/include/c++/11/string:
+
+/opt/ros/humble/include/rmw/rmw/security_options.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/opt/ros/humble/include/moveit_move_group_interface_export.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/cartesian_point__traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+/opt/ros/humble/include/rmw/rmw/message_sequence.h:
+
+/usr/include/boost/integer/integer_log2.hpp:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
+
+/opt/ros/humble/include/rcl_action/rcl_action/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/action/execute_trajectory.hpp:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/strings.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
