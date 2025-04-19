@@ -5,8 +5,8 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='realsense',
-            executable='color_range',
-            name='color_range_node',
+            executable='color_detect',
+            name='color_detect_node',
             output='screen'
         ),
         Node(
@@ -27,10 +27,4 @@ def generate_launch_description():
             name='realsense_read_node',
             output='screen'
         ),
-        Node(
-            package='realsense',
-            executable='visiual',
-            name='visiual_node',
-            output='screen'
-        )
     ])

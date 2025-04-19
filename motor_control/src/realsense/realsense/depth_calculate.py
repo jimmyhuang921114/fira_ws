@@ -23,6 +23,7 @@ class RGBPixelTo3D(Node):
         self.pose_pub = self.create_publisher(Pose, '/text_coordinate', 10)
         self.bridge = CvBridge()
 
+        # Camera intrinsic parameters
         self.fx = 919.0689
         self.fy = 919.3917
         self.cx = 623.3080
@@ -32,15 +33,16 @@ class RGBPixelTo3D(Node):
         self.color_image = None
 
     def text_callback(self, msg):
-        self.detected_texts = [item.split(',') for item in msg.data.split(';') if len(item.split(',')) == 3]
+        # Parse OCR results: expected format "text,x,y;text2,x2,y2;..."
+        self.detected_texts = [
+            item.split(',') for item in msg.data.split(';') if len(item.split(',')) == 3
+        ]
 
     def color_callback(self, msg):
         self.color_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
     def depth_callback(self, msg):
-
         depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-        vis_image = self.color_image.copy()
 
         for text, u_str, v_str in self.detected_texts:
             try:
@@ -48,33 +50,25 @@ class RGBPixelTo3D(Node):
                 if not (0 <= u < depth_image.shape[1] and 0 <= v < depth_image.shape[0]):
                     continue
 
-                Z = depth_image[v, u] / 1000.0  # mm → m
+                Z = depth_image[v, u] / 1000.0  # Convert mm to meters
                 if Z <= 0 or np.isnan(Z) or np.isinf(Z):
                     continue
 
                 X = (u - self.cx) * Z / self.fx
-                Y =-( (v - self.cy) * Z / self.fy)
+                Y = -((v - self.cy) * Z / self.fy)
 
-                # 發布 3D 座標
                 pose = Pose()
                 pose.position.x = float(X)
                 pose.position.y = float(Y)
                 pose.position.z = float(Z)
                 self.pose_pub.publish(pose)
 
-                # 顯示在 OpenCV 畫面上
-                cv2.circle(vis_image, (u, v), 5, (0, 255, 0), -1)
-                cv2.putText(vis_image, f'{text} ({X:.2f},{Y:.2f},{Z:.2f})', (u+10, v),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
-
-                self.get_logger().info(f'Text "{text}" at (u,v)=({u},{v}) -> (X,Y,Z)=({X:.2f}, {Y:.2f}, {Z:.2f})')
+                self.get_logger().info(
+                    f'Text "{text}" at (u,v)=({u},{v}) → (X,Y,Z)=({X:.2f}, {Y:.2f}, {Z:.2f})'
+                )
 
             except Exception as e:
                 self.get_logger().warn(f'Error processing point: {e}')
-
-
-        cv2.imshow("Text Detection with 3D", vis_image)
-        cv2.waitKey(1)
 
 def main():
     rclpy.init()
@@ -85,7 +79,6 @@ def main():
         pass
     node.destroy_node()
     rclpy.shutdown()
-    cv2.destroyAllWindows()
 
 if __name__ == '__main__':
     main()

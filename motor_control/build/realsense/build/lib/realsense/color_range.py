@@ -15,7 +15,7 @@ class ColorDetect(Node):
         self.bridge = CvBridge()
         
         # 初始化滑动条值
-        self.hsv_ranges = {
+        self.hsv_range = {
             "Blue": {'min': [78, 89, 24], 'max': [115, 255, 255]},
             "Yellow": {'min': [13, 104, 55], 'max': [46, 221, 255]},
             "Green": {'min': [42, 52, 30], 'max': [77, 255, 255]}

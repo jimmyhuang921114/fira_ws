@@ -11,19 +11,19 @@ class RealSensePublisher(Node):
     def __init__(self):
         super().__init__('realsense_publisher')
 
-        # Set up ROS 2 image publishers
+        # setting topic
         self.color_publisher = self.create_publisher(Image, '/camera/color', 10)
         self.depth_publisher = self.create_publisher(Image, '/camera/depth', 10)
         
-        # OpenCV and ROS image conversion tool
+        # opencv and ros2 tool
         self.bridge = CvBridge()
 
         # RealSense setup
         self.pipeline = None
         self.config = rs.config()
 
-        # Set image publishing frequency (every 0.1 seconds)
-        self.timer = self.create_timer(0.1, self.publish_frames)
+        # set timer
+        self.timer = self.create_timer(0.01, self.publish_frames)
 
         # Connection status
         self.connected = False
@@ -34,28 +34,24 @@ class RealSensePublisher(Node):
         self.connect_camera()
 
     def connect_camera(self):
-        """Try to connect to the RealSense camera."""
         self.get_logger().info("Attempting to connect to RealSense camera...")
         try:
             self.pipeline = rs.pipeline()
             config = rs.config()
 
-            # Enable color and depth streams
             config.enable_stream(rs.stream.color, 1280,720, rs.format.bgr8, 30)
             config.enable_stream(rs.stream.depth, 1280,720, rs.format.z16, 30)
-
-            # Start the pipeline
             self.pipeline.start(config)
             self.connected = True
             self.retry_count = 0
             self.get_logger().info("Successfully connected to RealSense camera")
+
         except Exception as e:
             self.connected = False
             self.get_logger().error(f"Failed to connect to RealSense: {str(e)}")
             self.retry_reconnect()
 
     def retry_reconnect(self):
-        """Try to reconnect if failed."""
         if self.retry_count < self.max_retries:
             wait_time = 2 ** self.retry_count
             self.get_logger().warn(f"Retrying in {wait_time} seconds... ({self.retry_count+1}/{self.max_retries})")
@@ -66,11 +62,9 @@ class RealSensePublisher(Node):
             self.get_logger().error("Max retry attempts reached. Check the camera connection.")
 
     def publish_frames(self):
-        """Capture and publish RealSense frames."""
         if not self.connected:
             self.get_logger().warn("Camera not connected. Skipping.")
             return
-
         try:
             frames = self.pipeline.wait_for_frames()
             color_frame = frames.get_color_frame()
@@ -79,32 +73,23 @@ class RealSensePublisher(Node):
             if not color_frame or not depth_frame:
                 self.get_logger().warn("Invalid frames. Skipping.")
                 return
+            
 
-            # Convert to numpy
             color_image = np.asanyarray(color_frame.get_data())
             depth_image = np.asanyarray(depth_frame.get_data())
 
-            # Convert to ROS 2 Image messages
             color_msg = self.bridge.cv2_to_imgmsg(color_image, encoding='bgr8')
             depth_msg = self.bridge.cv2_to_imgmsg(depth_image, encoding='16UC1')
 
-            # Add timestamp
             now = self.get_clock().now().to_msg()
+
             color_msg.header.stamp = now
             depth_msg.header.stamp = now
 
-            # Publish
             self.color_publisher.publish(color_msg)
             self.depth_publisher.publish(depth_msg)
 
             self.get_logger().info("Published /camera/color and /camera/depth")
-
-            # Display combined image
-            depth_colormap = cv2.applyColorMap(
-                cv2.convertScaleAbs(depth_image, alpha=0.03), cv2.COLORMAP_JET
-            )
-            combined = np.hstack((color_image, depth_colormap))
-            cv2.imshow("RealSense Raw Frames", combined)
             cv2.waitKey(1)
 
         except Exception as e:
@@ -113,7 +98,6 @@ class RealSensePublisher(Node):
             self.retry_reconnect()
 
     def destroy(self):
-        """Stop RealSense pipeline."""
         if self.pipeline:
             self.pipeline.stop()
         super().destroy_node()

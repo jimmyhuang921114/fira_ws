@@ -1,8 +1,6 @@
+#include <deque>
 #include <memory>
-#include <vector>
-#include <numeric>
 #include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/string.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include "python_moveit_interface/srv/detect_pose.hpp"
@@ -16,8 +14,15 @@ class AutoPoseService : public rclcpp::Node
 {
 public:
   AutoPoseService()
-  : Node("auto_pose_service")
+  : Node("auto_pose_service"),
+    fixed_z_(0.015)  // 固定Z軸高度
   {
+    // 初始化固定四元數（水平無旋轉）
+    fixed_quaternion_.x = 0.0;
+    fixed_quaternion_.y = 0.0;
+    fixed_quaternion_.z = 0.0;
+    fixed_quaternion_.w = 1.0;
+
     service_ = this->create_service<DetectPose>(
       "auto_pose_service",
       std::bind(&AutoPoseService::handle_service, this, _1, _2));
@@ -32,7 +37,7 @@ public:
       std::chrono::milliseconds(100),
       std::bind(&AutoPoseService::try_initialize_move_group, this));
 
-    RCLCPP_INFO(this->get_logger(), "🛠️ AutoPoseService created, waiting for MoveGroupInterface...");
+    RCLCPP_INFO(this->get_logger(), "AutoPoseService initialized. XY buffer ready.");
   }
 
 private:
@@ -41,7 +46,11 @@ private:
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr status_pub_;
   rclcpp::TimerBase::SharedPtr timer_;
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
-  std::vector<geometry_msgs::msg::Pose> pose_buffer_;
+  
+  // XY數據緩衝區
+  std::deque<std::pair<double, double>> xy_buffer_;
+  const double fixed_z_;
+  geometry_msgs::msg::Quaternion fixed_quaternion_;
 
   void try_initialize_move_group()
   {
@@ -51,10 +60,10 @@ private:
       move_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
         shared_from_this(), "small_arm");
       move_group_->setPlanningTime(10.0);
-      RCLCPP_INFO(this->get_logger(), "✅ MoveGroupInterface initialized.");
+      RCLCPP_INFO(this->get_logger(), "MoveGroupInterface initialized.");
       timer_->cancel();
     } catch (const std::exception &e) {
-      RCLCPP_WARN(this->get_logger(), "⏳ Waiting for MoveGroupInterface... (%s)", e.what());
+      RCLCPP_WARN(this->get_logger(), "Waiting for MoveGroupInterface... (%s)", e.what());
     }
   }
 
@@ -63,59 +72,59 @@ private:
     std_msgs::msg::String msg;
     msg.data = status;
     status_pub_->publish(msg);
-    RCLCPP_INFO(this->get_logger(), "📣 Status: %s", status.c_str());
+    RCLCPP_INFO(this->get_logger(), "Status: %s", status.c_str());
   }
 
   void pose_callback(const geometry_msgs::msg::Pose::SharedPtr msg)
   {
-    pose_buffer_.push_back(*msg);
-    if (pose_buffer_.size() > 10)
-      pose_buffer_.erase(pose_buffer_.begin());
-
-    RCLCPP_INFO(this->get_logger(), "📥 Received Pose: x=%.4f y=%.4f z=%.4f",
-                msg->position.x, msg->position.y, msg->position.z);
-  }
-
-  bool is_pose_stable(double tolerance = 0.009)
-  {
-    if (pose_buffer_.size() < 10) return false;
-
-    auto range = [&](auto accessor) {
-      std::vector<double> values;
-      for (const auto &p : pose_buffer_) values.push_back(accessor(p));
-      auto [min_it, max_it] = std::minmax_element(values.begin(), values.end());
-      return *max_it - *min_it;
-    };
-
-    return range([](auto p){ return p.position.x; }) <= tolerance &&
-           range([](auto p){ return p.position.y; }) <= tolerance &&
-           range([](auto p){ return p.position.z; }) <= tolerance;
-  }
-
-  geometry_msgs::msg::Pose average_pose()
-  {
-    geometry_msgs::msg::Pose avg;
-    for (const auto &p : pose_buffer_) {
-      avg.position.x += p.position.x;
-      avg.position.y += p.position.y;
-      avg.position.z += p.position.z;
+    // 只提取XY座標
+    double x = msg->position.x;
+    double y = msg->position.y;
+    
+    xy_buffer_.push_back({x, y});
+    
+    // 保持緩衝區大小為10
+    if (xy_buffer_.size() > 10) {
+      xy_buffer_.pop_front();
     }
 
-    avg.position.x /= pose_buffer_.size();
-    avg.position.y /= pose_buffer_.size();
+    RCLCPP_DEBUG(this->get_logger(), "XY updated: [%.4f, %.4f], buffer size: %zu",
+                 x, y, xy_buffer_.size());
+  }
 
-    // ✅ 固定 Z 值以確保抓取穩定
-    avg.position.z = 0.015;
+  bool is_data_stable()
+  {
+    if (xy_buffer_.size() < 10) return false;
 
-    avg.orientation = pose_buffer_.back().orientation;
+    // 計算XY波動範圍
+    auto [min_x, max_x] = std::minmax_element(
+      xy_buffer_.begin(), xy_buffer_.end(),
+      [](const auto& a, const auto& b) { return a.first < b.first; });
+    
+    auto [min_y, max_y] = std::minmax_element(
+      xy_buffer_.begin(), xy_buffer_.end(),
+      [](const auto& a, const auto& b) { return a.second < b.second; });
 
-    RCLCPP_INFO(this->get_logger(),
-      "📊 Averaged Pose: x=%.4f y=%.4f z=%.4f | orientation=[%.4f, %.4f, %.4f, %.4f]",
-      avg.position.x, avg.position.y, avg.position.z,
-      avg.orientation.x, avg.orientation.y, avg.orientation.z, avg.orientation.w);
+    double x_range = max_x->first - min_x->first;
+    double y_range = max_y->second - min_y->second;
 
-    RCLCPP_WARN(this->get_logger(), "⚠️ Z value is set to fixed 0.015 m");
-    return avg;
+    RCLCPP_DEBUG(this->get_logger(), "Stability check - X range: %.4f, Y range: %.4f",
+                 x_range, y_range);
+
+    return (x_range <= 0.01) && (y_range <= 0.01);
+  }
+
+  std::pair<double, double> calculate_average_xy()
+  {
+    double sum_x = 0.0;
+    double sum_y = 0.0;
+    
+    for (const auto& point : xy_buffer_) {
+      sum_x += point.first;
+      sum_y += point.second;
+    }
+    
+    return {sum_x / xy_buffer_.size(), sum_y / xy_buffer_.size()};
   }
 
   void handle_service(
@@ -124,63 +133,64 @@ private:
   {
     if (!move_group_) {
       response->success = false;
-      response->message = "❌ MoveGroupInterface not initialized.";
+      response->message = "MoveGroupInterface not initialized.";
       publish_status(response->message);
       return;
     }
 
-    publish_status("⏳ Buffering pose data...");
-    rclcpp::Rate rate(20);
-    auto start_time = this->now();
-    const double timeout = 10.0;
-
-    while (rclcpp::ok() && pose_buffer_.size() < 10) {
-      if ((this->now() - start_time).seconds() > timeout) {
-        response->success = false;
-        response->message = "❌ Timeout: Not enough pose data";
-        publish_status(response->message);
-        return;
-      }
-      rclcpp::spin_some(shared_from_this());
-      rate.sleep();
+    // 檢查數據充足性
+    if (xy_buffer_.size() < 10) {
+      response->success = false;
+      response->message = "Insufficient data (need 10 samples).";
+      publish_status(response->message);
+      return;
     }
 
-    publish_status("🔍 Checking pose stability...");
-    start_time = this->now();
-    while (rclcpp::ok() && !is_pose_stable()) {
-      if ((this->now() - start_time).seconds() > timeout) {
-        response->success = false;
-        response->message = "❌ Timeout: Pose not stable";
-        publish_status(response->message);
-        return;
-      }
-      rclcpp::spin_some(shared_from_this());
-      rate.sleep();
+    // 檢查數據穩定性
+    if (!is_data_stable()) {
+      response->success = false;
+      response->message = "XY data not stable (range > 0.01m).";
+      publish_status(response->message);
+      return;
     }
 
-    geometry_msgs::msg::Pose pose = average_pose();
+    // 計算平均XY
+    auto [avg_x, avg_y] = calculate_average_xy();
+    
+    // 構建目標姿勢
+    geometry_msgs::msg::Pose target_pose;
+    target_pose.position.x = avg_x;
+    target_pose.position.y = avg_y;
+    target_pose.position.z = fixed_z_;
+    target_pose.orientation = fixed_quaternion_;
 
-    publish_status("🧠 Planning motion...");
+    RCLCPP_INFO(this->get_logger(), 
+                "Target pose:\nPosition: [%.4f, %.4f, %.4f]\nOrientation: [%.4f, %.4f, %.4f, %.4f]",
+                target_pose.position.x, target_pose.position.y, target_pose.position.z,
+                target_pose.orientation.x, target_pose.orientation.y,
+                target_pose.orientation.z, target_pose.orientation.w);
+
+    // 運動規劃
+    publish_status("Planning movement...");
     move_group_->setStartStateToCurrentState();
-    move_group_->setPoseTarget(pose);
-
-    RCLCPP_INFO(this->get_logger(),
-      "🎯 Target Pose: x=%.3f y=%.3f z=%.3f | orientation=[%.3f, %.3f, %.3f, %.3f]",
-      pose.position.x, pose.position.y, pose.position.z,
-      pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w);
+    move_group_->setPoseTarget(target_pose);
 
     moveit::planning_interface::MoveGroupInterface::Plan plan;
     if (move_group_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS) {
-      publish_status("✅ Motion plan successful, executing...");
+      publish_status("Executing movement...");
       move_group_->execute(plan);
+      
       response->success = true;
-      response->message = "✅ Motion executed successfully";
+      response->message = "Movement executed successfully";
       publish_status(response->message);
     } else {
       response->success = false;
-      response->message = "❌ Motion planning failed";
+      response->message = "Motion planning failed";
       publish_status(response->message);
     }
+
+    // 清空緩衝區以準備下一輪
+    xy_buffer_.clear();
   }
 };
 

@@ -1,6 +1,6 @@
 CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/memory \
+ /usr/include/stdc-predef.h /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -36,6 +36,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/ext/alloc_traits.h \
  /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/initializer_list \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -49,10 +53,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/initializer_list /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
  /usr/include/c++/11/bits/functional_hash.h \
@@ -115,12 +117,7 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -214,7 +211,10 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/cassert \
+ /usr/include/c++/11/functional /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/cassert \
  /usr/include/assert.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/bits/ios_base.h \
@@ -482,6 +482,8 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp \
  /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp \
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -618,12 +620,6 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
@@ -1063,6 +1059,7 @@ CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/color_rgba.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
