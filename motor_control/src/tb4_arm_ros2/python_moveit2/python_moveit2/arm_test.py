@@ -6,6 +6,7 @@ from std_msgs.msg import String
 import time
 import yaml
 import os
+import threading
 from python_moveit_interface.srv import PoseRequest, GripperControl, DetectPose, ArmControl
 from ament_index_python.packages import get_package_share_directory
 from rclpy.executors import MultiThreadedExecutor
@@ -46,19 +47,27 @@ class ArmControlRouter(Node):
     def target_pose_callback(self, msg):
         self.latest_detect_pose = msg
 
+    import threading
+
     def run_task_service(self, request, response):
         task = request.task_name.lower()
         self.get_logger().info(f"Received task: {task}")
-        try:
-            if task in self.task_config:
-                self.run_task_sequence(self.task_config[task], response)
-            else:
+
+        def worker():
+            try:
+                if task in self.task_config:
+                    self.run_task_sequence(self.task_config[task], response)
+                else:
+                    response.success = False
+                    response.message = f"Unknown task: {task}"
+            except Exception as e:
                 response.success = False
-                response.message = f"Unknown task: {task}"
-        except Exception as e:
-            response.success = False
-            response.message = f"Exception: {str(e)}"
+                response.message = f"Exception: {str(e)}"
+            self.get_logger().info(f"Task [{task}] finished: {response.message}")
+
+        threading.Thread(target=worker, daemon=True).start()
         return response
+
 
     def run_task_sequence(self, steps, response):
         for i, step in enumerate(steps):
@@ -69,21 +78,36 @@ class ArmControlRouter(Node):
                 result = self.send_named_pose(step['name_pose'], response)
                 if result and result.success:
                     self.get_logger().info(f"Named pose '{step['name_pose']}' completed.")
-                time.sleep(1.0)
+                elif result and hasattr(result, 'failure') and result.failure:
+                    self.get_logger().error(f"Named pose '{step['name_pose']}' failed.")
+                    continue
 
             elif 'gripper' in step:
                 close = step['gripper'] == 'close'
                 result = self.send_gripper(close, response)
                 if result and result.success:
                     self.get_logger().info(f"Gripper {'closed' if close else 'opened'} successfully.")
-                time.sleep(1.0)
+                elif result and hasattr(result, 'failure') and result.failure:
+                    self.get_logger().error(f"Gripper {'close' if close else 'open'} failed.")
+                    continue
 
             elif 'detect_pose' in step:
                 if step['detect_pose']:
                     result = self.send_auto_pose(response)
                     if result and result.success:
                         self.get_logger().info("Auto pose detection completed.")
-                    time.sleep(1.5)
+                    elif result and hasattr(result, 'failure') and result.failure:
+                        self.get_logger().error("Auto pose detection failed.")
+                        continue
+
+            elif 'cartersian' in step:
+                if step['cartersian']:
+                    result = self.send_cartesian(response)
+                    if result and result.success:
+                        self.get_logger().info("Cartesian path completed.")
+                    elif result and hasattr(result, 'failure') and result.failure:
+                        self.get_logger().error("Cartesian path failed.")
+                        continue
 
             elif 'log' in step:
                 self.get_logger().info(f"{step['log']}")
@@ -99,10 +123,15 @@ class ArmControlRouter(Node):
                 continue
 
             if result is None or not result.success:
+                step_type = list(step.keys())[0] if isinstance(step, dict) else "unknown"
+                if step_type == "gripper":
+                    self.get_logger().warn(f"Gripper failed at step {i+1}, but continuing as it's allowed.")
+                    continue
                 self.get_logger().error(f"Step failed: {result.message if result else 'No response'}")
                 response.success = False
-                response.message = f"Aborted at step {i+1}: {step}"
+                response.message = f"Aborted at step {i+1}: {step}" 
                 return response
+
 
         response.success = True
         response.message = "All steps completed successfully."
@@ -110,16 +139,15 @@ class ArmControlRouter(Node):
         return response
 
     def send_named_pose(self, name, response):
-        if not self.named_pose_client.wait_for_service(timeout_sec=0.5):
+        if not self.named_pose_client.wait_for_service(timeout_sec=10.0):
             response.success = False
             response.message = "named_pose_service not available"
             return response
+
         req = PoseRequest.Request()
         req.message = name
         future = self.named_pose_client.call_async(req)
-        while not future.done():
-            time.sleep(0.1)
-        return future.result()
+        return self.wait_for_future(future, response, "named_pose")
 
     def send_auto_pose(self, response):
         if not self.auto_pose_client.wait_for_service(timeout_sec=0.5):
@@ -128,42 +156,47 @@ class ArmControlRouter(Node):
             return response
         req = DetectPose.Request()
         future = self.auto_pose_client.call_async(req)
-        rclpy.spin_until_future_complete(self, future)
-        return future.result()
+        return self.wait_for_future(future, response, "auto_pose")
+
+    def send_cartesian(self, response):
+        if not hasattr(self, 'cartesian_client'):
+            response.success = False
+            response.message = "cartesian_service client not defined"
+            return response
+        if not self.cartesian_client.wait_for_service(timeout_sec=0.5):
+            response.success = False
+            response.message = "cartesian_service not available"
+            return response
+        req = DetectPose.Request()
+        future = self.cartesian_client.call_async(req)
+        return self.wait_for_future(future, response, "cartesian")
 
     def send_gripper(self, close, response):
-        if not self.gripper_client.wait_for_service(timeout_sec=0.5):
+        if not self.gripper_client.wait_for_service(timeout_sec=1.0):
             response.success = False
             response.message = "gripper_control_service not available"
             return response
+
         req = GripperControl.Request()
         req.close = close
         future = self.gripper_client.call_async(req)
-        while not future.done():
-            time.sleep(0.1)
-        return future.result()
+        return self.wait_for_future(future, response, "gripper")
 
+    def wait_for_future(self, future, response, label="service"):
+        timeout = 10.0
+        interval = 0.01
+        waited = 0.0
+        while not future.done() and waited < timeout:
+            rclpy.spin_once(self, timeout_sec=interval)
+            waited += interval
 
-    # def send_gripper(self, close, response):
-    #     if not self.gripper_client.wait_for_service(timeout_sec=2.0):
-    #         response.success = False
-    #         response.message = "Gripper service not available"
-    #         return response
-
-    #     req = GripperControl.Request()
-    #     req.close = close
-    #     future = self.gripper_client.call_async(req)
-    #     rclpy.spin_until_future_complete(self, future, timeout_sec=5.0)
-    #     result = future.result()
-
-    #     if result:
-    #         response.success = result.success
-    #         response.message = result.message
-    #     else:
-    #         response.success = False
-    #         response.message = "Gripper control timeout or failed"
-
-    #     return response
+        if future.done():
+            return future.result()
+        else:
+            self.get_logger().error(f"{label} timeout or did not respond.")
+            response.success = False
+            response.message = f"{label} timeout or did not respond."
+            return response
 
 def main():
     rclpy.init()

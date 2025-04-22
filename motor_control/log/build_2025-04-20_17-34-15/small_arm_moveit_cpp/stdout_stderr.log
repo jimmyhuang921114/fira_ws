@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[ 20%] Built target named_goal
+[ 40%] Built target ee_pose_in_base
+[ 60%] Built target manual_pose_topic
+[ 80%] Built target auto_pose_goal
+[ 90%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In member function ‘[01m[Kvoid GripperControlService::try_init_mg()[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_global_executor[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+  168 |         rclcpp::[01;31m[Kget_global_executor[m[K()->get_future(), // keep default executor
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gripper_open.dir/build.make:76: CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/gripper_open.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

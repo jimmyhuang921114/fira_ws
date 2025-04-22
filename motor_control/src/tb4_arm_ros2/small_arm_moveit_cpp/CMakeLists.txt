@@ -7,6 +7,7 @@ find_package(moveit_ros_planning_interface REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(python_moveit_interface REQUIRED)  # ✅ 這行是關鍵
 
+add_executable(cartesian_path src/cartesian_path.cpp)
 add_executable(ee_pose_in_base src/ee_pose_in_base.cpp)
 add_executable(auto_pose_goal src/auto_pose_goal.cpp)
 add_executable(named_goal src/named_goal.cpp)
@@ -49,12 +50,20 @@ ament_target_dependencies(manual_pose_topic
   python_moveit_interface
 )
 
+ament_target_dependencies(cartesian_path
+  rclcpp
+  moveit_ros_planning_interface
+  geometry_msgs
+  python_moveit_interface
+)
+
 install(TARGETS
   auto_pose_goal
   named_goal
   gripper_open
   ee_pose_in_base
   manual_pose_topic
+  cartesian_path
   DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY launch/

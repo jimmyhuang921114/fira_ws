@@ -1,0 +1,6 @@
+[  8%] [32mBuilding CXX object CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o[0m
+[ 25%] Built target ee_pose_in_base
+[ 41%] Built target named_goal
+[ 58%] Built target manual_pose_topic
+[ 91%] Built target auto_pose_goal
+[ 91%] Built target gripper_open

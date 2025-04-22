@@ -1,0 +1,84 @@
+[0.624s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.672s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[0.673s] [35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[0.698s] [ 16%] Built target ee_pose_in_base
+[0.718s] [ 41%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[0.719s] [ 41%] Built target manual_pose_topic
+[0.720s] [ 75%] Built target cartesian_path
+[0.720s] [ 75%] Built target named_goal
+[0.721s] [ 91%] Built target auto_pose_goal
+[3.939s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:111:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[3.939s]   111 |     [01;31m[Kauto[m[K joint_names = move_group_interface_->getJointNames();
+[3.939s]       |     [01;31m[K^~~~[m[K
+[3.939s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:112:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[3.939s]   112 |     [01;31m[Kauto[m[K joint_values = move_group_interface_->getCurrentJointValues();
+[3.939s]       |     [01;31m[K^~~~[m[K
+[3.940s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:114:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[3.940s]   114 |     [01;31m[Kif[m[K (joint_names.empty() || joint_values.empty()) {
+[3.940s]       |     [01;31m[K^~[m[K
+[3.940s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:123:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+[3.940s]   123 |     [01;31m[Kauto[m[K it = std::find(joint_names.begin(), joint_names.end(), joint_name);
+[3.940s]       |     [01;31m[K^~~~[m[K
+[3.940s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:124:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[3.940s]   124 |     [01;31m[Kif[m[K (it != joint_names.end()) {
+[3.940s]       |     [01;31m[K^~[m[K
+[3.940s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:143:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[3.940s]   143 |     } [01;31m[Kelse[m[K {
+[3.940s]       |       [01;31m[K^~~~[m[K
+[3.940s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:147:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[3.940s]   147 |     } [01;31m[Kelse[m[K {
+[3.940s]       |       [01;31m[K^~~~[m[K
+[3.959s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In constructor ‘[01m[KGripperControlServiceWithDiagnostics::GripperControlServiceWithDiagnostics()[m[K’:
+[3.959s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_service_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcreate_service[m[K’?
+[3.959s]    17 |     [01;31m[Kgripper_service_[m[K = this->create_service<GripperControl>(
+[3.959s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.959s]       |     [32m[Kcreate_service[m[K
+[3.984s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiagnostic_publisher_[m[K’ was not declared in this scope
+[3.984s]    21 |     [01;31m[Kdiagnostic_publisher_[m[K = this->create_publisher<std_msgs::msg::String>("/gripper_diagnostic", 10);
+[3.984s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.991s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[3.991s]    23 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[3.991s]       |     [01;31m[K^~~~~~[m[K
+[3.991s]       |     [32m[Ktimer_t[m[K
+[4.009s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In member function ‘[01m[Kvoid GripperControlServiceWithDiagnostics::try_initialize_move_group()[m[K’:
+[4.009s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface_[m[K’ was not declared in this scope
+[4.009s]    33 |     if ([01;31m[Kmove_group_interface_[m[K) return;
+[4.009s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.021s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface_[m[K’ was not declared in this scope
+[4.021s]    36 |       [01;31m[Kmove_group_interface_[m[K = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
+[4.021s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.027s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:39:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[4.027s]    39 |       [01;31m[Ktimer_[m[K->cancel();
+[4.027s]       |       [01;31m[K^~~~~~[m[K
+[4.027s]       |       [32m[Ktimer_t[m[K
+[4.039s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In member function ‘[01m[Kvoid GripperControlServiceWithDiagnostics::publish_diagnostic(const string&)[m[K’:
+[4.039s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiagnostic_publisher_[m[K’ was not declared in this scope
+[4.039s]    49 |     [01;31m[Kdiagnostic_publisher_[m[K->publish(msg);
+[4.039s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.053s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In member function ‘[01m[Kvoid GripperControlServiceWithDiagnostics::handle_service(std::shared_ptr<python_moveit_interface::srv::GripperControl_Request_<std::allocator<void> > >, std::shared_ptr<python_moveit_interface::srv::GripperControl_Response_<std::allocator<void> > >)[m[K’:
+[4.053s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:56:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface_[m[K’ was not declared in this scope
+[4.053s]    56 |     if (![01;31m[Kmove_group_interface_[m[K) {
+[4.053s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.066s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:73:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface_[m[K’ was not declared in this scope
+[4.066s]    73 |     [01;31m[Kmove_group_interface_[m[K->setStartStateToCurrentState();
+[4.066s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.067s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K At global scope:
+[4.067s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:162:13:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K->[m[K’ token
+[4.067s]   162 |     response[01;31m[K->[m[Ksuccess = false;
+[4.067s]       |             [01;31m[K^~[m[K
+[4.069s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:163:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ does not name a type
+[4.069s]   163 |     [01;31m[Kresponse[m[K->message = "Execution failed or too far from target.";
+[4.069s]       |     [01;31m[K^~~~~~~~[m[K
+[4.069s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:164:23:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[4.069s]   164 |     publish_diagnostic[01;31m[K([m[Kresponse->message);
+[4.069s]       |                       [01;31m[K^[m[K
+[4.069s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:165:3:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.069s]   165 |   [01;31m[K}[m[K
+[4.070s]       |   [01;31m[K^[m[K
+[4.071s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:171:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[4.071s]   171 | [01;31m[K}[m[K;
+[4.071s]       | [01;31m[K^[m[K
+[5.808s] gmake[2]: *** [CMakeFiles/gripper_open.dir/build.make:76: CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o] Error 1
+[5.808s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/gripper_open.dir/all] Error 2
+[5.808s] gmake: *** [Makefile:146: all] Error 2
+[5.810s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

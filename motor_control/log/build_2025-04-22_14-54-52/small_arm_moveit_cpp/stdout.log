@@ -1,0 +1,5 @@
+[ 16%] Built target ee_pose_in_base
+[ 33%] Built target cartesian_path
+[ 50%] Built target manual_pose_topic
+[ 66%] Built target named_goal
+[ 83%] Built target gripper_open

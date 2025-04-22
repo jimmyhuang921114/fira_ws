@@ -1,0 +1,34 @@
+[1.448s] Invoking command in '/home/darkdemon/work/motor_control/src/realsense': PYTHONPATH=/home/darkdemon/work/motor_control/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense build --build-base /home/darkdemon/work/motor_control/build/realsense/build install --record /home/darkdemon/work/motor_control/build/realsense/install.log --single-version-externally-managed install_data
+[1.626s] running egg_info
+[1.627s] writing ../../build/realsense/realsense.egg-info/PKG-INFO
+[1.627s] writing dependency_links to ../../build/realsense/realsense.egg-info/dependency_links.txt
+[1.627s] writing entry points to ../../build/realsense/realsense.egg-info/entry_points.txt
+[1.627s] writing requirements to ../../build/realsense/realsense.egg-info/requires.txt
+[1.627s] writing top-level names to ../../build/realsense/realsense.egg-info/top_level.txt
+[1.628s] reading manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'
+[1.629s] writing manifest file '../../build/realsense/realsense.egg-info/SOURCES.txt'
+[1.629s] running build
+[1.629s] running build_py
+[1.629s] copying realsense/depth_calculate.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[1.629s] copying realsense/realsense_read.py -> /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense
+[1.630s] running install
+[1.630s] running install_lib
+[1.630s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/depth_calculate.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[1.630s] copying /home/darkdemon/work/motor_control/build/realsense/build/lib/realsense/realsense_read.py -> /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense
+[1.631s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/depth_calculate.py to depth_calculate.cpython-310.pyc
+[1.632s] byte-compiling /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/realsense_read.py to realsense_read.cpython-310.pyc
+[1.632s] running install_data
+[1.633s] running install_egg_info
+[1.635s] removing '/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info' (and everything under it)
+[1.635s] Copying ../../build/realsense/realsense.egg-info to /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense-0.0.1-py3.10.egg-info
+[1.635s] running install_scripts
+[1.651s] Installing box_edge_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing color_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing color_range script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing depth_calculate script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing paddleorc script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing realsense_read script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing visiual script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.651s] Installing yolo_number_detect script to /home/darkdemon/work/motor_control/install/realsense/lib/realsense
+[1.652s] writing list of installed files to '/home/darkdemon/work/motor_control/build/realsense/install.log'
+[1.668s] Invoked command in '/home/darkdemon/work/motor_control/src/realsense' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense build --build-base /home/darkdemon/work/motor_control/build/realsense/build install --record /home/darkdemon/work/motor_control/build/realsense/install.log --single-version-externally-managed install_data

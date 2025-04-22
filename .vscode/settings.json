@@ -87,7 +87,8 @@
         "variant": "cpp",
         "__functional_03": "cpp",
         "target": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "future": "cpp"
     },
     "cmake.sourceDirectory": "/home/darkdemon/workspace/hand_eye_cali_ws/build/visp_hand2eye_calibration/visp_hand2eye_calibration__py"
 }

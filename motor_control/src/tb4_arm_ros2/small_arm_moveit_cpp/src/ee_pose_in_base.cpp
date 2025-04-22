@@ -15,18 +15,15 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    // 宣告相機到 EE 的位移與旋轉參數
     this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.045, 0.05 , -0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
     this->declare_parameter<bool>("enable_z_scale_div10", true);
 
-    // 訂閱相機座標的 Pose 資料（通常為文字座標）
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(
       "/text_coordinate", 10,
       std::bind(&CameraToBasePrinter::callback, this, std::placeholders::_1)
     );
 
-    // 發布轉換到 base_link 座標下的目標 Pose
     publisher_ = this->create_publisher<geometry_msgs::msg::Pose>("/target_pose_in_base", 10);
   }
 
@@ -35,8 +32,7 @@ private:
   {
     geometry_msgs::msg::Pose input_pose = *msg;
     RCLCPP_INFO(this->get_logger(), "text_callback");
-
-    // 如果啟用 Z 縮放，將 Z 從 mm 除以 10（避免輸入單位錯誤）
+    
     bool enable_div10 = this->get_parameter("enable_z_scale_div10").as_bool();
     if (enable_div10) {
       double original_z = input_pose.position.z;
@@ -120,3 +116,4 @@ int main(int argc, char * argv[]) {
   rclcpp::shutdown();
   return 0;
 }
+  

@@ -11,37 +11,42 @@ class RealSensePublisher(Node):
     def __init__(self):
         super().__init__('realsense_publisher')
 
-        # setting topic
+        # === ROS2 Publishers ===
         self.color_publisher = self.create_publisher(Image, '/camera/color', 10)
         self.depth_publisher = self.create_publisher(Image, '/camera/depth', 10)
-        
-        # opencv and ros2 tool
+
+        # === CV Bridge ===
         self.bridge = CvBridge()
 
-        # RealSense setup
+        # === RealSense pipeline and filters ===
         self.pipeline = None
         self.config = rs.config()
+        self.align_to = rs.stream.color
+        self.align = rs.align(self.align_to)
 
-        # set timer
-        self.timer = self.create_timer(0.01, self.publish_frames)
+        # === Filters ===
+        self.spatial_filter = rs.spatial_filter()   # 去除空洞
+        self.temporal_filter = rs.temporal_filter() # 穩定畫面
 
-        # Connection status
+        # === Retry settings ===
         self.connected = False
         self.retry_count = 0
         self.max_retries = 5
 
-        # Attempt to connect
+        # === Timer ===
+        self.timer = self.create_timer(0.01, self.publish_frames)
+
+        # Try to connect
         self.connect_camera()
 
     def connect_camera(self):
         self.get_logger().info("Attempting to connect to RealSense camera...")
         try:
             self.pipeline = rs.pipeline()
-            config = rs.config()
+            self.config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
+            self.config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
 
-            config.enable_stream(rs.stream.color, 1280,720, rs.format.bgr8, 30)
-            config.enable_stream(rs.stream.depth, 1280,720, rs.format.z16, 30)
-            self.pipeline.start(config)
+            self.pipeline.start(self.config)
             self.connected = True
             self.retry_count = 0
             self.get_logger().info("Successfully connected to RealSense camera")
@@ -67,29 +72,40 @@ class RealSensePublisher(Node):
             return
         try:
             frames = self.pipeline.wait_for_frames()
-            color_frame = frames.get_color_frame()
-            depth_frame = frames.get_depth_frame()
+            aligned_frames = self.align.process(frames)
 
+            color_frame = aligned_frames.get_color_frame()
+            depth_frame = aligned_frames.get_depth_frame()
             if not color_frame or not depth_frame:
                 self.get_logger().warn("Invalid frames. Skipping.")
                 return
-            
 
+            # === Apply filters ===
+            depth_frame = self.spatial_filter.process(depth_frame)
+            depth_frame = self.temporal_filter.process(depth_frame)
+
+            # === Convert to numpy ===
             color_image = np.asanyarray(color_frame.get_data())
             depth_image = np.asanyarray(depth_frame.get_data())
 
+            # === Convert to ROS image messages ===
             color_msg = self.bridge.cv2_to_imgmsg(color_image, encoding='bgr8')
             depth_msg = self.bridge.cv2_to_imgmsg(depth_image, encoding='16UC1')
 
             now = self.get_clock().now().to_msg()
-
             color_msg.header.stamp = now
             depth_msg.header.stamp = now
 
             self.color_publisher.publish(color_msg)
             self.depth_publisher.publish(depth_msg)
 
-            self.get_logger().info("Published /camera/color and /camera/depth")
+            # self.get_logger().info("Published aligned /camera/color and /camera/depth")
+
+            # === Visualization ===
+            cv2.imshow("Color Frame", color_image)
+            depth_colormap = cv2.convertScaleAbs(depth_image, alpha=0.03)
+            depth_colormap_color = cv2.applyColorMap(depth_colormap, cv2.COLORMAP_JET)
+            cv2.imshow("Depth Frame (Color)", depth_colormap_color)
             cv2.waitKey(1)
 
         except Exception as e:

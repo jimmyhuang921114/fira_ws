@@ -1,0 +1,21 @@
+[  1%] Built target python_moveit_interface__cpp
+[ 12%] Built target python_moveit_interface__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_python_moveit_interface
+[ 41%] Built target python_moveit_interface__rosidl_typesupport_c
+[ 41%] Built target python_moveit_interface__rosidl_typesupport_introspection_c
+[ 45%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c
+[ 56%] Built target python_moveit_interface__rosidl_typesupport_introspection_cpp
+[ 67%] Built target python_moveit_interface__rosidl_typesupport_cpp
+[ 78%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_cpp
+[ 78%] Built target python_moveit_interface
+[ 80%] Built target python_moveit_interface__py
+[ 89%] Built target python_moveit_interface__rosidl_generator_py
+[ 96%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target python_moveit_interface__rosidl_typesupport_c__pyext
+[100%] Built target python_moveit_interface__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing python_moveit_interface.egg-info/PKG-INFO
+writing dependency_links to python_moveit_interface.egg-info/dependency_links.txt
+writing top-level names to python_moveit_interface.egg-info/top_level.txt
+reading manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+writing manifest file 'python_moveit_interface.egg-info/SOURCES.txt'

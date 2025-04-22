@@ -55,9 +55,18 @@ def generate_launch_description():
        parameters=[moveit_config.to_dict()],
     ) 
 
+    cartesian_node = Node(
+        name="moveit_cartesian",
+        package="small_arm_moveit_cpp",
+        executable="cartesian_path",
+        output="screen",
+        parameters=[moveit_config.to_dict()],
+    )
+
     return LaunchDescription([
         auto_pose_node,
         ee_pose_node,
         named_pose_node,
         gripper_open_node,
+        cartesian_node,
     ])

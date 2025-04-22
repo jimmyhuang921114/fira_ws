@@ -1,201 +1,150 @@
 initial_pose:
- - name_pose: home
- - wait: 0.5
- - log: finish
- - gripper: close
- - wait: 0.5
- - log: finish
+- name_pose: home
+- log: finish
+- gripper: close
+- log: finish
 
 detect_pose:
- - name_pose: detect
- - wait: 0.5
- - log: finish
+- name_pose: detect
+- log: finish
 
 gripper_open:
- - gripper: open
- - wait: 0.5
+- gripper: open
+- log: finish
 
 gripper_close:
- - gripper: close 
- - wait: 0.5
+- gripper: close
+- log: finish
+
+cartesian_move:
+- name_pose: detect
+- log : finish
+- gripper: open
+- log : finish
+- cartersian: true
+- log : finish
+- gripper: close
+- name_pose: detect
+- log: finish
 
 grap_up:
- - name_pose: detect
- - wait: 0.5
- - gripper : open
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper : close
- - wait: 0.5  
- - name_pose: detect
- - wait: 0.5
+- name_pose: detect
+- log : finish
+- gripper: open
+- log : finish
+- detect_pose: true
+- log : finish
+- gripper: close
+- log : finish
+- name_pose: detect
+- name_pose: home
+- log: finish
 
 put_down:
- - detect_pose: true
- - wait: 0.5
- - gripper: open 
- - wait: 0.5
- - name_pose: detect_pose
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish
 
-gripper_test: 
- - gripper: open
- - wait: 0.5
- - gripper: close
- - wait: 0.5
- - gripper: open
- - wait: 0.5
- - gripper: close
- - wait: 0.5
+gripper_test:
+- gripper: open
+- gripper: close
+- gripper: open
+- gripper: close
+- log: finish
 
 grab_detect_pose_left_up:
- - name_pose: detect
- - wait: 0.5
- - gripper : open
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper : close
- - wait: 0.5
- - name_pose: detect
- - wait: 0.5
- - name_pose: left_up_putting
- - wait: 0.5
- - gripper: open
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: detect
+- name_pose: detect
+- gripper: open
+- detect_pose: true
+- gripper: close
+- name_pose: detect
+- name_pose: left_up_putting
+- gripper: open
+- name_pose: right_up
+- name_pose: detect
+- log: finish
 
 grab_detect_pose_left_down:
- - name_pose: detect_pose
- - wait: 0.5
- - gripper : open
- - wait: 0.5
- - detect_pose : true
- - wait: 0.5
- - gripper : close
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - name_pose: left_down_putting
- - wait: 0.5
- - gripper: open
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: detect_pose
+- name_pose: detect_pose
+- gripper: open
+- detect_pose: true
+- gripper: close
+- name_pose: detect_pose
+- name_pose: left_down_putting
+- gripper: open
+- name_pose: right_up
+- name_pose: detect_pose
+- log: finish
 
 grab_detect_pose_right_up:
- - name_pose: detect_pose
- - wait: 0.5
- - gripper : open
- - wait: 0.5
- - detect_pose : true
- - wait: 0.5
- - gripper : close
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - name_pose: right_up_putting
- - wait: 0.5
- - gripper: open
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: detect_pose
+- name_pose: detect_pose
+- gripper: open
+- detect_pose: true
+- gripper: close
+- name_pose: detect_pose
+- name_pose: right_up_putting
+- gripper: open
+- name_pose: right_up
+- name_pose: detect_pose
+- log: finish
 
 grab_detect_pose_right_down:
- - name_pose: detect_pose
- - wait: 0.5
- - gripper : open
- - wait: 0.5
- - detect_pose : true
- - wait: 0.5
- - gripper : close
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - name_pose: right_down_putting
- - wait: 0.5
- - gripper: open
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: detect_pose
+- name_pose: detect_pose
+- gripper: open
+- detect_pose: true
+- gripper: close
+- name_pose: detect_pose
+- name_pose: right_down_putting
+- gripper: open
+- name_pose: right_up
+- name_pose: detect_pose
+- log: finish
 
 put_left_up_block:
- - gripper: open
- - wait: 0.5
- - name_pose: left_up
- - wait: 0.5
- - name_pose: left_up_putting
- - wait: 0.5
- - gripper: close
- - wait: 0.5
- - name_pose: left_up
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper: open 
- - wait: 0.5
- - name_pose: detect_pose
+- gripper: open
+- name_pose: left_up
+- name_pose: left_up_putting
+- gripper: close
+- name_pose: left_up
+- name_pose: detect_pose
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish
 
 put_left_down_block:
- - gripper: open
- - wait: 0.5
- - name_pose: left_down
- - wait: 0.5
- - name_pose: left_down_putting
- - wait: 0.5
- - gripper: close
- - wait: 0.5
- - name_pose: left_down
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper: open 
- - wait: 0.5
- - name_pose: detect_pose
+- gripper: open
+- name_pose: left_down
+- name_pose: left_down_putting
+- gripper: close
+- name_pose: left_down
+- name_pose: detect_pose
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish
 
 put_right_up_block:
- - gripper: open
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: right_up_putting
- - wait: 0.5
- - gripper: close
- - wait: 0.5
- - name_pose: right_up
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper: open 
- - wait: 0.5
- - name_pose: detect_pose
+- gripper: open
+- name_pose: right_up
+- name_pose: right_up_putting
+- gripper: close
+- name_pose: right_up
+- name_pose: detect_pose
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish
 
 put_right_down_block:
- - gripper: open
- - wait: 0.5
- - name_pose: right_down
- - wait: 0.5
- - name_pose: right_down_putting
- - wait: 0.5
- - gripper: close
- - wait: 0.5
- - name_pose: right_down
- - wait: 0.5
- - name_pose: detect_pose
- - wait: 0.5
- - detect_pose: true
- - wait: 0.5
- - gripper: open 
- - wait: 0.5
- - name_pose: detect_pose
+- gripper: open
+- name_pose: right_down
+- name_pose: right_down_putting
+- gripper: close
+- name_pose: right_down
+- name_pose: detect_pose
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish

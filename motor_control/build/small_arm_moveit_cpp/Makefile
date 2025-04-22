@@ -198,6 +198,19 @@ small_arm_moveit_cpp_uninstall/fast:
 .PHONY : small_arm_moveit_cpp_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named cartesian_path
+
+# Build rule for target.
+cartesian_path: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cartesian_path
+.PHONY : cartesian_path
+
+# fast build rule for target.
+cartesian_path/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartesian_path.dir/build.make CMakeFiles/cartesian_path.dir/build
+.PHONY : cartesian_path/fast
+
+#=============================================================================
 # Target rules for targets named ee_pose_in_base
 
 # Build rule for target.
@@ -285,6 +298,30 @@ src/auto_pose_goal.s: src/auto_pose_goal.cpp.s
 src/auto_pose_goal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_pose_goal.dir/build.make CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.s
 .PHONY : src/auto_pose_goal.cpp.s
+
+src/cartesian_path.o: src/cartesian_path.cpp.o
+.PHONY : src/cartesian_path.o
+
+# target to build an object file
+src/cartesian_path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartesian_path.dir/build.make CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o
+.PHONY : src/cartesian_path.cpp.o
+
+src/cartesian_path.i: src/cartesian_path.cpp.i
+.PHONY : src/cartesian_path.i
+
+# target to preprocess a source file
+src/cartesian_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartesian_path.dir/build.make CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.i
+.PHONY : src/cartesian_path.cpp.i
+
+src/cartesian_path.s: src/cartesian_path.cpp.s
+.PHONY : src/cartesian_path.s
+
+# target to generate assembly for a file
+src/cartesian_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cartesian_path.dir/build.make CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.s
+.PHONY : src/cartesian_path.cpp.s
 
 src/ee_pose_in_base.o: src/ee_pose_in_base.cpp.o
 .PHONY : src/ee_pose_in_base.o
@@ -398,6 +435,7 @@ help:
 	@echo "... small_arm_moveit_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... auto_pose_goal"
+	@echo "... cartesian_path"
 	@echo "... ee_pose_in_base"
 	@echo "... gripper_open"
 	@echo "... manual_pose_topic"
@@ -405,6 +443,9 @@ help:
 	@echo "... src/auto_pose_goal.o"
 	@echo "... src/auto_pose_goal.i"
 	@echo "... src/auto_pose_goal.s"
+	@echo "... src/cartesian_path.o"
+	@echo "... src/cartesian_path.i"
+	@echo "... src/cartesian_path.s"
 	@echo "... src/ee_pose_in_base.o"
 	@echo "... src/ee_pose_in_base.i"
 	@echo "... src/ee_pose_in_base.s"

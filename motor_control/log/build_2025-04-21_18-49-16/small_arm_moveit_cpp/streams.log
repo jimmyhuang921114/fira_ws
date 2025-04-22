@@ -1,0 +1,33 @@
+[0.791s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.816s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.938s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.978s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.983s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.991s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.008s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.099s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.112s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.112s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.112s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.181s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.199s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.385s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.412s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.421s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.448s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.500s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.536s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.699s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.723s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.745s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.786s] -- Found python_moveit_interface: 0.0.0 (/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake)
+[1.811s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[1.811s]   ament_target_dependencies() the first argument must be a valid target name
+[1.811s] Call Stack (most recent call first):
+[1.811s]   CMakeLists.txt:52 (ament_target_dependencies)
+[1.811s] 
+[1.811s] [0m
+[1.811s] -- Configuring incomplete, errors occurred!
+[1.811s] See also "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/CMakeFiles/CMakeOutput.log".
+[1.820s] gmake: *** [Makefile:431: cmake_check_build_system] Error 1
+[1.822s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/visual:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/home/darkdemon/work/motor_control/install/map_tool:/home/darkdemon/work/motor_control/install/lidar_filter:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/map_if:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

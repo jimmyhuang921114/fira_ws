@@ -1,0 +1,23 @@
+[1.753s] Invoking command in '/home/darkdemon/work/motor_control/src/RobotSot/src/map_tool': PYTHONPATH=/home/darkdemon/work/motor_control/build/map_tool/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/map_tool build --build-base /home/darkdemon/work/motor_control/build/map_tool/build install --record /home/darkdemon/work/motor_control/build/map_tool/install.log --single-version-externally-managed install_data
+[1.999s] running egg_info
+[2.001s] writing ../../../../build/map_tool/map_tool.egg-info/PKG-INFO
+[2.001s] writing dependency_links to ../../../../build/map_tool/map_tool.egg-info/dependency_links.txt
+[2.001s] writing entry points to ../../../../build/map_tool/map_tool.egg-info/entry_points.txt
+[2.001s] writing requirements to ../../../../build/map_tool/map_tool.egg-info/requires.txt
+[2.002s] writing top-level names to ../../../../build/map_tool/map_tool.egg-info/top_level.txt
+[2.004s] reading manifest file '../../../../build/map_tool/map_tool.egg-info/SOURCES.txt'
+[2.005s] writing manifest file '../../../../build/map_tool/map_tool.egg-info/SOURCES.txt'
+[2.005s] running build
+[2.005s] running build_py
+[2.006s] running install
+[2.006s] running install_lib
+[2.008s] running install_data
+[2.008s] running install_egg_info
+[2.013s] removing '/home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool-0.0.0-py3.10.egg-info' (and everything under it)
+[2.013s] Copying ../../../../build/map_tool/map_tool.egg-info to /home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages/map_tool-0.0.0-py3.10.egg-info
+[2.015s] running install_scripts
+[2.042s] Installing cmd_sender script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+[2.043s] Installing measure script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+[2.043s] Installing platform script to /home/darkdemon/work/motor_control/install/map_tool/lib/map_tool
+[2.043s] writing list of installed files to '/home/darkdemon/work/motor_control/build/map_tool/install.log'
+[2.100s] Invoked command in '/home/darkdemon/work/motor_control/src/RobotSot/src/map_tool' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/map_tool/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/map_tool/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/map_tool build --build-base /home/darkdemon/work/motor_control/build/map_tool/build install --record /home/darkdemon/work/motor_control/build/map_tool/install.log --single-version-externally-managed install_data

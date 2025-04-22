@@ -1,0 +1,213 @@
+[  5%] Built target python_moveit_interface__cpp
+[ 12%] Built target python_moveit_interface__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_python_moveit_interface
+[ 23%] Built target python_moveit_interface__rosidl_typesupport_introspection_c
+[ 34%] Built target python_moveit_interface__rosidl_typesupport_introspection_cpp
+[ 45%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c
+[ 56%] Built target python_moveit_interface__rosidl_typesupport_c
+[ 67%] Built target python_moveit_interface__rosidl_typesupport_cpp
+[ 78%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_cpp
+[ 78%] Built target python_moveit_interface
+[ 80%] Built target python_moveit_interface__py
+[ 89%] Built target python_moveit_interface__rosidl_generator_py
+[ 92%] Built target python_moveit_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target python_moveit_interface__rosidl_typesupport_c__pyext
+[100%] Built target python_moveit_interface__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing python_moveit_interface.egg-info/PKG-INFO
+writing dependency_links to python_moveit_interface.egg-info/dependency_links.txt
+writing top-level names to python_moveit_interface.egg-info/top_level.txt
+reading manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+writing manifest file 'python_moveit_interface.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_python_moveit_interface_egg
+-- Install configuration: ""
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/rosidl_interfaces/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__functions.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__functions.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__functions.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__type_support.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__struct.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__functions.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__struct.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__struct.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__functions.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__functions.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__functions.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__functions.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__struct.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/arm_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/gripper_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/pose_request.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detect_pose.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/library_path.sh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/library_path.dsv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_c.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__type_support.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_c.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__type_support.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__traits.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__builder.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__struct.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__struct.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__builder.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__builder.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__traits.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__struct.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__struct.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__traits.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__traits.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__builder.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/arm_control.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/gripper_control.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/pose_request.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detect_pose.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/dds_fastrtps
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__type_support.cpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/gripper_control__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/detect_pose__type_support.cpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/pose_request__type_support.cpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/include/python_moveit_interface/python_moveit_interface/srv/detail/arm_control__type_support.cpp
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/pythonpath.sh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/pythonpath.dsv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface-0.0.0-py3.10.egg-info
+-- Installing: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_c.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/__init__.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_arm_control_s.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_detect_pose_s.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_arm_control.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/__init__.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_detect_pose.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_gripper_control_s.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_pose_request.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_gripper_control.py
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv/_pose_request_s.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/_python_moveit_interface_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/libpython_moveit_interface__rosidl_generator_py.so
+Listing '/home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface'...
+Listing '/home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/srv'...
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages/python_moveit_interface/python_moveit_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/lib/libpython_moveit_interface__rosidl_generator_py.so
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/PoseRequest.idl
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/GripperControl.idl
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/DetectPose.idl
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/ArmControl.idl
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/PoseRequest.srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/PoseRequest_Request.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/PoseRequest_Response.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/GripperControl.srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/GripperControl_Request.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/GripperControl_Response.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/DetectPose.srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/DetectPose_Request.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/DetectPose_Response.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/ArmControl.srv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/ArmControl_Request.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/srv/ArmControl_Response.msg
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/package_run_dependencies/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/parent_prefix_path/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/ament_prefix_path.sh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/path.sh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/environment/path.dsv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.bash
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.sh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.zsh
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/local_setup.dsv
+-- Installing: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.dsv
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/ament_index/resource_index/packages/python_moveit_interface
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interface__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/export_python_moveit_interface__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interfaceConfig.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/cmake/python_moveit_interfaceConfig-version.cmake
+-- Up-to-date: /home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.xml

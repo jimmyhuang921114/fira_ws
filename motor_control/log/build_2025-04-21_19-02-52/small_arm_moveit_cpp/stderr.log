@@ -1,0 +1,159 @@
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:14:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot_interfaces[m[K’ does not name a type
+   14 | using CartesianPath = [01;31m[Kmy_robot_interfaces[m[K::srv::CartesianPath;
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:39:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   39 |   double [01;31m[Kfix[m[K  ed_z_;
+      |          [01;31m[K^~~[m[K
+      |             [32m[K;[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:39:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ked_z_[m[K’ does not name a type
+   39 |   double fix  [01;31m[Ked_z_[m[K;
+      |               [01;31m[K^~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   64 |     const std::shared_ptr<[01;31m[KCartesianPath[m[K::Request> /*request*/,
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                           [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |     const std::shared_ptr<CartesianPath::Request[01;31m[K>[m[K /*request*/,
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   64 |     const std::shared_ptr<[01;31m[KCartesianPath[m[K::Request> /*request*/,
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                           [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |     const std::shared_ptr<CartesianPath::Request[01;31m[K>[m[K /*request*/,
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   64 |     const std::shared_ptr<[01;31m[KCartesianPath[m[K::Request> /*request*/,
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                           [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   64 |     const std::shared_ptr<CartesianPath::Request[01;31m[K>[m[K /*request*/,
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:11:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   64 |     const [01;31m[Kstd[m[K::shared_ptr<CartesianPath::Request> /*request*/,
+      |           [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:27:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ has not been declared
+   64 |     const std::shared_ptr<[01;31m[KCartesianPath[m[K::Request> /*request*/,
+      |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:64:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   64 |     [01;31m[Kconst[m[K std::shared_ptr<CartesianPath::Request> /*request*/,
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   65 |     std::shared_ptr<[01;31m[KCartesianPath[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     std::shared_ptr<CartesianPath::Response[01;31m[K>[m[K response)
+      |                                            [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   65 |     std::shared_ptr<[01;31m[KCartesianPath[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     std::shared_ptr<CartesianPath::Response[01;31m[K>[m[K response)
+      |                                            [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   65 |     std::shared_ptr<[01;31m[KCartesianPath[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |     std::shared_ptr<CartesianPath::Response[01;31m[K>[m[K response)
+      |                                            [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:5:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   65 |     [01;31m[Kstd[m[K::shared_ptr<CartesianPath::Response> response)
+      |     [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ has not been declared
+   65 |     std::shared_ptr<[01;31m[KCartesianPath[m[K::Response> response)
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:65:5:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   65 |     [01;31m[Kstd[m[K::shared_ptr<CartesianPath::Response> response)
+      |     [01;31m[K^~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:101:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+  101 |   rclcpp::Service<[01;31m[KCartesianPath[m[K>::SharedPtr service_;
+      |                   [01;31m[K^~~~~~~~~~~~~[m[K
+      |                   [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:101:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  101 |   rclcpp::Service<CartesianPath[01;31m[K>[m[K::SharedPtr service_;
+      |                                [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:101:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  101 |   rclcpp::Service<CartesianPath>::[01;31m[KSharedPtr[m[K service_;
+      |                                   [01;31m[K^~~~~~~~~[m[K
+      |                                            [32m[K;[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:101:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ does not name a type
+  101 |   rclcpp::Service<CartesianPath>::SharedPtr [01;31m[Kservice_[m[K;
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:[m[K In constructor ‘[01m[KCartesianPathServer::CartesianPathServer()[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:20:36:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KCartesianPathServer[m[K’ does not have any field named ‘[01m[Kfixed_z_[m[K’
+   20 |   : Node("cartesian_path_server"), [01;31m[Kfixed_z_[m[K(0.03)
+      |                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ was not declared in this scope
+   25 |     [01;31m[Kservice_[m[K = this->create_service<CartesianPath>(
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:25:37:[m[K [01;31m[Kerror: [m[K‘[01m[KCartesianPath[m[K’ was not declared in this scope; did you mean ‘[01m[KCartesianPathServer[m[K’?
+   25 |     service_ = this->create_service<[01;31m[KCartesianPath[m[K>(
+      |                                     [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                     [32m[KCartesianPathServer[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:25:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCartesianPathServer::create_service<<expression error> >(const char [23], std::_Bind_helper<false, void (CartesianPathServer::*)(...), CartesianPathServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+   25 |     service_ = [01;31m[Kthis->create_service<CartesianPath>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   26 | [01;31m[K      "compute_cartesian_path",[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                    
+   27 | [01;31m[K      std::bind(&CartesianPathServer::handle_service, this, _1, _2))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  267 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:25:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   25 |     service_ = [01;31m[Kthis->create_service<CartesianPath>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   26 | [01;31m[K      "compute_cartesian_path",[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                    
+   27 | [01;31m[K      std::bind(&CartesianPathServer::handle_service, this, _1, _2))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:[m[K In member function ‘[01m[Kvoid CartesianPathServer::pose_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:50:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   50 |       [01;31m[Kfixed_z_[m[K = 0.015;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:52:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   52 |       [01;31m[Kfixed_z_[m[K = 0.025;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:54:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   54 |       [01;31m[Kfixed_z_[m[K = 0.035;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:56:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   56 |       [01;31m[Kfixed_z_[m[K = 0.03; // 預設值
+      |       [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:5[m[K:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:60:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   60 |          latest_point_.x, latest_point_.y, latest_point_.z, [01;31m[Kfixed_z_[m[K);
+      |                                                             [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:[m[K In member function ‘[01m[Kvoid CartesianPathServer::handle_service(...)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:74:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfixed_z_[m[K’ was not declared in this scope
+   74 |     target_pose.position.z = [01;31m[Kfixed_z_[m[K;  // 使用經過分類後的固定高度
+      |                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   90 |         [01;31m[Kresponse[m[K->success = true;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/cartesian_path.cpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   96 |     [01;31m[Kresponse[m[K->success = false;
+      |     [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cartesian_path.dir/build.make:76: CMakeFiles/cartesian_path.dir/src/cartesian_path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/cartesian_path.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

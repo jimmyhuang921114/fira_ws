@@ -4,6 +4,7 @@
 #include <geometry_msgs/msg/pose.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
+#include <rclcpp/executors/multi_threaded_executor.hpp>
 #include "python_moveit_interface/srv/detect_pose.hpp"
 
 using std::placeholders::_1;
@@ -20,7 +21,7 @@ public:
   {
     fixed_quaternion_.x = 0.0;
     fixed_quaternion_.y = 0.0;
-    fixed_quaternion_.z = 0.0;
+    fixed_quaternion_.z = 0.0;  
     fixed_quaternion_.w = 1.0;
 
     service_ = this->create_service<DetectPose>(
@@ -48,7 +49,7 @@ private:
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
 
   std::deque<std::pair<double, double>> xy_buffer_;
-  const double fixed_z_;
+  double fixed_z_;
   geometry_msgs::msg::Quaternion fixed_quaternion_;
 
   void try_initialize_move_group()
@@ -78,15 +79,15 @@ private:
   {
     double x = msg->position.x;
     double y = msg->position.y;
+    double z = msg->position.z;
 
     xy_buffer_.push_back({x, y});
-
     if (xy_buffer_.size() > 10) {
       xy_buffer_.pop_front();
     }
 
     RCLCPP_DEBUG(this->get_logger(), "XY updated: [%.4f, %.4f], buffer size: %zu",
-                 x, y, xy_buffer_.size());
+                x, y, xy_buffer_.size());
   }
 
   bool is_data_stable()
@@ -174,9 +175,9 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<AutoPoseService>();
-  rclcpp::executors::SingleThreadedExecutor exec;
-  exec.add_node(node);
-  exec.spin();
+  rclcpp::executors::MultiThreadedExecutor exector;
+  exector.add_node(node);
+  exector.spin();
   rclcpp::shutdown();
   return 0;
 }

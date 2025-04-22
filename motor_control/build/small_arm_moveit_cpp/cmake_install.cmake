@@ -143,6 +143,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp" TYPE EXECUTABLE FILES "/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp/cartesian_path")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path"
+         OLD_RPATH "/opt/ros/humble/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/opt/ros/humble/lib/x86_64-linux-gnu:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/small_arm_moveit_cpp/cartesian_path")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/small_arm_moveit_cpp/launch" TYPE DIRECTORY FILES "/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/launch/")
 endif()
 

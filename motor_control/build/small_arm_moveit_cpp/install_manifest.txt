@@ -3,6 +3,7 @@
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/gripper_open
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/ee_pose_in_base
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/manual_pose_topic
+/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/small_arm_moveit_cpp/cartesian_path
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/launch/motion_planning.launch.py
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/config/moveit_cpp.yaml
 /home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/ament_index/resource_index/package_run_dependencies/small_arm_moveit_cpp

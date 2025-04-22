@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target named_goal[0m
+[35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
+[35m[1mConsolidate compiler generated dependencies of target gripper_open[0m
+[ 16%] Built target ee_pose_in_base
+[ 33%] Built target cartesian_path
+[ 50%] Built target manual_pose_topic
+[ 58%] [32mBuilding CXX object CMakeFiles/named_goal.dir/src/named_goal.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:95:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kexec[m[K’ was not declared in this scope; did you mean ‘[01m[Kexecv[m[K’?
+   95 |   [01;31m[Kexec[m[K.add_node(node);
+      |   [01;31m[K^~~~[m[K
+      |   [32m[Kexecv[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:[m[K At global scope:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/named_goal.cpp:101:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+  101 | [01;31m[K1[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/gripper_open.cpp:154:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kexec[m[K’ was not declared in this scope; did you mean ‘[01m[Kexecv[m[K’?
+  154 |   [01;31m[Kexec[m[K.add_node(node);
+      |   [01;31m[K^~~~[m[K
+      |   [32m[Kexecv[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:192:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kexec[m[K’ was not declared in this scope; did you mean ‘[01m[Kexecv[m[K’?
+  192 |   [01;31m[Kexec[m[K.add_node(node);
+      |   [01;31m[K^~~~[m[K
+      |   [32m[Kexecv[m[K
+gmake[2]: *** [CMakeFiles/named_goal.dir/build.make:76: CMakeFiles/named_goal.dir/src/named_goal.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/named_goal.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/gripper_open.dir/build.make:76: CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/gripper_open.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/auto_pose_goal.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

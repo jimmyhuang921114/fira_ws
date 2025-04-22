@@ -5,12 +5,14 @@ from std_msgs.msg import String
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
+import json
+
 
 class ColorObjectTracker(Node):
     def __init__(self):
         super().__init__('color_object_tracker')
         self.bridge = CvBridge()
-
+        
         self.color_sub = self.create_subscription(Image, '/camera/color', self.color_callback, 10)
         self.color_pub = self.create_publisher(String, '/color_sort', 10)
 
@@ -56,12 +58,13 @@ class ColorObjectTracker(Node):
 
         if sorted_colors:
             # Publish joined string array (like: "Green,Blue,Yellow")
+            jsonfile = open("realsense/realsense/color_detect.py")
+            data={sorted_colors}
             msg = String()
-            msg.data = ','.join(sorted_colors)
+            json.dump(data,jsonfile)
             self.color_pub.publish(msg)
-
             self.get_logger().info(f'Published colors: {msg.data}')
-
+            
         cv2.imshow("Color Detection", frame)
         cv2.waitKey(1)
 

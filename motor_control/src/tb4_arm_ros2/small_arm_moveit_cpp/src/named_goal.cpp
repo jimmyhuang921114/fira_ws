@@ -2,6 +2,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <geometry_msgs/msg/pose.hpp>
+#include <rclcpp/executors/multi_threaded_executor.hpp>
 #include "python_moveit_interface/srv/pose_request.hpp"
 
 using PoseRequest = python_moveit_interface::srv::PoseRequest;
@@ -76,27 +77,23 @@ private:
     }
   }
 
-  // ROS2 服務物件
+  // ROS2 service
   rclcpp::Service<PoseRequest>::SharedPtr service_;
 
-  // MoveIt 的介面，用來控制機械手臂
+  // Moveit interface, moveing arm 
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_interface_;
 
-  // 用來初始化 MoveGroupInterface 的定時器
+  //initialize timer
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
 int main(int argc, char* argv[])
 {
   rclcpp::init(argc, argv);
-
-  // 建立節點
   auto node = std::make_shared<NamedGoalService>();
-
-  // 使用單執行緒的執行器來處理 callback
-  rclcpp::executors::SingleThreadedExecutor exec;
-  exec.add_node(node);
-  exec.spin();
+  rclcpp::executors::MultiThreadedExecutor executor;
+  executor.add_node(node);
+  executor.spin();
 
   rclcpp::shutdown();
   return 0;
