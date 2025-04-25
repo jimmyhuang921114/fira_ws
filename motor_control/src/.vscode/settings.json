@@ -84,6 +84,8 @@
         "strstream": "cpp",
         "future": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
-    }
+        "stack": "cpp",
+        "__mutex_base": "cpp"
+    },
+    "ros.distro": "humble"
 }

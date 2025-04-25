@@ -1,5 +1,6 @@
 #include <memory>
 #include <future>
+#include <mutex>
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
@@ -28,6 +29,7 @@ public:
   }
 
 private:
+  std::mutex move_group_mutex_;
   void try_initialize_move_group()
   {
     if (move_group_interface_) return;
@@ -60,6 +62,7 @@ private:
     const std::shared_ptr<GripperControl::Request> request,
     std::shared_ptr<GripperControl::Response> response)
   {
+  std::lock_guard<std::mutex> lock(move_group_mutex_);
     if (!move_group_interface_) {
       std::string msg = "MoveGroupInterface not initialized.";
       RCLCPP_ERROR(this->get_logger(), "%s", msg.c_str());
@@ -91,6 +94,7 @@ private:
 
       if (execution_result == moveit::core::MoveItErrorCode::SUCCESS) {
         msg = "Gripper " + action + " succeeded.";
+        reset_move_group_state(); 
         RCLCPP_INFO(this->get_logger(), "%s", msg.c_str());
         publish_diagnostic(msg);
         response->success = true;
@@ -163,7 +167,7 @@ int main(int argc, char* argv[])
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<GripperControlServiceWithDiagnostics>();
-  rclcpp::executors::MultiThreadedExecutor executor;
+  rclcpp::executors::MultiThreadedExecutor executor(rclcpp::ExecutorOptions(),4);
   executor.add_node(node);
   executor.spin();
   rclcpp::shutdown();

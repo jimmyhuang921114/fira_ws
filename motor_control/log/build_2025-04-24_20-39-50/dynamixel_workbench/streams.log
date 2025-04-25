@@ -1,0 +1,18 @@
+[0.007s] Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake /home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench -DCMAKE_INSTALL_PREFIX=/home/darkdemon/work/motor_control/install/dynamixel_workbench
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.085s] -- The CXX compiler identification is GNU 11.4.0
+[0.090s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.183s] -- Detecting C compile features
+[0.183s] -- Detecting C compile features - done
+[0.196s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.259s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.259s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.262s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.418s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.583s] -- Configuring done
+[0.586s] -- Generating done
+[0.587s] -- Build files have been written to: /home/darkdemon/work/motor_control/build/dynamixel_workbench

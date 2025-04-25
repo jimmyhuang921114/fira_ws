@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
-[35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
-[ 20%] Built target ee_pose_in_base
-[ 40%] Built target manual_pose_topic
-[ 60%] Built target named_goal
-[ 70%] [32mBuilding CXX object CMakeFiles/gripper_open.dir/src/gripper_open.cpp.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m

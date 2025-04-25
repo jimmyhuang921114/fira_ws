@@ -5,7 +5,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(python_moveit_interface REQUIRED)  # ✅ 這行是關鍵
+find_package(python_moveit_interface REQUIRED) 
 
 add_executable(cartesian_path src/cartesian_path.cpp)
 add_executable(ee_pose_in_base src/ee_pose_in_base.cpp)

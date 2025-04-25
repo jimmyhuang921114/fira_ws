@@ -37,10 +37,10 @@ grap_up:
 - gripper: close
 - log : finish
 - name_pose: detect
-- name_pose: home
 - log: finish
 
 put_down:
+- name_pose: detect
 - detect_pose: true
 - gripper: open
 - name_pose: detect_pose
@@ -112,6 +112,15 @@ put_left_up_block:
 - gripper: open
 - name_pose: detect_pose
 - log: finish
+
+
+put_down_block:
+- name_pose: detect
+- detect_pose: true
+- gripper: open
+- name_pose: detect_pose
+- log: finish
+
 
 put_left_down_block:
 - gripper: open

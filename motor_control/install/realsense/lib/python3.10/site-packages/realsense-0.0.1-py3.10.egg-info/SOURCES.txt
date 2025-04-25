@@ -11,6 +11,7 @@ setup.py
 launch/visual_launch.py
 realsense/__init__.py
 realsense/box_edge_detect.py
+realsense/camera.py
 realsense/color_detect.py
 realsense/color_range.py
 realsense/depth_calculate.py

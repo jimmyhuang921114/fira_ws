@@ -1,8 +1,0 @@
-setup.py
-map_if/__init__.py
-map_if.egg-info/PKG-INFO
-map_if.egg-info/SOURCES.txt
-map_if.egg-info/dependency_links.txt
-map_if.egg-info/top_level.txt
-map_if/srv/__init__.py
-map_if/srv/_command.py

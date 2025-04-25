@@ -1,3 +1,4 @@
+/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/camera.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/box_edge_detect.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/depth_calculate.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/color_detect.py
@@ -7,6 +8,7 @@
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/visiual.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/color_range.py
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/interface_robot.py
+/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__pycache__/camera.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__pycache__/box_edge_detect.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__pycache__/depth_calculate.cpython-310.pyc
 /home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/__pycache__/color_detect.cpython-310.pyc

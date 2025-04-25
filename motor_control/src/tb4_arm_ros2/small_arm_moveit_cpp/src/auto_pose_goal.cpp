@@ -1,5 +1,6 @@
-#include <deque>
 #include <memory>
+#include <deque>
+#include <mutex>
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <std_msgs/msg/string.hpp>
@@ -12,18 +13,11 @@ using std::placeholders::_2;
 namespace srv = python_moveit_interface::srv;
 using DetectPose = srv::DetectPose;
 
-class AutoPoseService : public rclcpp::Node
-{
+class AutoPoseService : public rclcpp::Node {
 public:
   AutoPoseService()
-  : Node("auto_pose_service"),
-    fixed_z_(0.015)
+  : Node("auto_pose_service"), has_pose_(false)
   {
-    fixed_quaternion_.x = 0.0;
-    fixed_quaternion_.y = 0.0;
-    fixed_quaternion_.z = 0.0;  
-    fixed_quaternion_.w = 1.0;
-
     service_ = this->create_service<DetectPose>(
       "auto_pose_service",
       std::bind(&AutoPoseService::handle_service, this, _1, _2));
@@ -38,19 +32,19 @@ public:
       std::chrono::milliseconds(100),
       std::bind(&AutoPoseService::try_initialize_move_group, this));
 
-    RCLCPP_INFO(this->get_logger(), "AutoPoseService initialized. XY buffer ready.");
+    RCLCPP_INFO(this->get_logger(), "AutoPoseService initialized.");
   }
 
 private:
+  std::mutex move_group_mutex_;
   rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr pose_sub_;
   rclcpp::Service<DetectPose>::SharedPtr service_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr status_pub_;
   rclcpp::TimerBase::SharedPtr timer_;
   std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
-
-  std::deque<std::pair<double, double>> xy_buffer_;
-  double fixed_z_;
-  geometry_msgs::msg::Quaternion fixed_quaternion_;
+  std::deque<geometry_msgs::msg::Pose> pose_buffer_;
+  static constexpr size_t BUFFER_SIZE = 30;
+  bool has_pose_ = false;
 
   void try_initialize_move_group()
   {
@@ -59,7 +53,8 @@ private:
     try {
       move_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
         shared_from_this(), "small_arm");
-      move_group_->setPlanningTime(10.0);
+      move_group_->setPlanningTime(5.0);
+      move_group_->setNumPlanningAttempts(3);
       RCLCPP_INFO(this->get_logger(), "MoveGroupInterface initialized.");
       timer_->cancel();
     } catch (const std::exception &e) {
@@ -77,48 +72,55 @@ private:
 
   void pose_callback(const geometry_msgs::msg::Pose::SharedPtr msg)
   {
-    double x = msg->position.x;
-    double y = msg->position.y;
-    double z = msg->position.z;
+    if (pose_buffer_.size() >= BUFFER_SIZE)
+      pose_buffer_.pop_front();
+    pose_buffer_.push_back(*msg);
+    has_pose_ = true;
 
-    xy_buffer_.push_back({x, y});
-    if (xy_buffer_.size() > 10) {
-      xy_buffer_.pop_front();
-    }
-
-    RCLCPP_DEBUG(this->get_logger(), "XY updated: [%.4f, %.4f], buffer size: %zu",
-                x, y, xy_buffer_.size());
+    // RCLCPP_DEBUG(this->get_logger(),
+    //   "Pose received: x=%.3f y=%.3f z=%.3f", msg->position.x, msg->position.y, msg->position.z);
   }
 
-  bool is_data_stable()
+  geometry_msgs::msg::Pose average_pose()
   {
-    if (xy_buffer_.size() < 5) return false;
-
-    auto [min_x, max_x] = std::minmax_element(xy_buffer_.begin(), xy_buffer_.end(),
-      [](const auto& a, const auto& b) { return a.first < b.first; });
-    auto [min_y, max_y] = std::minmax_element(xy_buffer_.begin(), xy_buffer_.end(),
-      [](const auto& a, const auto& b) { return a.second < b.second; });
-
-    double x_range = max_x->first - min_x->first;
-    double y_range = max_y->second - min_y->second;
-
-    return (x_range <= 0.05) && (y_range <= 0.05);
-  }
-
-  std::pair<double, double> calculate_average_xy()
-  {
-    double sum_x = 0.0, sum_y = 0.0;
-    for (const auto& point : xy_buffer_) {
-      sum_x += point.first;
-      sum_y += point.second;
+    geometry_msgs::msg::Pose avg;
+    double sum_x = 0, sum_y = 0, sum_z = 0;
+    for (const auto &p : pose_buffer_) {
+      sum_x += p.position.x;
+      sum_y += p.position.y;
+      sum_z += p.position.z;
     }
-    return {sum_x / xy_buffer_.size(), sum_y / xy_buffer_.size()};
+    avg.position.x = sum_x / pose_buffer_.size();
+    avg.position.y = sum_y / pose_buffer_.size();
+    avg.position.z = sum_z / pose_buffer_.size();
+    // avg.position.x = 0.000;
+    // avg.position.y = 0.200;
+    // avg.position.z = 0.07;
+    const auto &p = pose_buffer_.back();
+    if (avg.position.x > 0){
+      avg.orientation.x = 0;
+      avg.orientation.y = 0;
+      avg.orientation.z = -0.707;
+      avg.orientation.w = 0.707;}
+    else{
+      avg.orientation.x = 0;
+      avg.orientation.y = 0;
+      avg.orientation.z = 0.707;
+      avg.orientation.w = 0.707;}
+      
+    RCLCPP_DEBUG(this->get_logger(),
+    "Averaged Position: x=%.3f y=%.3f z=%.3f",
+    avg.position.x, avg.position.y, avg.position.z);
+
+    RCLCPP_DEBUG(this->get_logger(),"Orientation: x=%.3f y=%.3f z=%.3f w=%.3f", avg.orientation.x, avg.orientation.y, avg.orientation.z, avg.orientation.w);
+      return avg;
   }
 
   void handle_service(
     const std::shared_ptr<DetectPose::Request>,
     std::shared_ptr<DetectPose::Response> response)
   {
+    std::lock_guard<std::mutex> lock(move_group_mutex_);
     if (!move_group_) {
       response->success = false;
       response->message = "MoveGroupInterface not initialized.";
@@ -126,48 +128,48 @@ private:
       return;
     }
 
-    if (xy_buffer_.size() < 10 || !is_data_stable()) {
+    if (!has_pose_ || pose_buffer_.size() < BUFFER_SIZE) {
       response->success = false;
-      response->message = "Insufficient or unstable XY data.";
+      response->message = "Insufficient pose data.";
       publish_status(response->message);
       return;
     }
 
-    auto [avg_x, avg_y] = calculate_average_xy();
+    auto target_pose = average_pose();
 
-    geometry_msgs::msg::Pose target_pose;
-    target_pose.position.x = avg_x;
-    target_pose.position.y = avg_y;
-    target_pose.position.z = fixed_z_;
-    target_pose.orientation = fixed_quaternion_;
+    if (target_pose.position.z < 0.01 || target_pose.position.z > 0.3) {
+      response->success = false;
+      response->message = "Target Z out of range.";
+      publish_status(response->message);  
+      return;
+    }
 
-    publish_status("Planning movement...");
+    publish_status("Planning...");
 
     move_group_->setStartStateToCurrentState();
     move_group_->setPoseTarget(target_pose);
 
     moveit::planning_interface::MoveGroupInterface::Plan plan;
     if (move_group_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS) {
-      publish_status("Executing movement...");
+      publish_status("Executing...");
       auto result = move_group_->execute(plan);
       move_group_->stop();
       rclcpp::sleep_for(std::chrono::milliseconds(300));
-
+    
       if (result == moveit::core::MoveItErrorCode::SUCCESS) {
         response->success = true;
-        response->message = "Movement executed successfully";
+        response->message = "Motion complete.";
+
+        RCLCPP_INFO(this->get_logger(), "Waiting 2 seconds for pose to stabilize...");
+        pose_buffer_.clear();
+        rclcpp::sleep_for(std::chrono::seconds(5));  
       } else {
         response->success = false;
-        response->message = "Movement execution failed";
+        response->message = "Execution failed.";
       }
-      publish_status(response->message);
-    } else {
-      response->success = false;
-      response->message = "Motion planning failed";
-      publish_status(response->message);
     }
-
-    xy_buffer_.clear();
+    
+    publish_status(response->message);
   }
 };
 
@@ -175,9 +177,9 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<AutoPoseService>();
-  rclcpp::executors::MultiThreadedExecutor exector;
-  exector.add_node(node);
-  exector.spin();
+  rclcpp::executors::MultiThreadedExecutor executor(rclcpp::ExecutorOptions(), 4);
+  executor.add_node(node);
+  executor.spin();
   rclcpp::shutdown();
   return 0;
 }

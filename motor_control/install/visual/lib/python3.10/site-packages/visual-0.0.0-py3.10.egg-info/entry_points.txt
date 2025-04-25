@@ -1,4 +1,0 @@
-[console_scripts]
-main = visual.visual:main
-slave = visual.slave:main
-

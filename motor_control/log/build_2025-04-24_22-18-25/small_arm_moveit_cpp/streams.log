@@ -1,0 +1,20 @@
+[0.338s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.391s] [35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[0.391s] [35m[1mConsolidate compiler generated dependencies of target auto_pose_goal[0m
+[0.391s] [ 16%] Built target gripper_open
+[0.391s] [ 33%] Built target ee_pose_in_base
+[0.392s] [ 50%] Built target cartesian_path
+[0.392s] [ 66%] Built target manual_pose_topic
+[0.394s] [ 83%] Built target named_goal
+[0.398s] [ 91%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[3.216s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In member function ‘[01m[Kvoid AutoPoseService::handle_service(std::shared_ptr<python_moveit_interface::srv::DetectPose_Request_<std::allocator<void> > >, std::shared_ptr<python_moveit_interface::srv::DetectPose_Response_<std::allocator<void> > >)[m[K’:
+[3.216s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:127:10:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_pose_[m[K’ was not declared in this scope
+[3.216s]   127 |     if (![01;31m[Khas_pose_[m[K) {
+[3.216s]       |          [01;31m[K^~~~~~~~~[m[K
+[3.224s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:134:44:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_pose_[m[K’ was not declared in this scope
+[3.224s]   134 |     geometry_msgs::msg::Pose target_pose = [01;31m[Klatest_pose_[m[K;
+[3.224s]       |                                            [01;31m[K^~~~~~~~~~~~[m[K
+[5.855s] gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+[5.855s] gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/auto_pose_goal.dir/all] Error 2
+[5.855s] gmake: *** [Makefile:146: all] Error 2
+[5.857s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

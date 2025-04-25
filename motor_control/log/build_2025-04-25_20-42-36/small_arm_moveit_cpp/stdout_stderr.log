@@ -1,0 +1,14 @@
+[ 16%] Built target cartesian_path
+[ 33%] Built target manual_pose_topic
+[ 50%] Built target gripper_open
+[ 66%] Built target named_goal
+[ 83%] Built target auto_pose_goal
+[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:[m[K In member function ‘[01m[Kvoid CameraToBasePrinter::callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:64:50:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Ktf2::Transform[m[K’ to non-scalar type ‘[01m[Ktf2::Vector3[m[K’ requested
+   64 |       tf2::Vector3 camera_to_base =  [01;31m[KT_cam_to_ee * T_ee_to_base[m[K;
+      |                                      [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ee_pose_in_base.dir/build.make:76: CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/ee_pose_in_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,5 @@
+  File "/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages/realsense/depth_calculate.py", line 256
+    f"OCR '{text}' @ ({u},{v}) → (X,Y,Z)=({pose.position.x:.3f}, {pose.position.y:.3f}, {pose.position.z:.3f})\"
+    ^
+SyntaxError: unterminated string literal (detected at line 256)
+

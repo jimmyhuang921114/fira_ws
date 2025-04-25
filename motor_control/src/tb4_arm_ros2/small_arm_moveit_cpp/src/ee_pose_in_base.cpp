@@ -15,10 +15,8 @@ public:
     tf_buffer_(this->get_clock()),
     tf_listener_(tf_buffer_)
   {
-    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.045, 0.05 , -0.065});
+    this->declare_parameter<std::vector<double>>("camera_to_ee_translate", {-0.04, 0.035,-0.065});
     this->declare_parameter<std::vector<double>>("camera_to_ee_quaternion", {0.0, 0.0, 0.0, 1.0});
-    this->declare_parameter<bool>("enable_z_scale_div10", true);
-
     subscription_ = this->create_subscription<geometry_msgs::msg::Pose>(
       "/text_coordinate", 10,
       std::bind(&CameraToBasePrinter::callback, this, std::placeholders::_1)
@@ -31,17 +29,8 @@ private:
   void callback(const geometry_msgs::msg::Pose::SharedPtr msg)
   {
     geometry_msgs::msg::Pose input_pose = *msg;
-    RCLCPP_INFO(this->get_logger(), "text_callback");
-    
-    bool enable_div10 = this->get_parameter("enable_z_scale_div10").as_bool();
-    if (enable_div10) {
-      double original_z = input_pose.position.z;
-      input_pose.position.z /= 10.0;
-      RCLCPP_INFO(this->get_logger(), "Z-scaling enabled: original Z=%.4f → scaled Z=%.4f", original_z, input_pose.position.z);
-    }
 
-    // 將輸入 Pose 轉為 tf2 的 Vector 與 Quaternion 格式
-    tf2::Vector3 point_in_camera(input_pose.position.x, input_pose.position.y, input_pose.position.z);
+    tf2::Vector3 point_in_camera(input_pose.position.x, input_pose.position.y, 0.0);  // z 不參與變換
     tf2::Quaternion rotation_in_camera(
       input_pose.orientation.x,
       input_pose.orientation.y,
@@ -49,7 +38,6 @@ private:
       input_pose.orientation.w
     );
 
-    // 讀取相機 → EE 的靜態轉換參數
     auto cam_to_ee_t = this->get_parameter("camera_to_ee_translate").as_double_array();
     auto cam_to_ee_q = this->get_parameter("camera_to_ee_quaternion").as_double_array();
 
@@ -58,45 +46,57 @@ private:
       return;
     }
 
-    // 建立 T_cam_to_ee 轉換
     tf2::Vector3 translation_cam_to_ee(cam_to_ee_t[0], cam_to_ee_t[1], cam_to_ee_t[2]);
     tf2::Quaternion rotation_cam_to_ee(cam_to_ee_q[0], cam_to_ee_q[1], cam_to_ee_q[2], cam_to_ee_q[3]);
     tf2::Transform T_cam_to_ee(rotation_cam_to_ee, translation_cam_to_ee);
 
     try {
-      // 取得 TF: link6 → base_link
       geometry_msgs::msg::TransformStamped ee_to_base_tf =
         tf_buffer_.lookupTransform("base_link", "link6", tf2::TimePointZero);
 
       tf2::Transform T_ee_to_base;
       tf2::fromMsg(ee_to_base_tf.transform, T_ee_to_base);
 
-      // 將點從 camera → ee → base_link
       tf2::Vector3 point_in_ee = T_cam_to_ee * point_in_camera;
+      tf2::Vector3 camera_to_base = T_ee_to_base * T_cam_to_ee * tf2::Vector3(0, 0, 0);
       tf2::Vector3 point_in_base = T_ee_to_base * point_in_ee;
+      tf2::Vector3 ee_in_base = T_ee_to_base * tf2::Vector3(0, 0, 0);
 
-      // 旋轉部分同樣進行轉換
-      tf2::Quaternion rotation_in_ee = rotation_cam_to_ee * rotation_in_camera;
-      tf2::Quaternion rotation_in_base = T_ee_to_base.getRotation() * rotation_in_ee;
-
-      // 將結果打包並發布
-      geometry_msgs::msg::Pose target_pose;
-      target_pose.position.x = point_in_base.x();
-      target_pose.position.y = point_in_base.y();
-      target_pose.position.z = point_in_base.z();
-      target_pose.orientation = tf2::toMsg(rotation_in_base);
-
-      publisher_->publish(target_pose);
+      tf2::Vector3 translation = T_ee_to_base.getOrigin();
 
       RCLCPP_INFO(this->get_logger(),
-        "Transformed Pose in base_link:\n  Position: x=%.3f y=%.3f z=%.3f\n  Orientation: x=%.3f y=%.3f z=%.3f w=%.3f",
-        target_pose.position.x,
-        target_pose.position.y,
-        target_pose.position.z,
+      "ee_in_base: x=%.3f y=%.3f z=%.3f",
+      ee_in_base.x(), ee_in_base.y(), ee_in_base  .z());
+      RCLCPP_INFO(this->get_logger(),
+      "Camera to base: x=%.3f y=%.3f z=%.3f",
+      camera_to_base.x(), camera_to_base.y(), camera_to_base.z());
+      // Construct output pose
+      geometry_msgs::msg::Pose target_pose;
+      double dx = -0.04;  // 向 +X 修正 5mm
+      double dy = 0.035; // 向 -Y 修正 3mm
+      target_pose.position.x = point_in_base.x() + dx;
+      target_pose.position.y = point_in_base.y() + dy;
+      target_pose.position.z = input_pose.position.z;
+
+      tf2::Quaternion ee_current_rotation = T_ee_to_base.getRotation();
+      target_pose.orientation = tf2::toMsg(ee_current_rotation);
+      std::cout << "Orientation: "
+          << "x=" << target_pose.orientation.x << " "
+          << "y=" << target_pose.orientation.y << " "
+          << "z=" << target_pose.orientation.z << " "
+          << "w=" << target_pose.orientation.w << std::endl;
+
+      RCLCPP_DEBUG(this->get_logger(),
+        "Orientation: x=%.3f y=%.3f z=%.3f w=%.3f",
         target_pose.orientation.x,
         target_pose.orientation.y,
         target_pose.orientation.z,
-        target_pose.orientation.w
+        target_pose.orientation.w);
+        publisher_->publish(target_pose);
+
+      RCLCPP_INFO(this->get_logger(),
+        "Converted Pose:\n  XY Transformed | Z (raw+offset)\n  → x=%.3f y=%.3f z=%.3f",
+        target_pose.position.x, target_pose.position.y, target_pose.position.z
       );
 
     } catch (const tf2::TransformException & ex) {
@@ -116,4 +116,3 @@ int main(int argc, char * argv[]) {
   rclcpp::shutdown();
   return 0;
 }
-  

@@ -10,23 +10,18 @@ import time
 class RealSensePublisher(Node):
     def __init__(self):
         super().__init__('realsense_publisher')
-
-        # === ROS2 Publishers ===
         self.color_publisher = self.create_publisher(Image, '/camera/color', 10)
         self.depth_publisher = self.create_publisher(Image, '/camera/depth', 10)
-
-        # === CV Bridge ===
         self.bridge = CvBridge()
 
-        # === RealSense pipeline and filters ===
+
         self.pipeline = None
         self.config = rs.config()
         self.align_to = rs.stream.color
         self.align = rs.align(self.align_to)
 
-        # === Filters ===
-        self.spatial_filter = rs.spatial_filter()   # 去除空洞
-        self.temporal_filter = rs.temporal_filter() # 穩定畫面
+        self.spatial_filter = rs.spatial_filter()   
+        self.temporal_filter = rs.temporal_filter() 
 
         # === Retry settings ===
         self.connected = False

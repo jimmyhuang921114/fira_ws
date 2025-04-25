@@ -1,0 +1,16 @@
+[0.819s] Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[0.972s] [ 16%] Built target cartesian_path
+[1.040s] [ 33%] Built target manual_pose_topic
+[1.136s] [ 50%] Built target gripper_open
+[1.207s] [ 66%] Built target named_goal
+[1.277s] [ 83%] Built target auto_pose_goal
+[1.325s] [ 91%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[4.917s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:[m[K In member function ‘[01m[Kvoid CameraToBasePrinter::callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.917s] [01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/ee_pose_in_base.cpp:80:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kdz[m[K’ was not declared in this scope; did you mean ‘[01m[Kdy[m[K’?
+[4.918s]    80 |       target_pose.position.z = input_pose.position.z + [01;31m[Kdz[m[K;
+[4.918s]       |                                                        [01;31m[K^~[m[K
+[4.918s]       |                                                        [32m[Kdy[m[K
+[7.922s] gmake[2]: *** [CMakeFiles/ee_pose_in_base.dir/build.make:76: CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o] Error 1
+[7.924s] gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/ee_pose_in_base.dir/all] Error 2
+[7.924s] gmake: *** [Makefile:146: all] Error 2
+[7.932s] Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '2': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20

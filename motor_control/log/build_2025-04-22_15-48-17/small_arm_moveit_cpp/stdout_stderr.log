@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target ee_pose_in_base[0m
-gmake[1]: *** [CMakeFiles/Makefile2:225: CMakeFiles/named_goal.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/auto_pose_goal.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/manual_pose_topic.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/gripper_open.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:173: CMakeFiles/ee_pose_in_base.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/cartesian_path.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

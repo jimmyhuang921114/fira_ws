@@ -1,0 +1,8 @@
+[ 16%] Built target gripper_open
+[ 33%] Built target manual_pose_topic
+[ 41%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o[0m
+[ 66%] Built target cartesian_path
+[ 83%] Built target named_goal
+[ 91%] [32m[1mLinking CXX executable ee_pose_in_base[0m
+[ 91%] Built target ee_pose_in_base

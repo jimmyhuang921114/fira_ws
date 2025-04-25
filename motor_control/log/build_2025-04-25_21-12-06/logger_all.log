@@ -1,0 +1,763 @@
+[0.125s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5b4338ce50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5b4338c910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5b4338c910>>)
+[0.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.412s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/darkdemon/work/motor_control'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['ignore', 'ignore_ament_install']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'ros'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['cmake', 'python']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'cmake'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'python'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extensions ['python_setup_py']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/RobotSot) by extension 'python_setup_py'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['ros']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'ros'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['cmake', 'python']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'cmake'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'python'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extensions ['python_setup_py']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench) by extension 'python_setup_py'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench) by extension 'ros'
+[0.441s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dynamixel-workbench/dynamixel_workbench' with type 'ros.ament_cmake' and name 'dynamixel_workbench'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench/dynamixel_workbench_toolbox) by extension 'ros'
+[0.443s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dynamixel-workbench/dynamixel_workbench_toolbox' with type 'ros.ament_cmake' and name 'dynamixel_workbench_toolbox'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'ros'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['cmake', 'python']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'cmake'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'python'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extensions ['python_setup_py']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs) by extension 'python_setup_py'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extension 'colcon_meta'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extensions ['ros']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel-workbench-msgs/dynamixel_workbench_msgs) by extension 'ros'
+[0.448s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dynamixel-workbench-msgs/dynamixel_workbench_msgs' with type 'ros.ament_cmake' and name 'dynamixel_workbench_msgs'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extension 'ignore_ament_install'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extensions ['colcon_pkg']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extension 'colcon_pkg'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extensions ['colcon_meta']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extension 'colcon_meta'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extensions ['ros']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense) by extension 'ros'
+[0.450s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense' with type 'ros.ament_python' and name 'realsense'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'ignore_ament_install'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['colcon_pkg']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'colcon_pkg'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['colcon_meta']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'colcon_meta'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['ros']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'ros'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'python'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extensions ['python_setup_py']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/dynamixel_hardware) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/dynamixel_hardware' with type 'ros.ament_cmake' and name 'dynamixel_hardware'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit2) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/python_moveit2' with type 'ros.ament_python' and name 'python_moveit2'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/python_moveit_interface) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/python_moveit_interface' with type 'ros.catkin' and name 'python_moveit_interface'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_description) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/small_arm_description' with type 'ros.ament_cmake' and name 'small_arm_description'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extension 'ignore_ament_install'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extensions ['colcon_pkg']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extension 'colcon_pkg'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extensions ['colcon_meta']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_config) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/small_arm_moveit_config' with type 'ros.ament_cmake' and name 'small_arm_moveit_config'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/tb4_arm_ros2/small_arm_moveit_cpp) by extension 'ros'
+[0.467s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tb4_arm_ros2/small_arm_moveit_cpp' with type 'ros.ament_cmake' and name 'small_arm_moveit_cpp'
+[0.467s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.468s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.468s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.468s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.468s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_args' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_target' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.507s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_workbench_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_target' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.509s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.509s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_workbench_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'python_moveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.511s] DEBUG:colcon.colcon_core.verb:Building package 'python_moveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/python_moveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/python_moveit2', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2', 'symlink_install': False, 'test_result_base': None}
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_args' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_target' from command line to 'None'
+[0.511s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.512s] Level 5:colcon.colcon_core.verb:set package 'python_moveit_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.512s] DEBUG:colcon.colcon_core.verb:Building package 'python_moveit_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/python_moveit_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/python_moveit_interface', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit_interface', 'symlink_install': False, 'test_result_base': None}
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_args' from command line to 'None'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_target' from command line to 'None'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_clean_cache' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_clean_first' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'cmake_force_configure' from command line to 'False'
+[0.514s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'ament_cmake_args' from command line to 'None'
+[0.514s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'catkin_cmake_args' from command line to 'None'
+[0.514s] Level 5:colcon.colcon_core.verb:set package 'realsense' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.514s] DEBUG:colcon.colcon_core.verb:Building package 'realsense' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/realsense', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/realsense', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/realsense', 'symlink_install': False, 'test_result_base': None}
+[0.514s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_target' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.516s] DEBUG:colcon.colcon_core.verb:Building package 'small_arm_moveit_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/dynamixel_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/dynamixel_hardware', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'ament_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_workbench' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/dynamixel_workbench', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/dynamixel_workbench', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench', 'symlink_install': False, 'test_result_base': None}
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_target' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.520s] Level 5:colcon.colcon_core.verb:set package 'small_arm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.520s] DEBUG:colcon.colcon_core.verb:Building package 'small_arm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/small_arm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/small_arm_description', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_description', 'symlink_install': False, 'test_result_base': None}
+[0.521s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.521s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.521s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.521s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.522s] Level 5:colcon.colcon_core.verb:set package 'small_arm_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.522s] DEBUG:colcon.colcon_core.verb:Building package 'small_arm_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/darkdemon/work/motor_control/build/small_arm_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/darkdemon/work/motor_control/install/small_arm_moveit_config', 'merge_install': False, 'path': '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.522s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.524s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.525s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox' with build type 'ament_cmake'
+[0.525s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench_toolbox'
+[0.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.529s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.536s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs' with build type 'ament_cmake'
+[0.536s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench-msgs/dynamixel_workbench_msgs'
+[0.537s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.543s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2' with build type 'ament_python'
+[0.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit2', 'ament_prefix_path')
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/ament_prefix_path.ps1'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/ament_prefix_path.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/ament_prefix_path.sh'
+[0.547s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.548s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.553s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit_interface' with build type 'catkin'
+[0.554s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit_interface'
+[0.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.560s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/darkdemon/work/motor_control/src/realsense' with build type 'ament_python'
+[0.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense', 'ament_prefix_path')
+[0.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/ament_prefix_path.ps1'
+[0.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/ament_prefix_path.dsv'
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/ament_prefix_path.sh'
+[0.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.565s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.571s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp' with build type 'ament_cmake'
+[0.571s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp'
+[0.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox -- -j20 -l20
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs -- -j20 -l20
+[0.943s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2'
+[0.944s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
+[1.436s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/darkdemon/work/motor_control/src/realsense'
+[1.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[1.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox -- -j20 -l20
+[1.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox
+[1.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_toolbox)
+[1.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench_toolbox
+[1.524s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox' for CMake module files
+[1.525s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox' for CMake config files
+[1.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'cmake_prefix_path')
+[1.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.ps1'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.dsv'
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.sh'
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib'
+[1.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'ld_library_path_lib')
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.ps1'
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.dsv'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.sh'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/bin'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib/pkgconfig/dynamixel_workbench_toolbox.pc'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib/python3.10/site-packages'
+[1.542s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/bin'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.ps1'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.sh'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.bash'
+[1.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.zsh'
+[1.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/colcon-core/packages/dynamixel_workbench_toolbox)
+[1.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_toolbox)
+[1.556s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox' for CMake module files
+[1.557s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox' for CMake config files
+[1.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'cmake_prefix_path')
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.dsv'
+[1.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.sh'
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib'
+[1.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'ld_library_path_lib')
+[1.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.ps1'
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.dsv'
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.sh'
+[1.564s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/bin'
+[1.564s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib/pkgconfig/dynamixel_workbench_toolbox.pc'
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib/python3.10/site-packages'
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/bin'
+[1.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.ps1'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.sh'
+[1.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.bash'
+[1.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.zsh'
+[1.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/share/colcon-core/packages/dynamixel_workbench_toolbox)
+[1.576s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware' with build type 'ament_cmake'
+[1.579s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/dynamixel_hardware'
+[1.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.594s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench' with build type 'ament_cmake'
+[1.594s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/dynamixel-workbench/dynamixel_workbench'
+[1.594s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_hardware -- -j20 -l20
+[1.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench -- -j20 -l20
+[1.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench -- -j20 -l20
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench
+[1.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_hardware -- -j20 -l20
+[1.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_hardware
+[1.751s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench)
+[1.751s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench' for CMake module files
+[1.752s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench' for CMake config files
+[1.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench', 'cmake_prefix_path')
+[1.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.ps1'
+[1.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench
+[1.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.dsv'
+[1.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.sh'
+[1.767s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/bin'
+[1.767s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/lib/pkgconfig/dynamixel_workbench.pc'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/lib/python3.10/site-packages'
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/bin'
+[1.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.ps1'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.dsv'
+[1.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.sh'
+[1.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.bash'
+[1.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.zsh'
+[1.775s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/colcon-core/packages/dynamixel_workbench)
+[1.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench)
+[1.776s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench' for CMake module files
+[1.780s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench' for CMake config files
+[1.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench', 'cmake_prefix_path')
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.dsv'
+[1.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/hook/cmake_prefix_path.sh'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/bin'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/lib/pkgconfig/dynamixel_workbench.pc'
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/lib/python3.10/site-packages'
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench/bin'
+[1.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.ps1'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.dsv'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.sh'
+[1.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.bash'
+[1.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/dynamixel_workbench/package.zsh'
+[1.788s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench/share/colcon-core/packages/dynamixel_workbench)
+[1.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_hardware)
+[1.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_hardware' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_hardware
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware' for CMake module files
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware' for CMake config files
+[1.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'cmake_prefix_path')
+[1.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.ps1'
+[1.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.dsv'
+[1.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.sh'
+[1.796s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib'
+[1.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'ld_library_path_lib')
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.ps1'
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.dsv'
+[1.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.sh'
+[1.797s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/bin'
+[1.797s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib/pkgconfig/dynamixel_hardware.pc'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib/python3.10/site-packages'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/bin'
+[1.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.ps1'
+[1.802s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.dsv'
+[1.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.sh'
+[1.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.bash'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.zsh'
+[1.804s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/colcon-core/packages/dynamixel_hardware)
+[1.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_hardware)
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware' for CMake module files
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware' for CMake config files
+[1.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'cmake_prefix_path')
+[1.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.ps1'
+[1.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.dsv'
+[1.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/cmake_prefix_path.sh'
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib'
+[1.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_hardware', 'ld_library_path_lib')
+[1.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.ps1'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.dsv'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/hook/ld_library_path_lib.sh'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/bin'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib/pkgconfig/dynamixel_hardware.pc'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib/python3.10/site-packages'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_hardware/bin'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.ps1'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.dsv'
+[1.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.sh'
+[1.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.bash'
+[1.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/dynamixel_hardware/package.zsh'
+[1.822s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_hardware/share/colcon-core/packages/dynamixel_hardware)
+[1.824s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_description' with build type 'ament_cmake'
+[1.825s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_description'
+[1.825s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.825s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_description': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_description -- -j20 -l20
+[1.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_description' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_description -- -j20 -l20
+[1.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_description': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_description
+[1.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_description)
+[1.971s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description' for CMake module files
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description' for CMake config files
+[1.973s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_description', 'cmake_prefix_path')
+[1.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.ps1'
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.dsv'
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.sh'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/bin'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/lib/pkgconfig/small_arm_description.pc'
+[1.975s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/lib/python3.10/site-packages'
+[1.982s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/bin'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.ps1'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.dsv'
+[1.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.sh'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.bash'
+[1.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.zsh'
+[1.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_description/share/colcon-core/packages/small_arm_description)
+[1.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_description)
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description' for CMake module files
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description' for CMake config files
+[2.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_description' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_description
+[2.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_description', 'cmake_prefix_path')
+[2.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.ps1'
+[2.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.dsv'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/hook/cmake_prefix_path.sh'
+[2.014s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/bin'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/lib/pkgconfig/small_arm_description.pc'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/lib/python3.10/site-packages'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_description/bin'
+[2.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.ps1'
+[2.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.dsv'
+[2.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.sh'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.bash'
+[2.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_description/share/small_arm_description/package.zsh'
+[2.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_description/share/colcon-core/packages/small_arm_description)
+[2.021s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config' with build type 'ament_cmake'
+[2.021s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_config'
+[2.022s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.022s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_config': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_config -- -j20 -l20
+[2.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs -- -j20 -l20
+[2.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs
+[2.179s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_moveit_config)
+[2.180s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config' for CMake module files
+[2.180s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config' for CMake config files
+[2.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_moveit_config', 'cmake_prefix_path')
+[2.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.ps1'
+[2.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.dsv'
+[2.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.sh'
+[2.182s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/bin'
+[2.183s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/lib/pkgconfig/small_arm_moveit_config.pc'
+[2.183s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/lib/python3.10/site-packages'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/bin'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.ps1'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.dsv'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.sh'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.bash'
+[2.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.zsh'
+[2.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit_interface' returned '0': /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/python_moveit_interface -- -j20 -l20
+[2.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/python_moveit_interface': /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/python_moveit_interface
+[2.192s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/colcon-core/packages/small_arm_moveit_config)
+[2.192s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_moveit_config)
+[2.192s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config' for CMake module files
+[2.193s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config' for CMake config files
+[2.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_moveit_config', 'cmake_prefix_path')
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.ps1'
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.dsv'
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/hook/cmake_prefix_path.sh'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/bin'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/lib/pkgconfig/small_arm_moveit_config.pc'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/lib/python3.10/site-packages'
+[2.200s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/bin'
+[2.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.ps1'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.dsv'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.sh'
+[2.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.bash'
+[2.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/small_arm_moveit_config/package.zsh'
+[2.205s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_moveit_config/share/colcon-core/packages/small_arm_moveit_config)
+[2.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_config -- -j20 -l20
+[2.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_config': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_config
+[2.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs LD_LIBRARY_PATH=/home/darkdemon/work/motor_control/install/dynamixel_hardware/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox/lib:/home/darkdemon/work/motor_control/install/python_moveit_interface/lib:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_config
+[2.241s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_msgs)
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs' for CMake module files
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs' for CMake config files
+[2.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_msgs', 'cmake_prefix_path')
+[2.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.ps1'
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.dsv'
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.sh'
+[2.250s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib'
+[2.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_msgs', 'ld_library_path_lib')
+[2.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.ps1'
+[2.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.dsv'
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.sh'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/bin'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib/pkgconfig/dynamixel_workbench_msgs.pc'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib/python3.10/site-packages'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/bin'
+[2.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.ps1'
+[2.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.dsv'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.sh'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.bash'
+[2.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.zsh'
+[2.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/dynamixel_workbench_msgs
+[2.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/colcon-core/packages/dynamixel_workbench_msgs)
+[2.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_msgs)
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs' for CMake module files
+[2.266s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs' for CMake config files
+[2.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_msgs', 'cmake_prefix_path')
+[2.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.ps1'
+[2.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.dsv'
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/cmake_prefix_path.sh'
+[2.269s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib'
+[2.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_msgs', 'ld_library_path_lib')
+[2.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.ps1'
+[2.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.dsv'
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/hook/ld_library_path_lib.sh'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/bin'
+[2.274s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib/pkgconfig/dynamixel_workbench_msgs.pc'
+[2.275s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/lib/python3.10/site-packages'
+[2.275s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/bin'
+[2.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.ps1'
+[2.282s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.dsv'
+[2.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.sh'
+[2.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.bash'
+[2.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/dynamixel_workbench_msgs/package.zsh'
+[2.285s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs/share/colcon-core/packages/dynamixel_workbench_msgs)
+[2.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'ros_package_path')
+[2.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ros_package_path.ps1'
+[2.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ros_package_path.dsv'
+[2.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ros_package_path.sh'
+[2.291s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/local/lib/python3.10/dist-packages'
+[2.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'catkin_pythonpath')
+[2.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/catkin_pythonpath.ps1'
+[2.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/catkin_pythonpath.dsv'
+[2.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/python_moveit_interface' returned '0': /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/python_moveit_interface
+[2.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/catkin_pythonpath.sh'
+[2.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'pkg_config_path')
+[2.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path.ps1'
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path.dsv'
+[2.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path.sh'
+[2.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'pkg_config_path_multiarch')
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path_multiarch.ps1'
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path_multiarch.dsv'
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/pkg_config_path_multiarch.sh'
+[2.307s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_moveit_interface)
+[2.308s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface' for CMake module files
+[2.310s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface' for CMake config files
+[2.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'cmake_prefix_path')
+[2.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/cmake_prefix_path.ps1'
+[2.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/cmake_prefix_path.dsv'
+[2.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/cmake_prefix_path.sh'
+[2.314s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/lib'
+[2.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit_interface', 'ld_library_path_lib')
+[2.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ld_library_path_lib.ps1'
+[2.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ld_library_path_lib.dsv'
+[2.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/hook/ld_library_path_lib.sh'
+[2.317s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/bin'
+[2.317s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/lib/pkgconfig/python_moveit_interface.pc'
+[2.317s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/lib/python3.10/site-packages'
+[2.318s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit_interface/bin'
+[2.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.ps1'
+[2.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.dsv'
+[2.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.sh'
+[2.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.bash'
+[2.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit_interface/share/python_moveit_interface/package.zsh'
+[2.325s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/python_moveit_interface/share/colcon-core/packages/python_moveit_interface)
+[2.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/python_moveit2 build --build-base /home/darkdemon/work/motor_control/build/python_moveit2/build install --record /home/darkdemon/work/motor_control/build/python_moveit2/install.log --single-version-externally-managed install_data
+[2.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/src/realsense': PYTHONPATH=/home/darkdemon/work/motor_control/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense build --build-base /home/darkdemon/work/motor_control/build/realsense/build install --record /home/darkdemon/work/motor_control/build/realsense/install.log --single-version-externally-managed install_data
+[2.868s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2' for CMake module files
+[2.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/src/tb4_arm_ros2/python_moveit2' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/python_moveit2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/python_moveit2 build --build-base /home/darkdemon/work/motor_control/build/python_moveit2/build install --record /home/darkdemon/work/motor_control/build/python_moveit2/install.log --single-version-externally-managed install_data
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2' for CMake config files
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2/lib'
+[2.870s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2/bin'
+[2.871s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2/lib/pkgconfig/python_moveit2.pc'
+[2.871s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2/lib/python3.10/site-packages'
+[2.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('python_moveit2', 'pythonpath')
+[2.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/pythonpath.ps1'
+[2.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/pythonpath.dsv'
+[2.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/hook/pythonpath.sh'
+[2.878s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/python_moveit2/bin'
+[2.879s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(python_moveit2)
+[2.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.ps1'
+[2.881s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.dsv'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.sh'
+[2.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.bash'
+[2.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/python_moveit2/share/python_moveit2/package.zsh'
+[2.887s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/python_moveit2/share/colcon-core/packages/python_moveit2)
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense' for CMake module files
+[3.052s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense' for CMake config files
+[3.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/src/realsense' returned '0': PYTHONPATH=/home/darkdemon/work/motor_control/build/realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense build --build-base /home/darkdemon/work/motor_control/build/realsense/build install --record /home/darkdemon/work/motor_control/build/realsense/install.log --single-version-externally-managed install_data
+[3.053s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense/lib'
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense/bin'
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense/lib/pkgconfig/realsense.pc'
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense/lib/python3.10/site-packages'
+[3.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense', 'pythonpath')
+[3.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/pythonpath.ps1'
+[3.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/pythonpath.dsv'
+[3.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/realsense/share/realsense/hook/pythonpath.sh'
+[3.058s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/realsense/bin'
+[3.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense)
+[3.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/realsense/share/realsense/package.ps1'
+[3.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/realsense/share/realsense/package.dsv'
+[3.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/realsense/share/realsense/package.sh'
+[3.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/realsense/share/realsense/package.bash'
+[3.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/realsense/share/realsense/package.zsh'
+[3.063s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/realsense/share/colcon-core/packages/realsense)
+[14.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --build /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp -- -j20 -l20
+[14.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
+[14.317s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_moveit_cpp)
+[14.317s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp' for CMake module files
+[14.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/darkdemon/work/motor_control/build/small_arm_moveit_cpp' returned '0': CMAKE_PREFIX_PATH=/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp:/home/darkdemon/work/motor_control/install/small_arm_moveit_config:/home/darkdemon/work/motor_control/install/small_arm_description:/home/darkdemon/work/motor_control/install/realsense:/home/darkdemon/work/motor_control/install/python_moveit2:/opt/ros/humble:/home/darkdemon/work/motor_control/install/python_moveit_interface:/home/darkdemon/work/motor_control/install/dynamixel_workbench:/home/darkdemon/work/motor_control/install/dynamixel_hardware:/home/darkdemon/work/motor_control/install/dynamixel_workbench_toolbox:/home/darkdemon/work/motor_control/install/dynamixel_workbench_msgs /usr/bin/cmake --install /home/darkdemon/work/motor_control/build/small_arm_moveit_cpp
+[14.318s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp' for CMake config files
+[14.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_moveit_cpp', 'cmake_prefix_path')
+[14.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.ps1'
+[14.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.dsv'
+[14.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.sh'
+[14.321s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib'
+[14.321s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/bin'
+[14.321s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/pkgconfig/small_arm_moveit_cpp.pc'
+[14.322s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/python3.10/site-packages'
+[14.322s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/bin'
+[14.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.ps1'
+[14.323s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.dsv'
+[14.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.sh'
+[14.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.bash'
+[14.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.zsh'
+[14.325s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/colcon-core/packages/small_arm_moveit_cpp)
+[14.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(small_arm_moveit_cpp)
+[14.326s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp' for CMake module files
+[14.326s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp' for CMake config files
+[14.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('small_arm_moveit_cpp', 'cmake_prefix_path')
+[14.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.ps1'
+[14.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.dsv'
+[14.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/hook/cmake_prefix_path.sh'
+[14.328s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib'
+[14.329s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/bin'
+[14.329s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/pkgconfig/small_arm_moveit_cpp.pc'
+[14.329s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/lib/python3.10/site-packages'
+[14.329s] Level 1:colcon.colcon_core.environment:checking '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/bin'
+[14.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.ps1'
+[14.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.dsv'
+[14.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.sh'
+[14.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.bash'
+[14.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/small_arm_moveit_cpp/package.zsh'
+[14.331s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/darkdemon/work/motor_control/install/small_arm_moveit_cpp/share/colcon-core/packages/small_arm_moveit_cpp)
+[14.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[14.332s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.336s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[14.336s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.336s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.336s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.339s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[14.339s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/darkdemon/work/motor_control/install/local_setup.ps1'
+[14.341s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/darkdemon/work/motor_control/install/_local_setup_util_ps1.py'
+[14.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/darkdemon/work/motor_control/install/setup.ps1'
+[14.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/darkdemon/work/motor_control/install/local_setup.sh'
+[14.343s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/darkdemon/work/motor_control/install/_local_setup_util_sh.py'
+[14.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/darkdemon/work/motor_control/install/setup.sh'
+[14.344s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/darkdemon/work/motor_control/install/local_setup.bash'
+[14.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/darkdemon/work/motor_control/install/setup.bash'
+[14.345s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/darkdemon/work/motor_control/install/local_setup.zsh'
+[14.345s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/darkdemon/work/motor_control/install/setup.zsh'

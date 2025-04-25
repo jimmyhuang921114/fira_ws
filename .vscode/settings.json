@@ -88,7 +88,9 @@
         "__functional_03": "cpp",
         "target": "cpp",
         "locale": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "__mutex_base": "cpp"
     },
-    "cmake.sourceDirectory": "/home/darkdemon/workspace/hand_eye_cali_ws/build/visp_hand2eye_calibration/visp_hand2eye_calibration__py"
+    "cmake.sourceDirectory": "/home/darkdemon/workspace/hand_eye_cali_ws/build/visp_hand2eye_calibration/visp_hand2eye_calibration__py",
+    "ros.distro": "humble"
 }

@@ -1,0 +1,17 @@
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In member function ‘[01m[Kvoid AutoPoseService::pose_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:77:3:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_pose_[m[K’ was not declared in this scope
+   77 |   [01;31m[Klatest_pose_[m[K = *msg;
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:78:3:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_pose_[m[K’ was not declared in this scope
+   78 |   [01;31m[Khas_pose_[m[K = true;
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:[m[K In member function ‘[01m[Kvoid AutoPoseService::handle_service(std::shared_ptr<python_moveit_interface::srv::DetectPose_Request_<std::allocator<void> > >, std::shared_ptr<python_moveit_interface::srv::DetectPose_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:124:10:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_pose_[m[K’ was not declared in this scope
+  124 |     if (![01;31m[Khas_pose_[m[K) {
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/darkdemon/work/motor_control/src/tb4_arm_ros2/small_arm_moveit_cpp/src/auto_pose_goal.cpp:131:44:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_pose_[m[K’ was not declared in this scope
+  131 |     geometry_msgs::msg::Pose target_pose = [01;31m[Klatest_pose_[m[K;
+      |                                            [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/auto_pose_goal.dir/build.make:76: CMakeFiles/auto_pose_goal.dir/src/auto_pose_goal.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/auto_pose_goal.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

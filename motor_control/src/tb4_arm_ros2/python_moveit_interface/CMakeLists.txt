@@ -6,7 +6,6 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
-# 產生 service interface 檔案
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/PoseRequest.srv"
   "srv/GripperControl.srv"

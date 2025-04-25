@@ -1,3 +1,0 @@
-gmake[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/auto_pose_goal.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:252: CMakeFiles/gripper_open.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

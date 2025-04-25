@@ -1,5 +1,0 @@
-[ 30%] [32mBuilding CXX object CMakeFiles/ee_pose_in_base.dir/src/ee_pose_in_base.cpp.o[0m
-[ 30%] Built target manual_pose_topic
-[ 50%] Built target named_goal
-[ 70%] Built target auto_pose_goal
-[ 90%] Built target gripper_open
