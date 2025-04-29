@@ -71,5 +71,6 @@
         "typeinfo": "cpp",
         "__nullptr": "cpp",
         "locale": "cpp"
-    }
+    },
+    "ros.distro": "humble"
 }
